@@ -1,5 +1,5 @@
 ---
-description: Get all substructures attached to a given center atom.
+description: Get all substructures attached to a specified atom.
 ---
 
 # Substructure Finder
