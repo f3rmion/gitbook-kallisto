@@ -14,7 +14,7 @@
 ## Modelling <a id="model"></a>
 
 * [Molecular Graph Information](model/bonds.md)
-* [Breadth-First Sorting](model/sort.md)
+* [Breadth First Sorting](model/sort.md)
 * [Root-Mean-Squared Deviation](model/rms.md)
 * [Substructure Finder](model/lig.md)
 * [Substructure Exchanger](model/exs.md)
