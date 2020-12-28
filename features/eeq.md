@@ -1,6 +1,6 @@
 ---
 description: >-
-  Classical model to calculate atomic partial charges with Lagrangian
+  Classical model to calculate atomic partial charges via Lagrangian
   constraints.
 ---
 

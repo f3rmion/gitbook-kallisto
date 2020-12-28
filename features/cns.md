@@ -1,7 +1,5 @@
 ---
-description: >-
-  Simple measure to obtain the count of covalent bonds for an atom in a
-  molecule.
+description: Count of covalent bonds for an atom in a molecule.
 ---
 
 # Atomic Coordination Numbers
