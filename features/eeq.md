@@ -8,7 +8,7 @@ description: >-
 
 
 
-### Methodologies
+### Introduction
 
 Classical electronegativity equilibration \(EEQ\) partial charges are determined by minimising the following energy expression
 
