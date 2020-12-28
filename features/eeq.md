@@ -49,5 +49,5 @@ $$
 \quad \text{and}\quad \mathcal{X} = EN_i - \kappa_i\sqrt{CN_i},
 $$
 
-and use here the Pauling electronegativity and the atomic coordination number to introduce an environment dependency into the approach.
+and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the approach.
 
