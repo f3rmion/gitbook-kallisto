@@ -20,7 +20,7 @@ Here, Pauling electronegativities \(`EN`\), the internuclear distance of pair AB
 
 To calculate coordination numbers, we call the subcommand `cns` within `kallisto`
 
-```text
+```bash
 > kallisto --verbose cns --inp alanine-glycine.xyz
 3.98207181
 3.00785834 
@@ -45,4 +45,37 @@ To calculate coordination numbers, we call the subcommand `cns` within `kallisto
 ```
 
 We obtain a list of atomic coordination numbers, which is in agreement with chemical intuition.
+
+### Command-line Usage
+
+{% tabs %}
+{% tab title="subcommand" %}
+```bash
+> kallisto --verbose cns options arguments
+```
+{% endtab %}
+
+{% tab title="options" %}
+```
+--inp <string> 
+(optional, default: coord)
+description: 
+ input file in xmol format (Ångström) or in Turbomole format (Bohr)
+ 
+ --cntype <string>
+(optional, default: cov)
+available:
+ cov (default), exp, erf
+description:
+ choose between different damping function definitions
+```
+{% endtab %}
+
+{% tab title="arguments" %}
+```
+output : 
+ standard output (or to specified file)
+```
+{% endtab %}
+{% endtabs %}
 
