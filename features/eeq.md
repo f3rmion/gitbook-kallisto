@@ -105,7 +105,7 @@ description:
 {% tab title="arguments" %}
 ```text
 output: 
- standard output (or to specified file)
+ standard output or specified file
 ```
 {% endtab %}
 {% endtabs %}
