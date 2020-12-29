@@ -5,7 +5,7 @@
 
 ## Features
 
-* [Check the Example System](features/check-the-example-system.md)
+* [Check the Example System](features/example.md)
 * [Atomic Coordination Numbers](features/cns.md)
 * [Electronegativity Equilibration](features/eeq.md)
 * [Dynamic Polarizabilities](features/alp.md)
