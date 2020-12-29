@@ -51,7 +51,7 @@ and apply the Pauling electronegativity \(`EN`\) and the atomic coordination num
 
 ### Simple Example
 
-As usual we invoke `kallisto` via the command line. Please note that you need a valid molecular structure either in an `xmol` format \(\*.xyz in Ångström\) or in the `Turbomole` format \(coord in Bohr\). We exemplify the calculation of atomic partial charges for the alanine-glycine molecule.
+As usual we invoke `kallisto` via the command line. Please note that you need a valid molecular structure either in an `xmol` format \(\*.xyz in Ångström\) or in the `Turbomole` format \(coord in Bohr\). We exemplify the calculation of atomic EEQ partial charges for the alanine-glycine molecule.
 
 ```text
 > cat alanine-glycine.xyz
