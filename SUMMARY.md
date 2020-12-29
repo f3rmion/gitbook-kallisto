@@ -21,6 +21,6 @@
 
 ## Misc
 
-* [Need Help](misc/need-help.md)
+* [Need Help](misc/help.md)
 * [License](misc/license.md)
 
