@@ -49,36 +49,6 @@ $$
 
 and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the approach.
 
-### Application
-
-To calculate coordination numbers, we call the subcommand `eeq` within `kallisto`
-
-```text
-> kallisto --verbose eeq --inp alanine-glycine.xyz
-0.059704461728256275
-0.2626494653657499
--0.4965512448739412
-0.047991263003576215
-0.2744196871227069
--0.38881537388038867
--0.6402141334784498
--0.3928319273751289
--0.47582669447302023
-0.2790624116759344
-0.2891096702066603
--0.1845935570451514
-0.12417598515268524
-0.27028773655342087
-0.14722120980685544
-0.14502596136754614
-0.2992214711225029
-0.13031907222773667
-0.1342346682463232
-0.11540986754612566
-```
-
-We obtain a list of atomic EEQ charges, which sum up to a total charge of zero.
-
 ### Define the Subcommand
 
 {% tabs %}
@@ -109,4 +79,34 @@ output:
 ```
 {% endtab %}
 {% endtabs %}
+
+### Application
+
+To calculate coordination numbers, we call the subcommand `eeq` within `kallisto`
+
+```text
+> kallisto --verbose eeq --inp alanine-glycine.xyz
+0.059704461728256275
+0.2626494653657499
+-0.4965512448739412
+0.047991263003576215
+0.2744196871227069
+-0.38881537388038867
+-0.6402141334784498
+-0.3928319273751289
+-0.47582669447302023
+0.2790624116759344
+0.2891096702066603
+-0.1845935570451514
+0.12417598515268524
+0.27028773655342087
+0.14722120980685544
+0.14502596136754614
+0.2992214711225029
+0.13031907222773667
+0.1342346682463232
+0.11540986754612566
+```
+
+We obtain a list of atomic EEQ charges, which sum up to a total charge of zero.
 
