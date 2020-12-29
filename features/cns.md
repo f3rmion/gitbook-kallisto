@@ -48,7 +48,7 @@ H     3.572730    -0.688405    -1.154998
 
 ![Structure of the alanine-glycine molecule.](../.gitbook/assets/alagly.png)
 
-To calculate coordination numbers, we simply call the subcommand `cns` within `kallisto`
+To calculate coordination numbers, we call the subcommand `cns` within `kallisto`
 
 ```text
 > kallisto --verbose cns --inp alanine-glycine.xyz

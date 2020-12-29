@@ -49,3 +49,61 @@ $$
 
 and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the approach.
 
+### Simple Example
+
+As usual we invoke `kallisto` via the command line. Please note that you need a valid molecular structure either in an `xmol` format \(\*.xyz in Ångström\) or in the `Turbomole` format \(coord in Bohr\). We exemplify the calculation of atomic partial charges for the alanine-glycine molecule.
+
+```text
+> cat alanine-glycine.xyz
+  20
+
+C     2.081440     0.615100    -0.508430
+C     2.742230     1.824030    -1.200820
+N     4.117790     1.799870    -1.190410
+C     4.943570     2.827040    -1.822060
+C     6.440080     2.569360    -1.637600
+O     7.351600     3.252270    -2.069090
+N     0.610100     0.695090    -0.538780
+O     2.095560     2.724940    -1.739670
+O     6.705220     1.463410    -0.897460
+H     0.303080     1.426060     0.103770
+H     0.338420     1.050680    -1.460480
+C     2.488753    -0.593400    -1.198448
+H     2.416500     0.557400     0.532050
+H     4.614100     1.081980    -0.670550
+H     4.699850     3.794460    -1.373720
+H     4.722890     2.844690    -2.894180
+H     7.687400     1.448620    -0.860340
+H     2.029201    -1.457008    -0.719999
+H     2.170233    -0.542411    -2.238576
+H     3.572730    -0.688405    -1.154998
+```
+
+To calculate coordination numbers, we call the subcommand `eeq` within `kallisto`
+
+```text
+> kallisto --verbose eeq --inp alanine-glycine.xyz
+0.059704461728256275
+0.2626494653657499
+-0.4965512448739412
+0.047991263003576215
+0.2744196871227069
+-0.38881537388038867
+-0.6402141334784498
+-0.3928319273751289
+-0.47582669447302023
+0.2790624116759344
+0.2891096702066603
+-0.1845935570451514
+0.12417598515268524
+0.27028773655342087
+0.14722120980685544
+0.14502596136754614
+0.2992214711225029
+0.13031907222773667
+0.1342346682463232
+0.11540986754612566
+```
+
+We obtain a list of atomic EEQ charges ordered according to the input.
+
