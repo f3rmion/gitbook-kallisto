@@ -67,7 +67,7 @@ description:
 available:
  cov, exp, erf
 description:
- choose between different damping function definitions
+ different CN definitions
 ```
 {% endtab %}
 
