@@ -44,5 +44,5 @@ To calculate coordination numbers, we call the subcommand `cns` within `kallisto
 0.99397075
 ```
 
-We obtain a list of atomic coordination numbers, which is in agreement with chemical intuition, e.g., nitrogen atoms \(position 3 and 7 within the input file\) have CN-values of approximately three, hydrogen atoms of approximately one, respectively.
+We obtain a list of atomic coordination numbers, which is in agreement with chemical intuition.
 
