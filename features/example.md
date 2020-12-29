@@ -6,7 +6,7 @@ We exemplify the calculation of all atomic features for the alanine-glycine mole
 
 The coordinates of this molecule are given below in an `xmol` format \(\*.xyz in Ångström\):
 
-```text
+```bash
 > cat alanine-glycine.xyz
   20
 
