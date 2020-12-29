@@ -51,7 +51,7 @@ output:
 
 ### Application
 
-To calculate coordination numbers, we call the subcommand `cns` within `kallisto`
+To calculate coordination numbers, we call the subcommand `cns` 
 
 ```bash
 > kallisto --verbose cns --inp alanine-glycine.xyz

@@ -82,7 +82,7 @@ output:
 
 ### Application
 
-To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, we call the subcommand `eeq` within `kallisto`
+To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, we call the subcommand `eeq` 
 
 ```bash
 > kallisto --verbose eeq --inp alanine-glycine.xyz
