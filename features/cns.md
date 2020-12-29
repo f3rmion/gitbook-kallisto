@@ -22,10 +22,26 @@ To calculate coordination numbers, we call the subcommand `cns` within `kallisto
 
 ```text
 > kallisto --verbose cns --inp alanine-glycine.xyz
-[3.98207181 3.00785834 2.99800682 3.98095768 2.993322   1.00025168
- 2.99979217 1.00140949 1.98927904 0.99678598 0.9964672  4.0016192
- 0.9932187  0.99711911 0.99333844 0.99320143 0.99209619 0.99397073
- 0.99397068 0.99397075]
+3.98207181
+3.00785834 
+2.99800682 
+3.98095768 
+2.993322   
+1.00025168
+2.99979217 
+1.00140949 
+1.98927904 
+0.99678598 
+0.9964672  
+4.0016192
+0.9932187  
+0.99711911 
+0.99333844 
+0.99320143 
+0.99209619 
+0.99397073
+0.99397068 
+0.99397075
 ```
 
 We obtain a list of atomic coordination numbers, which is in agreement with chemical intuition, e.g., nitrogen atoms \(position 3 and 7 within the input file\) have CN-values of approximately three, hydrogen atoms of approximately one, respectively.
