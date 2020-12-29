@@ -11,13 +11,13 @@
 * [van-der-Waals Radii](features/vdw.md)
 * [Sterimol Descriptors](features/stm.md)
 
-## Modelling <a id="modell"></a>
+## Modelling
 
-* [Molecular Graph Information](modell/bonds.md)
-* [Breadth First Sorting](modell/sort.md)
-* [Root Mean Squared Deviation](modell/rms.md)
-* [Substructure Finder](modell/lig.md)
-* [Substructure Exchanger](modell/exs.md)
+* [Molecular Graph Information](modelling/bonds.md)
+* [Breadth First Sorting](modelling/sort.md)
+* [Root Mean Squared Deviation](modelling/rms.md)
+* [Substructure Finder](modelling/lig.md)
+* [Substructure Exchanger](modelling/exs.md)
 
 ## Misc
 
