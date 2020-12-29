@@ -108,5 +108,5 @@ To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, 
 0.11540986754612566
 ```
 
-We obtain a list of atomic EEQ charges, which sum up to a total charge of zero.
+We obtain a list of atomic EEQ charges, which sum up to a total charge of zero. We can calculate furthermore atomic EEQ charges for the cationic \(anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
 
