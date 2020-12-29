@@ -73,7 +73,7 @@ description:
 
 {% tab title="arguments" %}
 ```
-output : 
+output: 
  standard output (or to specified file)
 ```
 {% endtab %}
