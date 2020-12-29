@@ -2,7 +2,7 @@
 
 We exemplify the calculation of all atomic features for the alanine-glycine molecule as depicted below:
 
-![Alanine-glycine molecule.](../.gitbook/assets/alagly.png)
+![The example alanine-glycine molecule.](../.gitbook/assets/alagly.png)
 
 The coordinates of this molecule are given below in an `xmol` format \(\*.xyz in Ångström\):
 
