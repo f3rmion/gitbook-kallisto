@@ -1,7 +1,5 @@
 ---
-description: >-
-  Classical model to calculate atomic partial charges via Lagrangian
-  constraints.
+description: Calculate atomic partial charges via Lagrangian constraints.
 ---
 
 # Electronegativity Equilibration

@@ -1,5 +1,5 @@
 ---
-description: Use van-der-Waals radii to calculate descriptors for sterics.
+description: Calculate Sterimol descriptors.
 ---
 
 # Sterimol Descriptors
