@@ -68,7 +68,7 @@ description:
 --chrg <int>
 (optional, default: 0)
 description:
- absolute charge of the input structure (Lagrangian constraint)
+ absolute charge (qtotal) of the input structure (Lagrangian constraint)
 ```
 {% endtab %}
 
