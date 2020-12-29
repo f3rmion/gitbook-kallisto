@@ -46,7 +46,7 @@ To calculate coordination numbers, we call the subcommand `cns` within `kallisto
 
 We obtain a list of atomic coordination numbers, which is in agreement with chemical intuition.
 
-### Subcommand Definition
+### Define the Subcommand
 
 {% tabs %}
 {% tab title="cns" %}
