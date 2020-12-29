@@ -65,7 +65,7 @@ description:
  --cntype <string>
 (optional, default: cov)
 available:
- cov (default), exp, erf
+ cov, exp, erf
 description:
  choose between different damping function definitions
 ```
