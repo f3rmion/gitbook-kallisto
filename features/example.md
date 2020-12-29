@@ -1,4 +1,4 @@
-# Check our Example System
+# Check our Example
 
 We exemplify the calculation of all atomic features for the alanine-glycine molecule as depicted below:
 
