@@ -79,3 +79,34 @@ To calculate coordination numbers, we call the subcommand `eeq` within `kallisto
 
 We obtain a list of atomic EEQ charges, which sum up to a total charge of zero.
 
+### Define the Subcommand
+
+{% tabs %}
+{% tab title="eeq" %}
+```bash
+> kallisto --verbose eeq options arguments
+```
+{% endtab %}
+
+{% tab title="options" %}
+```text
+--inp <string> 
+(optional, default: coord)
+description: 
+ input file in xmol format (Ångström) or in Turbomole format (Bohr)
+ 
+--chrg <int>
+(optional, default: 0)
+description:
+ absolute charge of the input structure
+```
+{% endtab %}
+
+{% tab title="arguments" %}
+```text
+output: 
+ standard output (or to specified file)
+```
+{% endtab %}
+{% endtabs %}
+
