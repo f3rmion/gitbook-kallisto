@@ -77,5 +77,5 @@ To calculate coordination numbers, we call the subcommand `eeq` within `kallisto
 0.11540986754612566
 ```
 
-We obtain a list of atomic EEQ charges that are ordered according to the`alanine-glycine.xyz` input.
+We obtain a list of atomic EEQ charges, which sum up to a total charge of zero.
 
