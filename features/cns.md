@@ -46,10 +46,10 @@ To calculate coordination numbers, we call the subcommand `cns` within `kallisto
 
 We obtain a list of atomic coordination numbers, which is in agreement with chemical intuition.
 
-### Command-line Usage
+### Subcommand: cns
 
 {% tabs %}
-{% tab title="subcommand" %}
+{% tab title="cns" %}
 ```bash
 > kallisto --verbose cns options arguments
 ```
