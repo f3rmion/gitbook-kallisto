@@ -1,7 +1,7 @@
 # Table of contents
 
 * [User Guide to Atomic Featurizer Kallisto](README.md)
-* [Setup and Installation](setup-and-installation.md)
+* [Setup and Installation](setup.md)
 
 ## Features
 
