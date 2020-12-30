@@ -47,7 +47,7 @@ $$
 \quad \text{and}\quad \mathcal{X} = EN_i - \kappa_i\sqrt{CN_i},
 $$
 
-and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the approach.
+and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach.
 
 ### Define the Subcommand
 
