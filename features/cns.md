@@ -51,7 +51,7 @@ output:
 
 ### Application
 
-To calculate coordination numbers, we call the subcommand `cns` 
+To calculate coordination numbers, I call the subcommand `cns` 
 
 ```bash
 > kallisto --verbose cns --inp alanine-glycine.xyz
@@ -99,5 +99,5 @@ To calculate coordination numbers, we call the subcommand `cns`
 0.99397075
 ```
 
-We obtain a list of atomic coordination numbers, which is in agreement with chemical intuition.
+Now I obtain a list of atomic coordination numbers, which is in agreement with chemical intuition.
 
