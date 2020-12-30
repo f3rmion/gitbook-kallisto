@@ -47,7 +47,7 @@ $$
 \quad \text{and}\quad \mathcal{X}_i = EN_i - \kappa_i\sqrt{CN_i},
 $$
 
-and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and ...
+and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and `kappai`.
 
 ### Define the Subcommand
 
