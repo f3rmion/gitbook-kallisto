@@ -14,7 +14,7 @@ $$
 E_{IES} = \sum\limits_{i=1}^N\left( \chi_iq_i + \frac{1}{2}\left(J_{ii} + \frac{2\gamma_{ii}}{\sqrt{\pi}}\right)q_i^2\right) + \frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{j\ne i}^Nq_iq_j\frac{\text{erf}(\gamma_{ij}R_{ij})}{R_{ij}}.
 $$
 
-To obtain EEQ partial charges, under the constraint that the partial charges conserve the total charge of the system, the method of constrained Lagrangian optimisation is used
+To obtain EEQ partial charges under the constraint that the partial charges conserve the total charge of the system, the method of constrained Lagrangian optimisation is used
 
 $$
 \mathcal{L} = E_{IES} + \lambda\left(\sum\limits_{k=1}^Nq_k - q_{total}\right) \quad \text{with}\quad \frac{\partial\mathcal{L}}{\partial q} = \mathbf{0} \quad\text{and} \quad \frac{\partial\mathcal{L}}{\partial \lambda}= \sum\limits_{k=1}^N q_k-q_{total} =0,
