@@ -4,7 +4,7 @@ During the next sections, I exemplify the calculation of all atomic features for
 
 ![The example alanine-glycine molecule.](../.gitbook/assets/alagly.png)
 
-The coordinates of this molecule are given below in an `xmol` format \(\*.xyz in Ångström\):
+The coordinates of this molecule are given below in an `xmol` format in Ångström:
 
 ```bash
 > cat alanine-glycine.xyz
