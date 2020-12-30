@@ -1,6 +1,6 @@
 # Check the Example
 
-We exemplify the calculation of all atomic features for the Alanine-Glycine molecule as depicted below:
+During the next sections, I exemplify the calculation of all atomic features for the Alanine-Glycine molecule as depicted below:
 
 ![The example alanine-glycine molecule.](../.gitbook/assets/alagly.png)
 
