@@ -104,6 +104,7 @@ To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, 
 0.13031907222773667
 0.1342346682463232
 0.11540986754612566
+# Save output to file 'eeq'
 > kallisto --verbose eeq --inp alanine-glycine.xyz eeq
 > cat eeq
 0.059704461728256275
