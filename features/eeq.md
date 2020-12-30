@@ -44,10 +44,10 @@ $$
             J_{ii} + \frac{\sqrt{2}\gamma_{ii}}{\sqrt{\pi}}, &         \text{if } i=j\\
             \frac{\text{erf}(\gamma_{ij}R_{ij})}{R_{ij}}, &         \text{if } i\neq j 
     \end{cases}
-\quad \text{and}\quad \mathcal{X} = EN_i - \kappa_i\sqrt{CN_i},
+\quad \text{and}\quad \mathcal{X}_i = EN_i - \kappa_i\sqrt{CN_i},
 $$
 
-and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach.
+and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and ...
 
 ### Define the Subcommand
 
