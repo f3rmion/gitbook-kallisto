@@ -41,7 +41,7 @@ I define the interaction matrix and the right-hand side as
 
 $$
 \mathcal{A}_{ij} =     \begin{cases}
-            J_{ii} + \frac{\sqrt{2}\gamma_{ii}}{\sqrt{\pi}}, &         \text{if } i=j,\\
+            J_{ii} + \frac{\sqrt{2}\gamma_{ii}}{\sqrt{\pi}}, &         \text{if } i=j\\
             \frac{\text{erf}(\gamma_{ij}R_{ij})}{R_{ij}}, &         \text{if } i\neq j 
     \end{cases}
 \quad \text{and}\quad \mathcal{X} = EN_i - \kappa_i\sqrt{CN_i},
