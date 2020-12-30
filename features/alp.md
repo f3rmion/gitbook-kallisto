@@ -1,7 +1,5 @@
 ---
-description: >-
-  Interpolated polarizabilities from time-dependent density functional theory
-  reference data.
+description: Calculate atomic dynamic polarizabilities.
 ---
 
 # Dynamic Polarizabilities

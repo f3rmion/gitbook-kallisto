@@ -36,7 +36,7 @@ If you prefer to use the `conda` version manager then simply create a new virtua
 > conda create --name kallisto python=3.8
 ```
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 Sometimes `conda` and `nox` are getting in their ways, which could lead to a failure while running unit tests. When facing such a case, deactivate the virtual environment and try again.
 {% endhint %}
 

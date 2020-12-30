@@ -1,5 +1,5 @@
 ---
-description: Derived from atomic static polarizabilities.
+description: Calculate atomic van der Waals radii.
 ---
 
 # van-der-Waals Radii
