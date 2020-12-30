@@ -4,9 +4,7 @@ description: Calculate atomic partial charges via Lagrangian constraints.
 
 # Electronegativity Equilibration
 
-
-
-### Introduction
+## Introduction
 
 Classical electronegativity equilibration \(EEQ\) partial charges are determined by minimising the following energy expression, which is dependent on atomic charges _q_
 
@@ -49,7 +47,7 @@ $$
 
 and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and `kappai`.
 
-### Define the Subcommand
+## Define the Subcommand
 
 {% tabs %}
 {% tab title="eeq" %}
@@ -64,7 +62,7 @@ and apply the Pauling electronegativity \(`EN`\) and the atomic coordination num
 (optional, default: coord)
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
- 
+
 --chrg <int>
 (optional, default: 0)
 description:
@@ -80,9 +78,9 @@ output:
 {% endtab %}
 {% endtabs %}
 
-### Application
+## Application
 
-To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, I call the subcommand `eeq` 
+To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, I call the subcommand `eeq`
 
 ```bash
 > kallisto --verbose eeq --inp alanine-glycine.xyz
