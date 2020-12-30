@@ -37,7 +37,7 @@ q_{total}
 \end{pmatrix}.
 $$
 
-We define the interaction matrix and the right-hand side as
+I define the interaction matrix and the right-hand side as
 
 $$
 \mathcal{A}_{ij} =     \begin{cases}
@@ -82,7 +82,7 @@ output:
 
 ### Application
 
-To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, we call the subcommand `eeq` 
+To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, I call the subcommand `eeq` 
 
 ```bash
 > kallisto --verbose eeq --inp alanine-glycine.xyz
@@ -130,5 +130,5 @@ To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, 
 0.11540986754612566
 ```
 
-We obtain a list of atomic EEQ charges, which sum up to a total charge of zero. We can calculate furthermore atomic EEQ charges for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
+Now I obtain a list of atomic EEQ charges, which sum up to a total charge of zero. We can calculate furthermore atomic EEQ charges for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
 
