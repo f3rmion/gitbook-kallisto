@@ -101,5 +101,7 @@ To calculate atomic van-der-Waals radii for a neutral charged Alanine-Glycine mo
 2.5536833297719026
 ```
 
+Now I obtain a list of atomic van-der-Waals radii. However, I can furthermore calculate van-der-Waals radii for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
+
 
 
