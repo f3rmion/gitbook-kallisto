@@ -38,7 +38,7 @@ $$
 {% endtab %}
 
 {% tab title="options" %}
-```text
+```markup
 --inp <string> 
 (optional, default: coord)
 description: 

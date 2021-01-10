@@ -26,7 +26,7 @@ Here, Pauling electronegativities \(`EN`\), the internuclear distance of pair AB
 {% endtab %}
 
 {% tab title="options" %}
-```
+```markup
 --inp <string> 
 (optional, default: coord)
 description: 

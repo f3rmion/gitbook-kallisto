@@ -57,7 +57,7 @@ and apply the Pauling electronegativity \(`EN`\) and the atomic coordination num
 {% endtab %}
 
 {% tab title="options" %}
-```text
+```markup
 --inp <string> 
 (optional, default: coord)
 description: 
