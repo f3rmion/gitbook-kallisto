@@ -33,7 +33,7 @@ $$
 {% tabs %}
 {% tab title="alp" %}
 ```bash
-> kallisto --verbose eeq options arguments 
+> kallisto --verbose alp options arguments 
 ```
 {% endtab %}
 

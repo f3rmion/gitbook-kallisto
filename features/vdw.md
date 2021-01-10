@@ -6,7 +6,21 @@ description: Calculate atomic van der Waals radii.
 
 ## Introduction
 
+Atomic van-der-Waals radii ...
+
 ## Define the Subcommand
+
+{% tabs %}
+{% tab title="vdw" %}
+```bash
+> kallisto --verbose vdw options arguments 
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 ## Application
 
