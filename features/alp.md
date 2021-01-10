@@ -20,7 +20,7 @@ $$
 W_{j,ref}^j\left(CN_j, CN_{j,ref}\right) = \frac{\sum\limits_{j=1}^{N_s}\exp{\left(-\beta\times j\left(CN_j-CN_{j,ref}\right)^2\right)}}{\sum\limits_{j,ref=1}^{N_{j,ref}}\sum\limits_{j=1}^{N_s}\exp{\left(-\beta\times j\left(CN_j-CN_{j,ref}\right)^2\right)}},
 $$
 
-with the calculated CNs for the system of interest and of all reference systems. Note that the dynamic reference polarizabilities can be pre-scaled to, e.g., incorporate atomic-charge information as has been introduced recently by Caldeweyher et al. This approach uses an empirical charge-scaling function \(`zeta`\) to re-scale reference dynamic polarizabilities with respect to [electronegativity equilibration atomic partial charges](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MQgoO_6n1o2gY4PTCcJ/features/eeq) that enter afterwards the Gaussian weighing, respectively.
+with the calculated CNs for the system of interest and of all reference systems. Note that the dynamic reference polarizabilities can be pre-scaled to, e.g., incorporate atomic-charge information as has been introduced recently by Caldeweyher et al. This approach uses an empirical charge-scaling function \(`zeta`\) to re-scale reference dynamic polarizabilities with respect to [electronegativity equilibration atomic partial charges](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MQgoO_6n1o2gY4PTCcJ/features/eeq) that enter afterwards the Gaussian weighing as discussed above, respectively.
 
 $$
 \alpha_{j,ref}'(i\omega) = \alpha_{j,ref}(i\omega)\zeta
@@ -61,5 +61,54 @@ output:
 
 ## Application
 
+To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glycine molecule, I call the subcommand `alp`
 
+```bash
+> kallisto --verbose eeq --inp alanine-glycine.xyz
+6.797559893536487
+7.954558030234794
+8.343416502883054
+6.874125501683613
+7.912180255606206
+6.205524049384421
+8.929930573457574
+6.216975421946396
+6.374242458036639
+1.3827173212295591
+1.3536217412847078
+7.549015744100922
+1.9657806025363944
+1.4088758603316331
+1.8573692724029527
+1.8673376164561566
+1.336319279749363
+1.9359520557775551
+1.9173190746286342
+2.0092941860457025
+# Save output to file 'alp'
+> kallisto --verbose eeq --inp alanine-glycine.xyz alp
+> cat alp
+6.797559893536487
+7.954558030234794
+8.343416502883054
+6.874125501683613
+7.912180255606206
+6.205524049384421
+8.929930573457574
+6.216975421946396
+6.374242458036639
+1.3827173212295591
+1.3536217412847078
+7.549015744100922
+1.9657806025363944
+1.4088758603316331
+1.8573692724029527
+1.8673376164561566
+1.336319279749363
+1.9359520557775551
+1.9173190746286342
+2.0092941860457025
+```
+
+Now I obtain a list of atomic dynamic polarizabilities. However, I can furthermore calculate dynamic polarizabilities for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
 
