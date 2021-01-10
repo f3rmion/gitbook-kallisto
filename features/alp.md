@@ -28,6 +28,37 @@ $$
 
  
 
+## Define the Subcommand
+
+{% tabs %}
+{% tab title="alp" %}
+```bash
+> kallisto --verbose eeq options arguments 
+```
+{% endtab %}
+
+{% tab title="options" %}
+```text
+--inp <string> 
+(optional, default: coord)
+description: 
+ input file in xmol format (Ångström) or in Turbomole format (Bohr)
+
+--chrg <int>
+(optional, default: 0)
+description:
+ absolute charge (qtotal) of the input structure (Lagrangian constraint)
+```
+{% endtab %}
+
+{% tab title="arguments" %}
+```bash
+output: 
+ standard output or specified file
+```
+{% endtab %}
+{% endtabs %}
+
 ## Application
 
 
