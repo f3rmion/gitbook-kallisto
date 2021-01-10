@@ -14,7 +14,7 @@ $$
 \alpha_j(i\omega)=\sum\limits_{j,ref=1}^{N_{j,ref}}\alpha_{j,ref}(i\omega)\,W_{j,ref}^j
 $$
 
-The above equation sums over all pre-calulcated TD-DFT polarizabilities each having a weight associated such that all weights sum up to unity. So how do we get the weighting coefficients? This is exactly where the CNs become important
+The above equation sums over all pre-calulcated TD-DFT polarizabilities \(count of `Nj,ref`\) each having a weight associated such that all weights sum up to unity. So how do we get the weighting coefficients? This is exactly where the CNs become important
 
 $$
 W_{j,ref}^j\left(CN_j, CN_{j,ref}\right) = \frac{\sum\limits_{j=1}^{N_s}\exp{\left(-\beta\times j\left(CN_j-CN_{j,ref}\right)^2\right)}}{\sum\limits_{j,ref=1}^{N_{j,ref}}\sum\limits_{j=1}^{N_s}\exp{\left(-\beta\times j\left(CN_j-CN_{j,ref}\right)^2\right)}},
