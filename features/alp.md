@@ -26,8 +26,6 @@ $$
 \alpha_{j,ref}'(i\omega) = \alpha_{j,ref}(i\omega)\zeta
 $$
 
- 
-
 ## Define the Subcommand
 
 {% tabs %}
