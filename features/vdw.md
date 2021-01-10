@@ -36,7 +36,7 @@ description:
    rahm: 10.1002/chem.201700610
    truhlar: 10.1021/jp8111556
    
---angstrom
+--angstrom (flag)
 (optional, default: radii in Bohr)
 description:
  calculate van-der-Waals radii in Ångström
