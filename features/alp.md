@@ -62,7 +62,7 @@ output:
 To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glycine molecule, I call the subcommand `alp`
 
 ```bash
-> kallisto --verbose eeq --inp alanine-glycine.xyz
+> kallisto --verbose alp --inp alanine-glycine.xyz
 6.797559893536487
 7.954558030234794
 8.343416502883054
@@ -84,7 +84,7 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 1.9173190746286342
 2.0092941860457025
 # Save output to file 'alp'
-> kallisto --verbose eeq --inp alanine-glycine.xyz alp
+> kallisto --verbose alp --inp alanine-glycine.xyz alp
 > cat alp
 6.797559893536487
 7.954558030234794
