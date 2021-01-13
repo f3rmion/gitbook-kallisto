@@ -28,6 +28,8 @@ This atomic feature is useful to determine the steric hindrance from neighbourin
 
 ### Define the Subcommands
 
+#### Coordination Numbers
+
 {% tabs %}
 {% tab title="cns" %}
 ```bash
@@ -58,6 +60,8 @@ output:
 ```
 {% endtab %}
 {% endtabs %}
+
+#### Coordination Spheres
 
 {% tabs %}
 {% tab title="cnsp" %}
