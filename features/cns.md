@@ -57,6 +57,30 @@ output:
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="cnsp" %}
+```bash
+> kallisto --verbose cnsp options arguments
+```
+{% endtab %}
+
+{% tab title="options" %}
+```markup
+--inp <string> 
+(optional, default: coord)
+description: 
+ input file in xmol format (Ångström) or in Turbomole format (Bohr)
+```
+{% endtab %}
+
+{% tab title="arguments" %}
+```
+output: 
+ standard output or specified file
+```
+{% endtab %}
+{% endtabs %}
+
 ### Application
 
 To calculate coordination numbers, I call the subcommand `cns` 
