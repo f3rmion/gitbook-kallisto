@@ -136,7 +136,7 @@ To calculate coordination numbers, I call the subcommand `cns`
 
 Now I obtain a list of atomic coordination numbers, which is in agreement with chemical intuition. 
 
-Let's calculate coordination spheres for the toluene molecule:
+Let's calculate coordination spheres for the toluene molecule by calling the subcommand `cnsp`
 
 ```bash
 > cat toluene.xyz
