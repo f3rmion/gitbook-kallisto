@@ -24,6 +24,8 @@ $$
 
 This atomic feature is useful to determine the steric hindrance from neighbouring groups. The depiction below exemplifies this for the toluene molecule \(see Applications part\).
 
+![](../.gitbook/assets/cnsp_toluene.png)
+
 ### Define the Subcommands
 
 {% tabs %}
