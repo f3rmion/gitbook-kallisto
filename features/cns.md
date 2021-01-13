@@ -81,7 +81,7 @@ output:
 {% endtab %}
 {% endtabs %}
 
-### Application
+### Applications
 
 To calculate coordination numbers, I call the subcommand `cns` 
 
