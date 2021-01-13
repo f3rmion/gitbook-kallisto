@@ -2,7 +2,7 @@
 description: Count of covalent bonds for an atom in a molecule.
 ---
 
-# Atomic Coordination Numbers
+# Atomic Coordination Numbers and Spheres
 
 ### Introduction
 
@@ -14,9 +14,13 @@ CN_i = \sum\limits_i^N\sum\limits_{j \ne i} \frac{\delta_{AB}^{EN}}{2}\left( 1 +
 \text{where} \quad \delta_{AB}^{EN} = \left( k_1 \exp\left(|EN_A - EN_B| + k_2 \right)^2\right)/k_3
 $$
 
-Here, Pauling electronegativities \(`EN`\), the internuclear distance of pair AB \(`RAB`\), and covalent atomic radii \(`RcovAB = RcovA + RcovB`\) are used.
+Here, Pauling electronegativities \(`EN`\), the internuclear distance of pair AB \(`RAB`\), and covalent atomic radii \(`RcovAB = RcovA + RcovB`\) are used. Coordination number spheres are easily calculated by increasing the covalent atomic radii within the CN definition.
 
-### Define the Subcommand
+$$
+CNSP_{i}^{(3,2)} = CN_{i}\left(R^{cov'}_{AB} = 3\times R^{cov}_{AB}\right) - CN_{i}\left(R^{cov'}_{AB} = 2\times R^{cov}_{AB}\right)
+$$
+
+### Define the Subcommands
 
 {% tabs %}
 {% tab title="cns" %}

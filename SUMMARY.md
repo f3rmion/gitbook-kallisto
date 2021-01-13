@@ -6,7 +6,7 @@
 ## Features
 
 * [Check the Example](features/example.md)
-* [Atomic Coordination Numbers](features/cns.md)
+* [Atomic Coordination Numbers and Spheres](features/cns.md)
 * [Electronegativity Equilibration](features/eeq.md)
 * [Dynamic Polarizabilities](features/alp.md)
 * [van-der-Waals Radii](features/vdw.md)
