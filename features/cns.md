@@ -2,7 +2,7 @@
 description: Count of covalent bonds for an atom in a molecule.
 ---
 
-# Atomic Coordination Numbers and Spheres
+# Coordination Numbers and Spheres
 
 ### Introduction
 
