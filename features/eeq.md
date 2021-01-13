@@ -4,9 +4,7 @@ description: Calculate atomic partial charges via Lagrangian constraints.
 
 # Electronegativity Equilibration
 
-
-
-### Introduction
+## Introduction
 
 Classical electronegativity equilibration \(EEQ\) partial charges are determined by minimising the following energy expression, which is dependent on atomic charges _q_
 
@@ -49,7 +47,7 @@ $$
 
 and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and `kappai`.
 
-### Define the Subcommand
+## Define the Subcommand
 
 {% tabs %}
 {% tab title="eeq" %}
@@ -59,12 +57,12 @@ and apply the Pauling electronegativity \(`EN`\) and the atomic coordination num
 {% endtab %}
 
 {% tab title="options" %}
-```text
+```markup
 --inp <string> 
 (optional, default: coord)
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
- 
+
 --chrg <int>
 (optional, default: 0)
 description:
@@ -80,9 +78,9 @@ output:
 {% endtab %}
 {% endtabs %}
 
-### Application
+## Application
 
-To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, I call the subcommand `eeq` 
+To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, I call the subcommand `eeq`
 
 ```bash
 > kallisto --verbose eeq --inp alanine-glycine.xyz
@@ -106,6 +104,7 @@ To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, 
 0.13031907222773667
 0.1342346682463232
 0.11540986754612566
+# Save output to file 'eeq'
 > kallisto --verbose eeq --inp alanine-glycine.xyz eeq
 > cat eeq
 0.059704461728256275
@@ -130,5 +129,5 @@ To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, 
 0.11540986754612566
 ```
 
-Now I obtain a list of atomic EEQ charges, which sum up to a total charge of zero. We can calculate furthermore atomic EEQ charges for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
+Now I obtain a list of atomic EEQ charges, which sum up to a total charge of zero. However, I can furthermore calculate atomic EEQ charges for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
 

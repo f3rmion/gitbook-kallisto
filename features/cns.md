@@ -26,7 +26,7 @@ Here, Pauling electronegativities \(`EN`\), the internuclear distance of pair AB
 {% endtab %}
 
 {% tab title="options" %}
-```
+```markup
 --inp <string> 
 (optional, default: coord)
 description: 
@@ -75,6 +75,7 @@ To calculate coordination numbers, I call the subcommand `cns`
 0.99397073
 0.99397068 
 0.99397075
+# Save output to file 'cns'
 > kallisto --verbose cns --inp alanine-glycine.xyz cns
 > cat cns
 3.98207181
