@@ -20,6 +20,8 @@ $$
 CNSP_{i}^{(3,2)} = CN_{i}\left(R^{cov'}_{AB} = 3\times R^{cov}_{AB}\right) - CN_{i}\left(R^{cov'}_{AB} = 2\times R^{cov}_{AB}\right)
 $$
 
+This atomic feature is useful to determine the steric hindrance from neighbouring groups. The depiction below exemplifies this for the toluene molecule.  
+
 ### Define the Subcommands
 
 {% tabs %}
