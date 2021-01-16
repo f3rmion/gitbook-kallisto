@@ -6,7 +6,7 @@ description: Calculate atomic van der Waals radii.
 
 ## Introduction
 
-Atomic van-der-Waals \(vdW\) radii are calculated from atomic polarizabilities as recently popularised by Fedorov _et al._ \(see their [arXiv](https://arxiv.org/abs/1803.11507)\). In their work, they obtained a quantum-mechanical relation between atomic polarizabilities and vdW radii. 
+Atomic van-der-Waals \(vdW\) radii are calculated from atomic polarizabilities as recently introduced by Fedorov _et al._ \(see their [arXiv](https://arxiv.org/abs/1803.11507)\). In their work, they obtained a quantum-mechanical relation between atomic polarizabilities and vdW radii. 
 
 $$
 R_{vdw}(\alpha) = \theta_a \alpha^{1/7},
