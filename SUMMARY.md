@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Atomic Features and Modelling Helper](README.md)
+* [Featureizer and Modelling Helper](README.md)
 * [Setup and Installation](setup.md)
 
 ## Features
