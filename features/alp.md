@@ -28,11 +28,32 @@ $$
 
 ### Molecular Polarizabilities
 
-We obtain molecular polarizabilities as sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently.
+We obtain molecular polarizabilities as sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently. 
 
 $$
 \alpha_{mol} = \sum\limits_{i=1}^N \alpha_i
 $$
+
+The direct comparison to experimental and theoretically derived polarizabilities shows the great success of the implemented method. As can be seen in the table below the `kallisto` program calculates molecular polarizabilities \(for 47 organic molecules\) that are comparable to high-level quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published [AlphaML](https://tools.materialscloud.org/alphaml/input_structure/) model \(CCSD mode\).
+
+| **Measure in %** | **MP2** | **kallisto** | **AlphaML** |
+| :--- | :--- | :--- | :--- |
+| **MAD** | 3.1 | 4.7 | 10.9 |
+| **MD** | -2.6 | -2.2 | -0.8 |
+| **RMSD** | 3.1 | 6.8 | 20.6 |
+| **AMAX** | 16.9 | 22.3 | 74.4 |
+
+{% hint style="warning" %}
+**Statistical measures**
+
+**MAD** = Mean absolut deviation
+
+**MD** = mean deviation
+
+**RMSD** = root-mean squared deviation
+
+**AMAX** = absolut maximum deviation
+{% endhint %}
 
 ## Define the Subcommand
 
