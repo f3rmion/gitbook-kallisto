@@ -22,6 +22,7 @@ description: Sort your structure according to the breadth-first search algorithm
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
  
+# Note that the atom count starts at 0
 --start <int>
 (optional)
 description:
