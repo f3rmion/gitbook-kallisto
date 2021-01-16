@@ -15,7 +15,7 @@ $$
 To obtain EEQ partial charges under the constraint that the partial charges conserve the total charge of the system, the method of constrained Lagrangian optimisation is used
 
 $$
-\mathcal{L} = E_{IES} + \lambda\left(\sum\limits_{k=1}^Nq_k - q_{total}\right) \quad \text{with}\quad \frac{\partial\mathcal{L}}{\partial q} = \mathbf{0} \quad\text{and} \quad \frac{\partial\mathcal{L}}{\partial \lambda}= \sum\limits_{k=1}^N q_k-q_{total} =0,
+\mathcal{L} = E_{IES} + \lambda\left(\sum\limits_{k=1}^Nq_k - q_{total}\right) \\ \quad \text{with}\quad \frac{\partial\mathcal{L}}{\partial q} = \mathbf{0} \quad\text{and} \quad \frac{\partial\mathcal{L}}{\partial \lambda}= \sum\limits_{k=1}^N q_k-q_{total} =0,
 $$
 
 which leads to a set of \(N + 1\) linear equations that can be rewritten in matrix form as
