@@ -79,7 +79,7 @@ H      1.0300    1.0300   -2.7100
 H      0.7600    2.0300   -1.2500
 ```
 
-The depiction below shows the sorting for the ethane molecule. On the left side the initial coordinates are shown, while the right side presents the BFS sorted structure with `start = 0`.
+The depiction below shows the sorting for the ethane molecule. On the left side the initial coordinates are shown, while the right side presents the BFS sorted structure with `start = 0`. Note that the atom declared by `start` will always be the first atom in the sorted structure.
 
 ![](../.gitbook/assets/bfs.png)
 
