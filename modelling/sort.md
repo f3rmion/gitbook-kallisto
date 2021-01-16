@@ -6,6 +6,16 @@ description: Sort your structure according to the breadth-first search algorithm
 
 ### Introduction
 
+Breadth First Search \(BFS\) algorithm traverses a graph in a breadth-ward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration.
+
+![](../.gitbook/assets/breadth_first_traversal.jpg)
+
+As in the example given above, BFS algorithm traverses from `A` to `B` to `E` to `F` first then to `C` and `G` lastly to `D`. It employs the following rules.
+
+1.  Visit the adjacent unvisited vertex. Mark it as visited. Display it. Insert it in a queue.
+2. If no adjacent vertex is found, remove the first vertex from the queue.
+3. Repeat Rule 1 and Rule 2 until the queue is empty.
+
 ### Define the Subcommand
 
 {% tabs %}
