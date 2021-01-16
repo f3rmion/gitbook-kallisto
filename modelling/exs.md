@@ -25,11 +25,13 @@ description:
  to match. First <string> is the reference and 
  second <string> the new structure 
 
+# Note that the atom count starts at 0
 --center <int>
 (required)
 description:
  central atom for which covalently bound substructures are obtained
  
+# Note that the substructure count starts at 0
 --subnr <int>
 (required)
 description:
