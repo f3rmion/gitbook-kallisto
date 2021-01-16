@@ -54,7 +54,7 @@ H	1.03 1.03 -2.71
 C	1.03 1.03 -1.61
 H	0.76 2.03 -1.25
 H	0.00 0.00 0.00
-# Save sorted structure to 'ethane_s.xyz'
+# Save BFS sorted structure to 'ethane_s.xyz'
 > kallisto sort --inp ethane.xyz --start 0 > ethane_s.xyz
 > cat ethane_s.xyz
     8
