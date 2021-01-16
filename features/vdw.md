@@ -20,7 +20,7 @@ $$
 
 We apply static atomic polarizabilities for the calculation of vdW radii. The graphic below depicts vdW radii for all atoms up to Radon \(CN = 0, q = 0\).
 
-
+![](../.gitbook/assets/vdw.png)
 
 ## Define the Subcommand
 
