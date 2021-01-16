@@ -50,7 +50,30 @@ output:
 
 ### Application
 
-To calculate atomic van-der-Waals radii for a neutral charged Alanine-Glycine molecule, I call the subcommand `vdw`
+To calculate Sterimol parameter for an ethane molecule along the C2-C5 bond use the subcommand `stm`
+
+```bash
+> cat ethane.xyz
+8
+ethane
+H	0.00 0.00 0.00
+C	0.00 0.00 -1.10
+H	-1.00	0.27 -1.47
+H	0.27 -1.00 -1.47
+C	1.03 1.03 -1.61
+H	1.03 1.03 -2.71
+H	2.03 0.76 -1.25
+H	0.76 2.03 -1.25
+# Note that the counting of atoms starts at 0
+> kallisto --verbose stm --inp ethane.xyz --origin 1 --partner 4
+L, Bmin, Bmax / au:  6.29  4.27  4.54
+L, Bmin, Bmax / A:  3.33  2.26  2.40
+# Save output to file 'stm'
+> kallisto --verbose stm --inp ethane.xyz --origin 1 --partner 4 stm
+> cat stm
+L, Bmin, Bmax / au:  6.29  4.27  4.54
+L, Bmin, Bmax / A:  3.33  2.26  2.40
+```
 
 
 
