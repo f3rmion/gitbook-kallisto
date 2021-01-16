@@ -1,6 +1,6 @@
 # Table of contents
 
-* [User Guide to Atomic Featurizer Kallisto](README.md)
+* [Atomic feature and Modelling Helper](README.md)
 * [Setup and Installation](setup.md)
 
 ## Features

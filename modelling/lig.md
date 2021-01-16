@@ -4,9 +4,9 @@ description: Get all substructures attached to a specified atom.
 
 # Substructure Finder
 
-### Introduction
+## Introduction
 
-### Define the Subcommand
+## Define the Subcommand
 
 {% tabs %}
 {% tab title="lig" %}
@@ -21,7 +21,7 @@ description: Get all substructures attached to a specified atom.
 (optional, default: coord)
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
- 
+
 # Note that the atom count starts at 0
 --center <int>
 (required)
@@ -31,12 +31,12 @@ description:
 {% endtab %}
 
 {% tab title="arguments" %}
-```
+```text
 output: 
  standard output or specified file
 ```
 {% endtab %}
 {% endtabs %}
 
-### Application
+## Application
 

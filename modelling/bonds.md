@@ -4,9 +4,9 @@ description: Find the molecular graph according to covalent bonds between atoms.
 
 # Molecular Graph Information
 
-### Introduction
+## Introduction
 
-### Define the Subcommand
+## Define the Subcommand
 
 {% tabs %}
 {% tab title="bonds" %}
@@ -21,7 +21,7 @@ description: Find the molecular graph according to covalent bonds between atoms.
 (optional, default: coord)
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
- 
+
 # Note that the atom count starts at 0
 --partner <int>
 (optional)
@@ -31,12 +31,12 @@ description:
 {% endtab %}
 
 {% tab title="arguments" %}
-```
+```text
 output: 
  standard output or specified file
 ```
 {% endtab %}
 {% endtabs %}
 
-### Application
+## Application
 

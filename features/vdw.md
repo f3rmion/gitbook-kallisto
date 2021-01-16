@@ -6,7 +6,7 @@ description: Calculate atomic van der Waals radii.
 
 ## Introduction
 
-Atomic van-der-Waals \(vdW\) radii are calculated from atomic polarizabilities as recently introduced by Fedorov _et al._ \(see their [arXiv](https://arxiv.org/abs/1803.11507)\). In their work, they obtained a quantum-mechanical relation between atomic polarizabilities and vdW radii. 
+Atomic van-der-Waals \(vdW\) radii are calculated from atomic polarizabilities as recently introduced by Fedorov _et al._ \(see their [arXiv](https://arxiv.org/abs/1803.11507)\). In their work, they obtained a quantum-mechanical relation between atomic polarizabilities and vdW radii.
 
 $$
 R_{vdw}(\alpha) = \theta_a \alpha^{1/7},
@@ -27,7 +27,7 @@ We apply static atomic polarizabilities for the calculation of vdW radii. The gr
 {% tabs %}
 {% tab title="vdw" %}
 ```bash
-> kallisto --verbose vdw options arguments 
+> kallisto --verbose vdw options arguments
 ```
 {% endtab %}
 
@@ -42,14 +42,14 @@ description:
 (optional, default: 0)
 description:
  absolute charge (qtotal) of the input structure (Lagrangian constraint)
- 
+
  --vdwtype <string>
  (optional, default: rahm)
  description:
   reference atomic van der Waals radii
    rahm: 10.1002/chem.201700610
    truhlar: 10.1021/jp8111556
-   
+
 --angstrom (flag)
 (optional, default: radii in Bohr)
 description:
@@ -116,6 +116,4 @@ To calculate atomic van-der-Waals radii for a neutral charged Alanine-Glycine mo
 ```
 
 Now I obtain a list of atomic van-der-Waals radii. However, I can furthermore calculate van-der-Waals radii for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
-
-
 

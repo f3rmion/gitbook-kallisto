@@ -4,9 +4,9 @@ description: Simply exchange a found substructure with another.
 
 # Substructure Exchanger
 
-### Introduction
+## Introduction
 
-### Define the Subcommand
+## Define the Subcommand
 
 {% tabs %}
 {% tab title="exs" %}
@@ -30,7 +30,7 @@ description:
 (required)
 description:
  central atom for which covalently bound substructures are obtained
- 
+
 # Note that the substructure count starts at 0
 --subnr <int>
 (required)
@@ -47,5 +47,5 @@ output:
 {% endtab %}
 {% endtabs %}
 
-### Application
+## Application
 

@@ -4,9 +4,9 @@ description: Calculate the root-mean squared deviation using quaternions.
 
 # Root Mean Squared Deviation
 
-### Introduction
+## Introduction
 
-### Define the Subcommand
+## Define the Subcommand
 
 {% tabs %}
 {% tab title="rms" %}
@@ -27,12 +27,12 @@ description:
 {% endtab %}
 
 {% tab title="arguments" %}
-```
+```text
 output:
  standard output or specified file
 ```
 {% endtab %}
 {% endtabs %}
 
-### Application
+## Application
 
