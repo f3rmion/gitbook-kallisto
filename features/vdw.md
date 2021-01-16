@@ -18,7 +18,7 @@ $$
 R_{vdw}(\alpha) = \theta_a \theta_b\alpha^{1/7}
 $$
 
-We apply static atomic polarizabilities for the calculation of vdW radii. The graphic below depicts vdW radii for all atoms up to Radon \(CN = 0, q = 0\).
+We apply static atomic polarizabilities for the calculation of vdW radii. The graphic below depicts calculated vdW radii for all atoms up to Radon \(CN = 0, q = 0\).
 
 ![](../.gitbook/assets/vdw.png)
 
