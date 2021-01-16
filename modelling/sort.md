@@ -6,7 +6,7 @@ description: Sort your structure according to the breadth-first search algorithm
 
 ### Introduction
 
-### Define the SubcommandApplication
+### Define the Subcommand
 
 {% tabs %}
 {% tab title="sort" %}
@@ -36,4 +36,6 @@ output:
 ```
 {% endtab %}
 {% endtabs %}
+
+### Application
 
