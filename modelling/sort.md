@@ -6,6 +6,8 @@ description: Sort your structure according to the breadth-first search algorithm
 
 ### Introduction
 
+![](../.gitbook/assets/bfs.png)
+
 ### Define the Subcommand
 
 {% tabs %}
