@@ -26,6 +26,14 @@ $$
 \alpha_{j,ref}'(i\omega) = \alpha_{j,ref}(i\omega)\zeta
 $$
 
+### Molecular Polarizabilities
+
+We obtain molecular polarizabilities as sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently.
+
+$$
+\alpha_{mol} = \sum\limits_{i=1}^N \alpha_i
+$$
+
 ## Define the Subcommand
 
 {% tabs %}
@@ -46,6 +54,11 @@ description:
 (optional, default: 0)
 description:
  absolute charge (qtotal) of the input structure (Lagrangian constraint)
+ 
+--molecular (flag)
+(optional, default: false)
+description:
+ get the molecular polarizability as sum of all atomic ones
 ```
 {% endtab %}
 
