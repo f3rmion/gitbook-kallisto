@@ -12,7 +12,7 @@ $$
 R_{vdw}(\alpha) = \theta_a \alpha^{1/7},
 $$
 
-where `thetaa = 2.54` has been obtained by fitting to reference data for noble gases. Since the present model should be easily applicable to all elements up to Radon, an additional element-wise parameter `thetab` is introduced and fitted to reproduce theoretically determined vdW radii.
+where `thetaa = 2.54` has been obtained by fitting to reference data for noble gases. Since the present model should be easily applicable to all elements up to Radon, an additional element-wise parameter `thetab` is introduced and fitted to reproduce theoretically determined vdW radii \(see [Rahm](https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/chem.201602949) and [Mantina](https://pubs.acs.org/doi/10.1021/jp8111556)\).
 
 $$
 R_{vdw}(\alpha) = \theta_a \theta_b\alpha^{1/7}
