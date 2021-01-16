@@ -22,6 +22,7 @@ description: Get all substructures attached to a specified atom.
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
  
+# Note that the atom count starts at 0
 --center <int>
 (required)
 description:
