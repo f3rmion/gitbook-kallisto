@@ -28,11 +28,13 @@ An example how the Sterimol descriptors of an ethane molecule along the C2-C5 bo
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
  
+# Note that the atom count starts at 0
 --origin <int>
 (required)
 description:
  number of the origin atom
 
+# Note that the atom count starts at 0
 --partner <int>
 (required)
 description:

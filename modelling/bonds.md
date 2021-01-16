@@ -22,6 +22,7 @@ description: Find the molecular graph according to covalent bonds between atoms.
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
  
+# Note that the atom count starts at 0
 --partner <int>
 (optional)
 description:
