@@ -40,5 +40,34 @@ output:
 
 ### Application
 
+To sort an ethane molecule according to a breadth-first algorithms us the subcommand `sort`
+
+```bash
+> cat ethane.xyz
+8
+ethane
+C	0.00 0.00 -1.10
+H	2.03 0.76 -1.25
+H	-1.00	0.27 -1.47
+H	0.27 -1.00 -1.47
+H	1.03 1.03 -2.71
+C	1.03 1.03 -1.61
+H	0.76 2.03 -1.25
+H	0.00 0.00 0.00
+# Save sorted structure to 'ethane_s.xyz'
+> kallisto sort --inp ethane.xyz --start 0 > ethane_s.xyz
+> cat ethane_s.xyz
+    8
+Created with kallisto
+C      0.0000    0.0000   -1.1000
+H     -1.0000    0.2700   -1.4700
+H      0.2700   -1.0000   -1.4700
+C      1.0300    1.0300   -1.6100
+H      0.0000    0.0000    0.0000
+H      2.0300    0.7600   -1.2500
+H      1.0300    1.0300   -2.7100
+H      0.7600    2.0300   -1.2500
+```
+
 ![](../.gitbook/assets/bfs.png)
 
