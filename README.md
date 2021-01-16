@@ -1,7 +1,5 @@
 ---
-description: >-
-  This user guide focuses on the kallisto method for the calculation of atomic
-  features for the application in machine learning methods.
+description: Calculate atomic features efficiently for most elements of the periodic table!
 ---
 
 # Atomic feature and Modelling Helper
