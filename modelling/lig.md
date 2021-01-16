@@ -25,7 +25,7 @@ description:
 --center <int>
 (required)
 description:
- central atom from which covalently bound substructures are obtained
+ central atom for which covalently bound substructures are obtained
 ```
 {% endtab %}
 
