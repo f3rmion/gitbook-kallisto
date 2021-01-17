@@ -34,7 +34,7 @@ $$
 \alpha_{mol} = \sum\limits_{i=1}^N \alpha_i
 $$
 
-The direct comparison to experimental  polarizabilities shows the great success of the implemented method. As can be seen in the table below the `kallisto` program calculates molecular polarizabilities \(for 47 organic molecules\) that are comparable to high-level quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\). 
+The direct comparison to experimental  polarizabilities shows the great success of the implemented method. As can be seen in the table below the `kallisto` program calculates molecular polarizabilities \(for 47 organic molecules\) that are comparable to accurate quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\). 
 
 | **Measure in %** | **MP2** | \*\*\*\*[**kallisto**](https://github.com/f3rmion/kallisto)\*\*\*\* | \*\*\*\*[**AlphaML**](https://tools.materialscloud.org/alphaml/input_structure/)\*\*\*\* |
 | :--- | :--- | :--- | :--- |
