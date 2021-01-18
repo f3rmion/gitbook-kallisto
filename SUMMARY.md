@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Featureizer and Modelling Helper](README.md)
+* [Featurizer and Modelling Helper](README.md)
 * [Setup and Installation](setup.md)
 
 ## Features
