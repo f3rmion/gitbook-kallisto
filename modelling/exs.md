@@ -36,6 +36,14 @@ description:
 (required)
 description:
  substructure to be replaced by new structure
+ 
+ # Note that the substructire count starts at 0
+ --rotate <int>
+ (optional, defaut = 0)
+ description:
+  rotate the substrate around the covalent bond defined
+  between the center and the first atom in substrate.
+  Angle has to be given in degrees.
 ```
 {% endtab %}
 
