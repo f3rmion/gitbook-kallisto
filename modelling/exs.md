@@ -63,3 +63,7 @@ Let's take the example given in the section [Substructure Finder](https://app.gi
 
 ![](../.gitbook/assets/pyridine_c.png)
 
+{% hint style="warning" %}
+Note that the substrate exchanger needs the exchange position to be the first atom inside the structure.
+{% endhint %}
+
