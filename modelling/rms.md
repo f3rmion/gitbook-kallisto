@@ -14,7 +14,9 @@ $$
 q = a+b\,\mathbf{i} +c\,\mathbf {j} +d\,\mathbf {k}
 $$
 
-with `a`, `b`, `c`, and `d` are real numbers; and **i**, **j**, and **k** are the fundamental quaternion units.
+with `a`, `b`, `c`, and `d` as real numbers; and **i**, **j**, and **k** as the fundamental quaternion units. The set of quaternions is made a four-dimensional vector space over the real numbers {1, **i**, **j**, **k**} as a basis, where Hamilton defined the quaternion as consisting of a scalar part and a vector part. The vector part of the quaternion can be interpreted as a coordinate in three dimensional space. Operations such as the vector dot product and cross products can be defined in terms of quaternions, and this makes it possible to apply quaternion techniques wherever spatial vectors arise. Such as complex numbers can be represented as matrices, so can quaternions.
+
+
 
 ## Define the Subcommand
 
