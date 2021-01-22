@@ -14,7 +14,7 @@ $$
 
 with `a`, `b`, `c`, and `d` as real numbers; and **i**, **j**, and **k** as the fundamental quaternion units. The set of quaternions is made a four-dimensional vector space over the real numbers {1, **i**, **j**, **k**} as a basis, where Hamilton defined the quaternion as consisting of a scalar part and a vector part. The vector part of the quaternion can be interpreted as a coordinate in three dimensional space. Operations such as the vector dot product and cross products can be defined in terms of quaternions, and this makes it possible to apply quaternion techniques wherever spatial vectors arise.
 
-After setting up the quaternion \(4x4 matrix\), the largest eigenvalue is calculated by 1\) estimation via [Gershgoring's theorem](https://en.wikipedia.org/wiki/Gershgorin_circle_theorem) followed by a 2\) single value decomposition to obtain the eigenvalues of the matrix. We use the eigenvector corresponding to the largest eigenvalue to create a rotation matrix, which is then used to match the two structures.
+After setting up the quaternion \(4x4 matrix\), the largest eigenvalue is calculated by 1\) estimation via [Gershgorin's theorem](https://en.wikipedia.org/wiki/Gershgorin_circle_theorem) followed by a 2\) single value decomposition to obtain the eigenvalues of the matrix. We use the eigenvector corresponding to the largest eigenvalue to create a rotation matrix, which is then used to match the two structures.
 
 ## Define the Subcommand
 
