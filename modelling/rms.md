@@ -1,5 +1,5 @@
 ---
-description: Calculate the root-mean squared deviation using quaternions.
+description: Calculate the root-mean square deviation using quaternions.
 ---
 
 # Root Mean Square Deviation
