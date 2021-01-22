@@ -187,7 +187,7 @@ H     -0.3174   -4.9144    5.3587
 H     -2.2525   -3.5543    4.4358
 ```
 
-Ok, this seems to be working quite nicely, but what happens when we exchange with largere substructures? Let's takle one such problem by exchanging with an c-Met Kinase Inhibitor
+Ok, this seems to be working quite nicely, but what happens when we exchange with largere substructures? Let's takle one such problem by exchanging with a c-Met Kinase Inhibitor
 
 ```bash
 > cat cmet.xyz
