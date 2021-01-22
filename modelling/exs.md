@@ -38,7 +38,7 @@ description:
 (required)
 description:
  substructure to be replaced by new structure
- 
+
  # Note that the substructre count starts at 0
  --rotate <int>
  (optional, defaut = 0)
@@ -64,7 +64,7 @@ Let's take the example given in the section [Substructure Finder](https://app.gi
 ![](../.gitbook/assets/pyridine_c.png)
 
 {% hint style="warning" %}
-Note that the substrate exchanger needs the exchange position to be the first atom inside the structure.
+Note that the substrate exchanger needs the exchange position to be the first atom inside the structure. You can use the [BFS sorting](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRe6-_b8HjAaH4Is2t0/modelling/sort) to prepare your substrate.
 {% endhint %}
 
 To exchange benzene with pyridine, we need to know the substructure number of benzene within the complex. Here we take the result from the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdkU9-SqjnamgQtEMU/modelling/lig); benzene has substructure number `2`. Furthermore, the Iridium atom has to be specified according to the numbering inside the complex, which is `18`.
@@ -186,4 +186,104 @@ H      1.9862   -4.4664    4.4870
 H     -0.3174   -4.9144    5.3587
 H     -2.2525   -3.5543    4.4358
 ```
+
+Ok, this seems to be working quite nicely, but what happens when we exchange with largere substructures? Let's takle one such problem by exchanging with a c-Met Kinase Inhibitor
+
+```bash
+> cat cmet.xyz
+   73
+Created with kallisto
+C     -4.8579   -0.2541    2.8380
+C     -3.8074   -0.6686    2.0030
+C     -5.6903   -1.2392    3.3856
+N     -2.8308    0.0583    1.3763
+C     -3.6298   -2.0135    1.7390
+C     -5.4923   -2.5931    3.0900
+H     -6.4941   -0.9444    4.0602
+C     -2.0561   -0.8580    0.8080
+C     -4.4517   -3.0160    2.2465
+O     -2.5185   -2.1426    0.9555
+H     -6.1550   -3.3337    3.5362
+C     -0.7520   -0.6113    0.1756
+H     -4.2878   -4.0611    2.0190
+C      0.1755   -1.5727   -0.2603
+C     -0.3447    0.7443    0.1258
+N     -0.0790   -2.9304   -0.3006
+N      1.4046   -1.2067   -0.6777
+C      0.9299    1.1065   -0.2988
+H     -1.0370    1.5189    0.4550
+C      0.9956   -3.9448   -0.2162
+H     -0.8556   -3.1549   -0.9135
+C      1.7660    0.0847   -0.6811
+C      1.4106    2.4641   -0.3061
+C      1.4775   -3.9809    1.2455
+C      0.3659   -5.2950   -0.6105
+C      2.2135   -3.7576   -1.1450
+H      2.7930    0.2563   -0.9903
+C      2.3941    3.0757   -1.1131
+C      1.0484    3.4434    0.5914
+H      0.6389   -3.8980    1.9464
+H      2.1516   -3.1408    1.4559
+H      2.0232   -4.9022    1.4715
+H     -0.6290   -5.4288   -0.1754
+H      0.9955   -6.1366   -0.3012
+H      0.2530   -5.3579   -1.7013
+H      2.8826   -2.9518   -0.8258
+H      1.9134   -3.5649   -2.1804
+H      2.8436   -4.6562   -1.1382
+N      2.6361    4.3342   -0.7537
+H      2.9535    2.6509   -1.9382
+N      1.8316    4.5280    0.3059
+H      0.3510    3.4486    1.4182
+C      1.8813    5.7730    1.0633
+C      1.0124    6.8617    0.4276
+C      3.3119    6.2656    1.3267
+H      1.4428    5.5197    2.0388
+C      1.6921    7.5182   -0.7680
+H      0.8205    7.6325    1.1851
+H      0.0367    6.4594    0.1292
+C      3.9346    6.9937    0.1362
+H      3.2744    6.9678    2.1698
+H      3.9608    5.4367    1.6364
+N      3.0255    7.9928   -0.4196
+H      1.0691    8.3418   -1.1304
+H      1.7974    6.8114   -1.6001
+H      4.8711    7.4537    0.4663
+H      4.2005    6.3068   -0.6735
+C      3.4682    9.2042   -0.9364
+O      4.7876    9.4141   -0.6926
+O      2.7445   10.0017   -1.5189
+C      5.4363   10.6718   -1.0172
+C      4.7763   11.8444   -0.2802
+C      6.8795   10.5002   -0.5114
+C      5.4760   10.9179   -2.5288
+H      4.5007   11.5688    0.7431
+H      3.8577   12.1649   -0.7836
+H      5.4361   12.7186   -0.2429
+H      6.9020   10.0055    0.4666
+H      7.4054   11.4573   -0.4318
+H      7.4562    9.8614   -1.1914
+H      4.4759   11.0709   -2.9448
+H      5.9044   10.0570   -3.0536
+H      6.0736   11.8048   -2.7667
+# Exchange benzene with c-Met Kinase Inhibitor
+> kallisto --verbose exs --inp iridium.xyz cmet.xyz --center 18 --subnr 2
+```
+
+Again the new structure is saved into `newstructure.xyz`. By taking a closer look onto this structure, we see that atoms seem to clash into each other - "[no bueno](https://www.quora.com/What-does-no-bueno-mean-in-English)".
+
+![](../.gitbook/assets/messed.png)
+
+To overcome this failure, the `kallisto` program writes out constrainment files that are intended to be used in combination with the open source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The created constrainment files can now be used to repair the structure within a constrained geometry optimization. The constraints fix the complex and enable only the new substrate to relax.
+
+```bash
+# Constrained geometry optimization in implicit tetrahydrofuran
+> xtb newstructure.xyz --opt tight --alpb thf --input constrain.inp
+```
+
+After optimising  the geometry successfully, we obtain a reasonable complex \(see depiction below\). This approach reduces the complexity of the exchange algorithm tremendously since we solve the exchange problems by applying a physically motivated scheme instead of empirical rules like, e.g., a template based substrate exchange.
+
+![](../.gitbook/assets/opt.png)
+
+
 
