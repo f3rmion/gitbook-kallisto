@@ -6,6 +6,8 @@ description: Get all substructures attached to a specified atom.
 
 ## Introduction
 
+Often we are interested in the finding substructures, e.g., ligands that are covalently bound to a metal center within an organometallic catalyst. Here, we need information about the molecular graph. This information is, however, not adequate enough to write out ligands or other substructures. Within the `kallisto` program we implemented a recursive way to deal with substructures that are covalently bound to a specified atom \(termed as the `center`\).
+
 ## Define the Subcommand
 
 {% tabs %}
