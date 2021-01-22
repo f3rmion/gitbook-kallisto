@@ -38,7 +38,7 @@ description:
 (required)
 description:
  substructure to be replaced by new structure
- 
+
  # Note that the substructre count starts at 0
  --rotate <int>
  (optional, defaut = 0)
@@ -64,14 +64,14 @@ Let's take the example given in the section [Substructure Finder](https://app.gi
 ![](../.gitbook/assets/pyridine_c.png)
 
 {% hint style="warning" %}
-Note that the substrate exchanger needs the exchange position to be the first atom inside the structure. You can use the [BFS sorting](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdmQPuEjIlx_fWMWQR/modelling/sort) to prepare your new substrate!
+Note that the substrate exchanger needs the exchange position to be the first atom inside the structure.
 {% endhint %}
 
 To exchange benzene with pyridine, we need to know the substructure number of benzene within the complex. Here we take the result from the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdkU9-SqjnamgQtEMU/modelling/lig); benzene has substructure number `2`. Furthermore, the Iridium atom has to be specified according to the numbering inside the complex, which is `18`.
 
 Now we call the subcommand `exs` to exchange the benzene substructure with the new pyridine one. This generates a new `xmol` file \(termed `newstructure.xyz`\) that incorporates the new structure.
 
-```bash
+```text
 > cat pyridine.xyz
 10
 Pyridine without H in ortho position of N
