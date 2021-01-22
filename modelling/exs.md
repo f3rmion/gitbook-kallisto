@@ -277,6 +277,7 @@ Again the new structure is saved into `newstructure.xyz`. By taking a closer loo
 To overcome this failure, the `kallisto` program writes out constrainment files that are intended to be used in combination with the open source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The created constrainment files can now be used to repair the structure within a constrained geometry optimization. The constraints fix the complex and enable only the new substrate to relax.
 
 ```bash
+# Constrained geometry optimization in implicit tetrahydrofuran
 > xtb newstructure.xyz --opt tight --alpb thf --input constrain.inp
 ```
 
