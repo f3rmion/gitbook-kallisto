@@ -15,7 +15,7 @@
 ## Modelling
 
 * [Breadth First Sorting](modelling/sort.md)
-* [Root Mean Squared Deviation](modelling/rms.md)
+* [Root Mean Square Deviation](modelling/rms.md)
 * [Substructure Finder](modelling/lig.md)
 * [Substructure Exchanger](modelling/exs.md)
 

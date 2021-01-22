@@ -2,9 +2,11 @@
 description: Calculate the root-mean squared deviation using quaternions.
 ---
 
-# Root Mean Squared Deviation
+# Root Mean Square Deviation
 
 ## Introduction
+
+A widely used way to compare the structures is to translate and rotate one structure with respect to the other to minimize the root mean square deviation \(RMSD\).
 
 ## Define the Subcommand
 
