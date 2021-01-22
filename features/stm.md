@@ -4,20 +4,18 @@ description: 'Calculate Sterimol descriptors L, Bmin, and Bmax.'
 
 # Sterimol Descriptors
 
-### Introduction
+## Introduction
 
-An example how the Sterimol descriptors of an ethane molecule along the C2-C5 bond are constructed is shown below \(depiction taken from [here](https://github.com/bobbypaton/DBSTEP)\). For the calculation of Sterimol descriptors `kallisto` uses van-der-Waals radii that are obtained from atomic static polarzabilities as described in [van-der-Waals Radii](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRAfxINKqRBUyA1POhp/features/vdw).
-
-### 
+An example how the Sterimol descriptors of an ethane molecule along the C2-C5 bond are constructed is shown below \(depiction taken from [here](https://github.com/bobbypaton/DBSTEP)\). For the calculation of Sterimol descriptors `kallisto` uses van-der-Waals radii that are obtained from atomic static polarzabilities as described in the section [van-der-Waals Radii](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRAfxINKqRBUyA1POhp/features/vdw).
 
 ![](../.gitbook/assets/sterimol_new.png)
 
-### Define the Subcommand
+## Define the Subcommand
 
 {% tabs %}
 {% tab title="stm" %}
 ```bash
-> kallisto --verbose stm options arguments 
+> kallisto --verbose stm options arguments
 ```
 {% endtab %}
 
@@ -27,7 +25,7 @@ An example how the Sterimol descriptors of an ethane molecule along the C2-C5 bo
 (optional, default: coord)
 description: 
  input file in xmol format (Ångström) or in Turbomole format (Bohr)
- 
+
 # Note that the atom count starts at 0
 --origin <int>
 (required)
@@ -43,14 +41,14 @@ description:
 {% endtab %}
 
 {% tab title="arguments" %}
-```
+```text
 output: 
  standard output or specified file
 ```
 {% endtab %}
 {% endtabs %}
 
-### Application
+## Application
 
 To calculate Sterimol parameter for an ethane molecule along the C2-C5 bond use the subcommand `stm`
 
@@ -58,14 +56,14 @@ To calculate Sterimol parameter for an ethane molecule along the C2-C5 bond use 
 > cat ethane.xyz
 8
 ethane
-H	0.00 0.00 0.00
-C	0.00 0.00 -1.10
-H	-1.00	0.27 -1.47
-H	0.27 -1.00 -1.47
-C	1.03 1.03 -1.61
-H	1.03 1.03 -2.71
-H	2.03 0.76 -1.25
-H	0.76 2.03 -1.25
+H    0.00 0.00 0.00
+C    0.00 0.00 -1.10
+H    -1.00    0.27 -1.47
+H    0.27 -1.00 -1.47
+C    1.03 1.03 -1.61
+H    1.03 1.03 -2.71
+H    2.03 0.76 -1.25
+H    0.76 2.03 -1.25
 # Note that the counting of atoms starts at 0
 > kallisto --verbose stm --inp ethane.xyz --origin 1 --partner 4
 L, Bmin, Bmax / au:  6.29  4.27  4.54
@@ -76,6 +74,4 @@ L, Bmin, Bmax / A:  3.33  2.26  2.40
 L, Bmin, Bmax / au:  6.29  4.27  4.54
 L, Bmin, Bmax / A:  3.33  2.26  2.40
 ```
-
-
 

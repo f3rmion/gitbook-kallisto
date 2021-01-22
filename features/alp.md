@@ -20,11 +20,30 @@ $$
 W_{j,ref}^j\left(CN_j, CN_{j,ref}\right) = \frac{\sum\limits_{j=1}^{N_s}\exp{\left(-\beta\times j\left(CN_j-CN_{j,ref}\right)^2\right)}}{\sum\limits_{j,ref=1}^{N_{j,ref}}\sum\limits_{j=1}^{N_s}\exp{\left(-\beta\times j\left(CN_j-CN_{j,ref}\right)^2\right)}},
 $$
 
-with the calculated CNs for the system of interest and of all reference systems. The equation above uses the limit `Ns` for one of the summations, which is determined separately for each reference system \(for those details [checkout the paper](https://chemrxiv.org/articles/preprint/A_Generally_Applicable_Atomic-Charge_Dependent_London_Dispersion_Correction_Scheme/7430216)\).Note that the dynamic reference polarizabilities can be pre-scaled to, e.g., incorporate atomic-charge information as has been introduced recently by Caldeweyher et al. This approach uses an empirical charge-scaling function \(`zeta`\) to re-scale reference dynamic polarizabilities with respect to [electronegativity equilibration atomic partial charges](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MQgoO_6n1o2gY4PTCcJ/features/eeq) that enter afterwards the Gaussian weighing as discussed above, respectively.
+with the calculated CNs for the system of interest and of all reference systems. The equation above uses the limit `Ns` for one of the summations, which is determined separately for each reference system \(for those details [check out the paper](https://chemrxiv.org/articles/preprint/A_Generally_Applicable_Atomic-Charge_Dependent_London_Dispersion_Correction_Scheme/7430216)\).Note that the dynamic reference polarizabilities can be pre-scaled to, e.g., incorporate atomic-charge information as has been introduced recently by Caldeweyher et al. This approach uses an empirical charge-scaling function \(`zeta`\) to re-scale reference dynamic polarizabilities with respect to [electronegativity equilibration atomic partial charges](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MQgoO_6n1o2gY4PTCcJ/features/eeq) that enter afterwards the Gaussian weighing as discussed above, respectively.
 
 $$
 \alpha_{j,ref}'(i\omega) = \alpha_{j,ref}(i\omega)\zeta
 $$
+
+### Molecular Polarizabilities
+
+We obtain molecular polarizabilities as sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently. 
+
+$$
+\alpha_{mol} = \sum\limits_{i=1}^N \alpha_i
+$$
+
+The direct comparison to experimental  polarizabilities shows the great success of the implemented method. As can be seen in the table below the `kallisto` program calculates molecular polarizabilities \(for 47 organic molecules\) that are comparable to accurate quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\). 
+
+| **Measure in %** | \*\*\*\*[**MP2**](https://aip.scitation.org/doi/abs/10.1063/1.4932594)\*\*\*\* | \*\*\*\*[**kallisto**](https://github.com/f3rmion/kallisto)\*\*\*\* | \*\*\*\*[**AlphaML**](https://tools.materialscloud.org/alphaml/input_structure/)\*\*\*\* |
+| :--- | :--- | :--- | :--- |
+| **MAD** | 3.1 | 4.7 | 10.9 |
+| **MD** | -2.6 | -2.2 | -0.8 |
+| **RMSD** | 3.1 | 6.8 | 20.6 |
+| **AMAX** | 16.9 | 22.3 | 74.4 |
+
+**MAD** = Mean Absolute Deviation; **MD** = Mean Deviation; **RMSD** = Root-Mean Squared Deviation; **AMAX** = Absolut MAXimum deviation.
 
 ## Define the Subcommand
 
@@ -46,6 +65,11 @@ description:
 (optional, default: 0)
 description:
  absolute charge (qtotal) of the input structure (Lagrangian constraint)
+ 
+--molecular (flag)
+(optional, default: false)
+description:
+ get the molecular polarizability as sum of all atomic ones
 ```
 {% endtab %}
 
