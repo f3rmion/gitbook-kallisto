@@ -42,7 +42,7 @@ output:
 
 ## Application
 
-Let's dive directly into an example to extract substructures \(ligands\) of an organometallic transition state structure \(B3LYP-D3\(BJ\)/LACVP\*\*/PBF\(THF\) level\) for the Iridium atom `center = 18`.
+Let's dive directly into an example to extract substructures for the Iridium atom within an organometallic transition state structure for the oxidative addition of benzene \(B3LYP-D3\(BJ\)/LACVP\*\*/PBF\(THF\) level\).
 
 ![Transition state structure for the oxidative addition \(Hartwig&apos;s Iridium catalyzed borylation\)](../.gitbook/assets/iridium_exs.png)
 
