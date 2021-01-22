@@ -6,7 +6,15 @@ description: Calculate the root-mean squared deviation using quaternions.
 
 ## Introduction
 
-A widely used way to compare the structures is to translate and rotate one structure with respect to the other to minimize the root mean square deviation \(RMSD\).
+A widely used way to compare the structures is to translate and rotate one structure with respect to the other to minimize the root mean square deviation \(RMSD\). We implemented a simple scheme, based on quaternions, for the optimal transformation \(rotation-translation\) that minimizes the RMSD between two sets of structures.
+
+Quaternions are generally represented in the form
+
+$$
+q = a+b\,\mathbf{i} +c\,\mathbf {j} +d\,\mathbf {k}
+$$
+
+with `a`, `b`, `c`, and `d` are real numbers; and **i**, **j**, and **k** are the fundamental quaternion units.
 
 ## Define the Subcommand
 
