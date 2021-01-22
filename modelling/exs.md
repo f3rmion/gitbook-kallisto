@@ -270,7 +270,7 @@ H      6.0736   11.8048   -2.7667
 > kallisto --verbose exs --inp iridium.xyz cmet.xyz --center 18 --subnr 2
 ```
 
-Again the new structure is saved in newstructure.xyz. By taking a closer look onto this structure, we see that atoms seem to clash into each other \("[no bueno](https://www.quora.com/What-does-no-bueno-mean-in-English)"\).
+Again the new structure is saved in newstructure.xyz. By taking a closer look onto this structure, we see that atoms seem to clash into each other - "[no bueno](https://www.quora.com/What-does-no-bueno-mean-in-English)".
 
 ![](../.gitbook/assets/messed.png)
 
