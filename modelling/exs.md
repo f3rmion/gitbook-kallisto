@@ -6,6 +6,10 @@ description: Simply exchange a found substructure with another.
 
 ## Introduction
 
+Often we simply want to modify existing molecular structures in an automated way, which is always a little tricky. The `kallisto` program implements an easy way to exchange substructures within a molecular structure by another substructure. For the definition of substructures and the way we find them in `kallisto` check out the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig).
+
+
+
 ## Define the Subcommand
 
 {% tabs %}
