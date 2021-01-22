@@ -158,3 +158,15 @@ Substructure 5: [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
 Substructure 6: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91]
 ```
 
+We find the following substructures:
+
+| \# | Substructure in complex |
+| :--- | :--- |
+| 0 | N-ligand |
+| 1 | N-ligand |
+| 2 | Benzene |
+| 3 | Hydrogen Atom |
+| 4 | Bpin-ligand |
+| 5 | Bpin-ligand |
+| 6 | Bpin-ligand |
+
