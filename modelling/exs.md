@@ -187,7 +187,7 @@ H     -0.3174   -4.9144    5.3587
 H     -2.2525   -3.5543    4.4358
 ```
 
-Ok, this seems to be working quite nicely, but what happens when we exchange with largere substructures? Let's takle one such problem by exchanging with a c-Met Kinase Inhibitor
+Ok, this seems to be working quite nicely, but what happens when we exchange with larger substructures? Let's tackle one such problem by exchanging with a c-Met Kinase Inhibitor
 
 ```bash
 > cat cmet.xyz
@@ -290,4 +290,10 @@ After optimising  the geometry successfully, we obtain a reasonable complex \(se
 Sometimes we want to additionally rotate the new substrate around its covalent bond connecting to the central atom after matching it. The `kallisto` program makes use of the Rodrigues rotation formula that rotates a vector **v** by an angle `theta` around vector **k** by decomposing it into its components parallel and perpendicular to **k**, and rotating only the perpendicular component.
 
 ![](../.gitbook/assets/rodrigues.png)
+
+A simple example is given as follows, where we rotate the new substrate by an angle of 180 Degrees after matching it to the old substrate inside the complex of interest. Here, we take the example from above:
+
+```bash
+> kallisto --verbose exs --inp iridium.xyz pyridine.xyz --center 18 --subnr 2 --rotate 180
+```
 
