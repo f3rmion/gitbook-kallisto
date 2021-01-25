@@ -294,8 +294,9 @@ Sometimes we want to additionally rotate the new substrate around its covalent b
 $$
 \mathbf{v}_{\text{rot}} = \mathbf{v}\text{cos}(\theta) + (\textbf{k}\times \mathbf{v})\text{sin}(\theta) + \mathbf{k}(\mathbf{k}\cdot \mathbf{v})(1 -\text{cos}(\theta)) \\[.5em]
 \text{with}\quad\mathbf{v} = \mathbf{v}_{\vert\vert} + \mathbf{v}_{\perp}\\[.5em]
-\mathbf{v}_{\vert\vert} = (\mathbf{v}\cdot\mathbf{k})\mathbf{k} \quad(\text{projection})\\
-\mathbf{v}_{\perp} = \mathbf{v} - \mathbf{v}_{\vert\vert} = \mathbf{v} - (\mathbf{k}\cdot\mathbf{v})\mathbf{k} = -\mathbf{k}\times(\mathbf{k}\times\mathbf{v}) \quad (\text{rejection})
+\mathbf{v}_{\vert\vert} = (\mathbf{v}\cdot\mathbf{k})\mathbf{k} \\\quad(\text{projection})\\[.5em]
+\mathbf{v}_{\perp} = \mathbf{v} - \mathbf{v}_{\vert\vert} = \mathbf{v} - (\mathbf{k}\cdot\mathbf{v})\mathbf{k} = -\mathbf{k}\times(\mathbf{k}\times\mathbf{v}) \\\quad (\text{rejection of }\mathbf{v}\text{ from 
+ }\mathbf{k})
 $$
 
 A simple example is given as follows, where we rotate the new substrate by an angle of 180 Degrees after matching it to the old substrate inside the complex of interest. Here, we take the example from above:
