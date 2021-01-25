@@ -291,6 +291,10 @@ Sometimes we want to additionally rotate the new substrate around its covalent b
 
 ![](../.gitbook/assets/rodrigues.png)
 
+$$
+\mathbf{v}_{\text{rot}} = \mathbf{v}\text{cos}(\theta) + (\textbf{k}\times \mathbf{v})\text{sin}(\theta) + \mathbf{k}(\mathbf{k}\cdot \mathbf{v})(1 -\text{cos}(\theta))
+$$
+
 A simple example is given as follows, where we rotate the new substrate by an angle of 180 Degrees after matching it to the old substrate inside the complex of interest. Here, we take the example from above:
 
 ```bash
