@@ -287,7 +287,7 @@ After optimising  the geometry successfully, we obtain a reasonable complex \(se
 
 ### Rotate with Rodrigues' rotation formula
 
-Sometimes we want to additionally rotate the new substrate around its covalent bond connecting to the central atom after matching it. The `kallisto` program makes use of the Rodrigues rotation formula that rotates a vector **v** by an angle `theta` around vector **k** by decomposing it into its components parallel and perpendicular to **k**, and rotating only the perpendicular component.
+Sometimes we want to additionally rotate the new substrate around its covalent bond \(central atom to substrate atom\) after matching it. The `kallisto` program makes use of the Rodrigues rotation formula that rotates a vector **v** by an angle `theta` around vector **k** by decomposing it into its components parallel and perpendicular to **k**, and rotating only the perpendicular component.
 
 ![](../.gitbook/assets/rodrigues.png)
 
