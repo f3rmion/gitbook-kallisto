@@ -294,7 +294,8 @@ Sometimes we want to additionally rotate the new substrate around its covalent b
 $$
 \mathbf{v}_{\text{rot}} = \mathbf{v}\text{cos}(\theta) + (\textbf{k}\times \mathbf{v})\text{sin}(\theta) + \mathbf{k}(\mathbf{k}\cdot \mathbf{v})(1 -\text{cos}(\theta)) \\[.5em]
 \text{with}\quad\mathbf{v} = \mathbf{v}_{\vert\vert} + \mathbf{v}_{\perp}\\[.5em]
-\mathbf{v}_{\vert\vert} = (\mathbf{v}\cdot\mathbf{k})\mathbf{k} \\\quad(\text{projection})\\[.5em]
+\mathbf{v}_{\vert\vert} = (\mathbf{v}\cdot\mathbf{k})\mathbf{k} \\\quad(\text{projection of }\mathbf{v}\text{ from 
+ }\mathbf{k})\\[.5em]
 \mathbf{v}_{\perp} = \mathbf{v} - \mathbf{v}_{\vert\vert} = \mathbf{v} - (\mathbf{k}\cdot\mathbf{v})\mathbf{k} = -\mathbf{k}\times(\mathbf{k}\times\mathbf{v}) \\\quad (\text{rejection of }\mathbf{v}\text{ from 
  }\mathbf{k})
 $$
