@@ -2,7 +2,15 @@
 
 This guide deal with the general setup and local installation of the `kallisto` program.
 
-## Getting the program
+## Install from PyPI
+
+The `kallisto` program is available on PyPI. The installation is straightforward using `pip`
+
+```bash
+> pip install kallisto
+```
+
+## Install from Source
 
 `kallisto` runs on `python3`
 
