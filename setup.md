@@ -53,7 +53,7 @@ Sometimes `conda` and `nox` are getting in their ways, which could lead to a fai
 We start by cloning the repository
 
 ```text
-> git clone git@github.com:f3rmion/kallisto.git
+> git clone git@github.com:AstraZeneca/kallisto.git
 ```
 
 Install a python package manager, where we choose to go with [poetry](https://python-poetry.org/) via curl
