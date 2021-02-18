@@ -48,7 +48,7 @@ If you prefer to use the `conda` version manager then simply create a new virtua
 Sometimes `conda` and `nox` are getting in their ways, which could lead to a failure while running unit tests. When facing such a case, deactivate the virtual environment and try again.
 {% endhint %}
 
-### Install the kallisto program
+### Clone and install the kallisto program
 
 We start by cloning the repository
 
