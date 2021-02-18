@@ -6,7 +6,7 @@ description: Simply exchange a found substructure with another.
 
 ## Introduction
 
-Often we simply want to modify existing molecular structures in an automated way, which is always a little tricky. The `kallisto` program implements an easy way to exchange substructures within a molecular structure by another substructure. For the definition of substructures and the way we find them in `kallisto` check out the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig). The easiest way to introduce you to the substructure exchanger is by going through several examples \(see below\).
+Often we want to modify existing molecular structures in an automated way, which is always a little tricky. The `kallisto` program implements an easy way to exchange substructures within a molecular structure with another substructure. For the definition of substructures and the way, we find them in `kallisto` , check out the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig). The easiest way to introduce you to the substructure exchanger is by going through several examples \(see below\).
 
 ## Define the Subcommand
 
@@ -270,11 +270,11 @@ H      6.0736   11.8048   -2.7667
 > kallisto --verbose exs --inp iridium.xyz cmet.xyz --center 18 --subnr 2
 ```
 
-Again the new structure is saved into `newstructure.xyz`. By taking a closer look onto this structure, we see that atoms seem to clash into each other - "[no bueno](https://www.quora.com/What-does-no-bueno-mean-in-English)".
+Again the new structure is saved into `newstructure.xyz`. By taking a closer look onto this structure, we see that atoms seem to crash into each other - "[no bueno](https://www.quora.com/What-does-no-bueno-mean-in-English)".
 
 ![](../.gitbook/assets/messed.png)
 
-To overcome this failure, the `kallisto` program writes out constrainment files that are intended to be used in combination with the open source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The created constrainment files can now be used to repair the structure within a constrained geometry optimization. The constraints fix the complex and enable only the new substrate to relax.
+To overcome this failure, the `kallisto` program writes out constraint files that are intended to be used in combination with the open-source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The created constraint files can be used to repair the structure within a constrained geometry optimization. The constraints fix the complex and enable only the new substrate to relax.
 
 ```bash
 # Constrained geometry optimization in implicit tetrahydrofuran

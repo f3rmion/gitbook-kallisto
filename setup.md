@@ -18,13 +18,13 @@ The `kallisto` program is [available on PyPI](https://pypi.org/project/kallisto/
 
 If you do not have it already installed, install the `pyenv` version manager
 
-```text
+```bash
 > curl https://pyenv.run | bash
 ```
 
 add the following to your `.bashrc` and source it
 
-```text
+```bash
 > export PATH="~/.pyenv/bin:$PATH"
 > eval "$(pyenv init -)"
 > eval "$(pyenv virtualenv-init -)"
@@ -32,15 +32,15 @@ add the following to your `.bashrc` and source it
 
 Install the latest `python` version
 
-```text
+```bash
 > pyenv install 3.8.2
 > pyenv install 3.7.7
 > pyenv local 3.8.2 3.7.7
 ```
 
-If you prefer to use the `conda` version manager then simply create a new virtual environment
+If you prefer to use the `conda` version manager than simply create a new virtual environment
 
-```text
+```bash
 > conda create --name kallisto python=3.8
 ```
 
@@ -48,48 +48,55 @@ If you prefer to use the `conda` version manager then simply create a new virtua
 Sometimes `conda` and `nox` are getting in their ways, which could lead to a failure while running unit tests. When facing such a case, deactivate the virtual environment and try again.
 {% endhint %}
 
-### Install the kallisto program
+### Clone and install the kallisto program
 
 We start by cloning the repository
 
-```text
-> git clone git@github.com:f3rmion/kallisto.git
+```bash
+> git clone git@github.com:AstraZeneca/kallisto.git
 ```
 
 Install a python package manager, where we choose to go with [poetry](https://python-poetry.org/) via curl
 
-```text
+```bash
 > curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 > source ~/.poetry/env
 ```
 
 or alternatively via `pip`
 
-```text
+```bash
 > pip install --user poetry
+```
+
+Check that `poetry` is running correctly
+
+```bash
+> poetry --version
+Poetry version 1.0.10
 ```
 
 Now, if you haven’t already done so, change into the cloned kallisto directory and download the dependencies via `poetry`
 
-```text
+```bash
 > cd kallisto
 > poetry install
 ```
 
-Finally install the test automation environment [nox](https://nox.thea.codes/en/stable/) via `pip`
+Finally, install the test automation environment [nox](https://nox.thea.codes/en/stable/) via `pip`
 
-```text
+```bash
 > pip install --user --upgrade nox
 ```
 
-Run `nox` to test the setup. When everything runs smoothly through, your are done!  
+Run `nox` to test the setup. When everything runs smoothly through, you are done!  
 
 
 ### Getting Help
 
-Beside this manual you can check the in-program help by
+Besides this manual, you can check the in-program help by
 
-```text
+```bash
 > kallisto --help
 ```
 
