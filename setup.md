@@ -38,7 +38,7 @@ Install the latest `python` version
 > pyenv local 3.8.2 3.7.7
 ```
 
-If you prefer to use the `conda` version manager then simply create a new virtual environment
+If you prefer to use the `conda` version manager than simply create a new virtual environment
 
 ```bash
 > conda create --name kallisto python=3.8
@@ -83,18 +83,18 @@ Now, if you haven’t already done so, change into the cloned kallisto directory
 > poetry install
 ```
 
-Finally install the test automation environment [nox](https://nox.thea.codes/en/stable/) via `pip`
+Finally, install the test automation environment [nox](https://nox.thea.codes/en/stable/) via `pip`
 
 ```bash
 > pip install --user --upgrade nox
 ```
 
-Run `nox` to test the setup. When everything runs smoothly through, your are done!  
+Run `nox` to test the setup. When everything runs smoothly through, you are done!  
 
 
 ### Getting Help
 
-Beside this manual you can check the in-program help by
+Besides this manual, you can check the in-program help by
 
 ```bash
 > kallisto --help
