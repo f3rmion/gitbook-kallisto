@@ -50,7 +50,7 @@ output:
 
 ## Application
 
-To sort an ethane molecule according to a breadth-first algorithms us the subcommand `sort`
+To sort an ethane molecule according to a breadth-first algorithms, we use the subcommand `sort`
 
 ```bash
 > cat ethane.xyz
