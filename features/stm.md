@@ -50,7 +50,7 @@ output:
 
 ## Application
 
-To calculate Sterimol parameter for an ethane molecule along the C2-C5 bond use the subcommand `stm`
+To calculate Sterimol parameter for an ethane molecule along the C2-C5 bond, we use the subcommand `stm`
 
 ```bash
 > cat ethane.xyz

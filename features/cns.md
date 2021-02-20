@@ -138,7 +138,7 @@ To calculate coordination numbers, I call the subcommand `cns`
 0.99397075
 ```
 
-Now I obtain a list of atomic coordination numbers, which is in agreement with chemical intuition. 
+Now we obtain a list of atomic coordination numbers, which is in agreement with chemical intuition. 
 
 Let's calculate coordination spheres for the toluene molecule by calling the subcommand `cnsp`
 
