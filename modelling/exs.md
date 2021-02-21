@@ -273,7 +273,7 @@ Again, the new structure is saved to `newstructure.xyz`. By taking a closer look
 
 ![](../.gitbook/assets/messed.png)
 
-To overcome this failure, the `kallisto` program writes constraint files that are intended to be used in combination with the open-source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The constraint files can be used to repair the structure within a constrained geometry optimisation. The constraints fix the catalyst and enable only the substrate to relax itself in this geometry.
+To overcome this failure, the `kallisto` program writes constraint files \(termed `constrain.inp`\) that are intended to be used in combination with the open-source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The constraint files can be used to repair the structure within a constrained geometry optimisation. The constraints fix the catalyst and enable only the substrate to relax itself in this geometry.
 
 ```bash
 # Constrained geometry optimization in implicit tetrahydrofuran
