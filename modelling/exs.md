@@ -280,7 +280,7 @@ To overcome this failure, the `kallisto` program writes constraint files \(terme
 > xtb newstructure.xyz --opt tight --alpb thf --input constrain.inp
 ```
 
-After optimising the geometry successfully, we obtain a reasonable complex \(see depiction below\). This approach reduces the complexity of the exchange algorithm tremendously since we solve the exchange problems by applying a physically motivated scheme instead of empirical rules like, e.g., a template based substrate exchange.
+After optimising the geometry, we obtain a reasonable complex \(see depiction below\). This approach reduces the complexity of the exchange algorithm tremendously since we solve the exchange problems by applying a physically motivated scheme instead of empirical rules like, e.g., a template based substrate exchange.
 
 ![](../.gitbook/assets/opt.png)
 
