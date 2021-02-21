@@ -39,7 +39,6 @@ description:
 description:
  substructure to be replaced by new structure
 
- # Note that the substructre count starts at 0
  --rotate <int>
  (optional, defaut = 0)
  description:
