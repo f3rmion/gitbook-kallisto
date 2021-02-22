@@ -66,7 +66,7 @@ Let's take the example given in the section [Substructure Finder](https://app.gi
 Note that the substrate exchanger needs the exchange position to be the first atom inside the structure. You can use the [BFS sorting](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRe6-_b8HjAaH4Is2t0/modelling/sort) to prepare your substrate.
 {% endhint %}
 
-To exchange benzene with pyridine, we need to know the substructure number of benzene within the complex. Here, we take the result from the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdkU9-SqjnamgQtEMU/modelling/lig); benzene has substructure number `2`. Furthermore, the Iridium atom has to be specified according to the numbering inside the complex, which is `18`.
+To exchange benzene with pyridine, we need to know the substructure number of benzene within the complex. Here, we take the result from the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdkU9-SqjnamgQtEMU/modelling/lig); benzene is substructure number `2`. Furthermore, the Iridium atom has to be specified according to the numbering inside the complex, which is `18`.
 
 Now we call the subcommand `exs` to exchange the benzene substructure with the new one. This generates a new `xmol` file \(termed `newstructure.xyz`\) that incorporates the new structure.
 
