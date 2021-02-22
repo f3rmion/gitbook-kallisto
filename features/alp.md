@@ -28,7 +28,7 @@ $$
 
 ### Molecular Polarizabilities
 
-We obtain molecular polarizabilities as sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently. 
+We obtain molecular polarizabilities as the sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently. 
 
 $$
 \alpha_{mol} = \sum\limits_{i=1}^N \alpha_i
