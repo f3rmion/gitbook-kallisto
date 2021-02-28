@@ -10,7 +10,7 @@ The default `nox` session includes: linting \(lint\), type checks \(mypy, pytype
 > nox
 ```
 
-After one successful run of `nox` we can reuse the virtual environment \(faster\)
+After one successful run of `nox` we can reuse the virtual environment, which is faster.
 
 ```bash
 > nox -r
