@@ -72,7 +72,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Coverage
 
-Unit test [coverage](https://coverage.readthedocs.io/en/coverage-5.4/) is checked as well.
+Unit test [coverage](https://coverage.readthedocs.io/en/coverage-5.4/) can be checked as well.
 
 ```bash
 > nox -rs coverage
