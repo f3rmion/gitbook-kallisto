@@ -185,7 +185,6 @@ Create a virtual environment, clone the `kallisto` project, and install it
 > git clone git@github.com:AstraZeneca/kallisto.git
 > cd kallisto
 > poetry install
-
 ```
 
 
