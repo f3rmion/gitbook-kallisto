@@ -1,6 +1,6 @@
 # Testing suite
 
-The `kallisto` project uses [nox](https://nox.thea.codes/en/stable/tutorial.html#installation) as an automated unit test suite, which is therefore an additional dependency.
+The `kallisto` project uses [nox](https://nox.thea.codes/en/stable/tutorial.html#installation) as an automated unit test suite, which is therefore an **additional dependency**.
 
 ### Default nox session
 
