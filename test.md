@@ -16,7 +16,7 @@ When everything runs smoothly through, you are ready to go! After one successful
 > nox -r
 ```
 
-Different unit test sessions are implemented \(check the `noxfile.py`\), which can be called separately via the run session \(`-rs`\) flag. In the following, we list all sessions separately.
+Different unit test sessions are implemented \(check the `noxfile.py`\), which can be called separately via the run session `-rs` flag. In the following, we list all sessions separately.
 
 {% hint style="info" %}
 Sometimes `conda` and `nox` are getting in their ways, which could lead to a failure while running unit tests. When facing such a case, deactivate the virtual environment and try again.
