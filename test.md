@@ -28,7 +28,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Lint
 
-`kallisto` uses the [flake8](https://flake8.pycqa.org/en/latest/) linter behind the scenes
+`kallisto` uses the [flake8](https://flake8.pycqa.org/en/latest/) linter behind the scenes \(check the `.flake8` config file\).
 
 ```bash
 > nox -rs lint
@@ -36,7 +36,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Black
 
-`kallisto` uses the [black](https://github.com/psf/black) code formatter
+`kallisto` uses the [black](https://github.com/psf/black) code formatter.
 
 ```bash
 > nox -rs black
@@ -44,7 +44,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Safety
 
-`kallisto` checks the security of dependencies via [safety](https://pyup.io/safety/)
+`kallisto` checks the security of dependencies via [safety](https://pyup.io/safety/).
 
 ```bash
 > nox -rs safety
@@ -52,7 +52,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Mypy
 
-`kallisto` checks for static types via [mypy](https://github.com/python/mypy)
+`kallisto` checks for static types via [mypy](https://github.com/python/mypy).
 
 ```bash
 > nox -rs mypy
@@ -60,7 +60,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Pytype
 
-`kallisto` furthermore uses [pytype](https://github.com/google/pytype)
+`kallisto` furthermore uses [pytype](https://github.com/google/pytype).
 
 ```bash
 > nox -rs pytype
@@ -68,7 +68,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Coverage
 
-Unit test [coverage](https://coverage.readthedocs.io/en/coverage-5.4/) is checked as well
+Unit test [coverage](https://coverage.readthedocs.io/en/coverage-5.4/) is checked as well.
 
 ```bash
 > nox -rs coverage
