@@ -32,7 +32,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Lint
 
-`kallisto` uses the [flake8](https://flake8.pycqa.org/en/latest/) linter behind the scenes \(check the `.flake8` config file\).
+`kallisto` uses the [flake8](https://flake8.pycqa.org/en/latest/) linter \(check the `.flake8` config file\).
 
 ```bash
 > nox -rs lint
