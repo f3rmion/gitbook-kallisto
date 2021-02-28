@@ -16,7 +16,7 @@ After one successful run of `nox` we can reuse the virtual environment, which is
 > nox -r
 ```
 
-Different unit test sessions are implemented, which can be called separately via the run session \(`-rs`\) flag. In the following, we list all sessions separately.
+Different unit test sessions are implemented \(check the `noxfile.py`\), which can be called separately via the run session \(`-rs`\) flag. In the following, we list all sessions separately.
 
 ### Tests
 
