@@ -20,6 +20,8 @@ Different unit test sessions are implemented, which can be called separately via
 
 ### Tests
 
+Run all unit tests that are defined in the `/tests` directory.
+
 ```bash
 > nox -rs tests
 ```
