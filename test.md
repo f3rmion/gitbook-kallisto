@@ -52,7 +52,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Mypy
 
-`kallisto` checks for static types via [mypy](https://github.com/python/mypy).
+`kallisto` checks for static types via [mypy](https://github.com/python/mypy) \(check the `mypy.ini` config file\).
 
 ```bash
 > nox -rs mypy
