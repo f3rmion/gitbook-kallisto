@@ -16,7 +16,7 @@ When everything runs smoothly through, you are ready to go! After one successful
 > nox -r
 ```
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Sometimes `conda` and `nox` are getting in their ways, which could lead to a failure while running unit tests. When facing such a case, deactivate the virtual environment and try again.
 {% endhint %}
 
