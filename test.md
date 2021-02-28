@@ -2,9 +2,9 @@
 
 The `kallisto` project uses [nox](https://nox.thea.codes/en/stable/tutorial.html#installation) as an automated unit test suite, which is therefore an additional dependency.
 
-### Complete testing suite
+### Testing suite
 
-Run `nox` to test the setup. When everything runs smoothly through, you are ready to go!
+Run `nox` to test the setup. The default tests include: linting \(lint\), type checks \(mypy, pytype\), and unit tests \(tests\). When everything runs smoothly through, you are ready to go!
 
 ```bash
 > nox
@@ -26,11 +26,15 @@ Different unit test sessions are implemented, which can be called separately.
 
 ### Lint
 
+`kallisto` uses the [flake8](https://flake8.pycqa.org/en/latest/) linter behind the scenes
+
 ```bash
 > nox -rs lint
 ```
 
 ### Black
+
+`kallisto` uses the [black](https://github.com/psf/black) code formatter
 
 ```bash
 > nox -rs black
@@ -38,11 +42,15 @@ Different unit test sessions are implemented, which can be called separately.
 
 ### Safety
 
+`kallisto` checks the security of dependencies via [safety](https://pyup.io/safety/)
+
 ```bash
 > nox -rs safety
 ```
 
 ### Mypy
+
+`kallisto` checks for static types via [mypy](https://github.com/python/mypy)
 
 ```bash
 > nox -rs mypy
