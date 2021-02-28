@@ -4,7 +4,7 @@ This guide deal with the general setup and local installation of the `kallisto` 
 
 ### Dependencies
 
-We list all dependencies of `kallisto` \(v1.0.3\)
+We list all dependencies of `kallisto` \(v1.0.4\)
 
 ```markup
 black 19.10b0 The uncompromising code formatter.
