@@ -170,7 +170,7 @@ Requirements to install`kallisto` from sources:
 
 * [poetry](https://python-poetry.org/docs/#installation)
 * [pyenv](https://github.com/pyenv/pyenv#installation) or [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
-*  python &gt;=3.7
+* python &gt;=3.7
 
 First check that `poetry` is running correctly \(v1.0.10 at the time of writing\)
 
