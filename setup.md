@@ -179,7 +179,7 @@ First check that `poetry` is running correctly \(here v1.0.10\)
 Poetry version 1.0.10
 ```
 
-Create a virtual environment, clone the `kallisto` project, and install it
+Create a virtual environment \(activate it\), clone the `kallisto` project, and install it
 
 ```bash
 > git clone git@github.com:AstraZeneca/kallisto.git
