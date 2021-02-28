@@ -16,7 +16,7 @@ After one successful run of `nox` we can reuse the virtual environment \(faster\
 > nox -r
 ```
 
-Different unit test sessions are implemented, which can be called separately via the run session \(`-rs`\) command.
+Different unit test sessions are implemented, which can be called separately via the run session \(`-rs`\) command. I the following we describe list all sessions.
 
 ### Tests
 
