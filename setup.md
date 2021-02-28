@@ -166,7 +166,7 @@ The `kallisto` program is [available on PyPI](https://pypi.org/project/kallisto/
 
 ## Install from Source
 
-The following packages are required to install`kallisto` from sources:
+Requirements to install`kallisto` from sources:
 
 * [poetry](https://python-poetry.org/docs/#installation)
 * [pyenv](https://github.com/pyenv/pyenv#installation) or [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
