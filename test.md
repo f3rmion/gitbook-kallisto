@@ -58,11 +58,15 @@ Different unit test sessions are implemented, which can be called separately.
 
 ### Pytype
 
+`kallisto` furthermore uses [pytype](https://github.com/google/pytype)
+
 ```bash
 > nox -rs pytype
 ```
 
 ### Coverage
+
+Unit test [coverage](https://coverage.readthedocs.io/en/coverage-5.4/) is checked as well
 
 ```bash
 > nox -rs coverage
