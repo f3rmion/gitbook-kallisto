@@ -2,7 +2,7 @@
 
 This guide deal with the general setup and local installation of the `kallisto` program.
 
-### Main Dependencies
+### Dependencies
 
 We list all dependencies of `kallisto` \(v1.0.3\)
 
