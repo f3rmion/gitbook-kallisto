@@ -2,7 +2,7 @@
 
 * [Featurizer and Modelling Helper](README.md)
 * [Setup and Installation](setup.md)
-* [Unit tests](test.md)
+* [Testing suite](test.md)
 
 ## Features
 
