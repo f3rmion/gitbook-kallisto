@@ -1,6 +1,6 @@
 # Unit tests
 
-The `kallisto` project uses [nox](https://nox.thea.codes/en/stable/tutorial.html#installation) as an automated unit test suite, which is therefore an additional dependency. Different unit test sessions are implemented:
+The `kallisto` project uses [nox](https://nox.thea.codes/en/stable/tutorial.html#installation) as an automated unit test suite, which is therefore an additional dependency.
 
 ### Complete testing suite
 
@@ -15,6 +15,8 @@ After one successful run of `nox` we can reuse the virtual environment \(faster\
 ```bash
 > nox -r
 ```
+
+Different unit test sessions are implemented, which can be called separately.
 
 ### Tests
 
