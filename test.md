@@ -4,7 +4,7 @@ The `kallisto` project uses [nox](https://nox.thea.codes/en/stable/tutorial.html
 
 ### Default nox session
 
-The default `nox` session includes: linting \(lint\), type checks \(mypy, pytype\), and unit tests \(tests\). When everything runs smoothly through, you are ready to go!
+The default session includes: linting \(lint\), type checks \(mypy, pytype\), and unit tests \(tests\). When everything runs smoothly through, you are ready to go!
 
 ```bash
 > nox
