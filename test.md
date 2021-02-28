@@ -2,7 +2,7 @@
 
 The `kallisto` project uses [nox](https://nox.thea.codes/en/stable/tutorial.html#installation) as an automated unit test suite, which is therefore an additional dependency.
 
-### Testing suite
+### Default nox session
 
 Run `nox` to test the setup. The default `nox` session includes: linting \(lint\), type checks \(mypy, pytype\), and unit tests \(tests\). When everything runs smoothly through, you are ready to go!
 
