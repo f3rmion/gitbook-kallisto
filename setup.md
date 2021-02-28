@@ -185,22 +185,8 @@ Create a virtual environment, clone the `kallisto` project, and install it
 > git clone git@github.com:AstraZeneca/kallisto.git
 > cd kallisto
 > poetry install
+
 ```
-
-\`\`
-
-{% hint style="info" %}
-Sometimes `conda` and `nox` are getting in their ways, which could lead to a failure while running unit tests. When facing such a case, deactivate the virtual environment and try again.
-{% endhint %}
-
-Finally, install the test automation environment [nox](https://nox.thea.codes/en/stable/) via `pip`
-
-```bash
-> pip install --user --upgrade nox
-```
-
-Run `nox` to test the setup. When everything runs smoothly through, you are done!  
-
 
 
 
