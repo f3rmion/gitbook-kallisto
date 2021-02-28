@@ -64,7 +64,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Pytype
 
-`kallisto` furthermore uses [pytype](https://github.com/google/pytype).
+`kallisto` furthermore uses [pytype](https://github.com/google/pytype) for type checks.
 
 ```bash
 > nox -rs pytype
