@@ -10,7 +10,7 @@ The default session includes: linting \(lint\), type checks \(mypy, pytype\), an
 > nox
 ```
 
-When everything runs smoothly through, you are ready to go! After one successful run of `nox` we can reuse the virtual environment, which is faster.
+When everything runs smoothly through, you are ready to go! After one successful `nox` run, we can reuse the virtual environment via the `-r` flag.
 
 ```bash
 > nox -r
