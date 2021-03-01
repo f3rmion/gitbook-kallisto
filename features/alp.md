@@ -6,7 +6,7 @@ description: Calculate atomic dynamic polarizabilities.
 
 ## Introduction
 
-Accurate dynamic polarizabilities can be determined by time-dependent density functional theory \(TD-DFT\) when applying a large atomic orbital basis set. Such reference TD-DFT calculations are, however, computationally demanding. To overcome this computational bottleneck, `kallisto` uses a set of pre-calculated dynamic polarizabilities for each atom and maps the environmental effect \(so-called many-body effect\) to atomic coordination numbers. Hence the problem is shifted from calculating dynamic polarizabilities to calculating atomic coordination numbers and interpolate the atomic reference systems. This procedure comes along with a tremendous increase in efficiency and overcomes furthermore numerical issues that could occur in TD-DFT calculations.
+Accurate dynamic polarizabilities can be determined by time-dependent density functional theory \(TD-DFT\) when applying a large atomic orbital basis set. Such reference TD-DFT calculations are, however, computationally demanding. To overcome this computational bottleneck `kallisto` uses a set of pre-calculated dynamic polarizabilities for each atom and maps the environmental effect \(so-called many-body effect\) to atomic coordination numbers. Hence the problem is shifted from calculating dynamic polarizabilities to calculating atomic coordination numbers and interpolate the atomic reference systems. This procedure comes along with a tremendous increase in efficiency and overcomes furthermore numerical issues that could occur in TD-DFT calculations.
 
 We introduced the concept of [atomic coordination numbers](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MQgkWTyy2kFmCRZXTvp/features/cns) \(CNs\) earlier. We calculate reference CN-values for each reference system and map all calculated TD-DFT polarizabilities to reference CN-values. Now we have a simple mapping from CN-values to TD-DFT polarizabilities, which is used within a Gaussian weighting scheme together with system-specific CN-values for a system of interest. 
 
@@ -14,7 +14,7 @@ $$
 \alpha_j(i\omega)=\sum\limits_{j,ref=1}^{N_{j,ref}}\alpha_{j,ref}(i\omega)\,W_{j,ref}^j
 $$
 
-The above equation sums over all pre-calulcated TD-DFT polarizabilities \(count of `Nj,ref`\) each having a weight associated such that all weights sum up to unity. So how do we get the weighting coefficients? This is exactly where the CNs become important
+The above equation sums over all pre-calculated TD-DFT polarizabilities \(count of `Nj,ref`\) each having a weight associated such that all weights sum up to unity. So how do we get the weighting coefficients? This is exactly where the CNs become important
 
 $$
 W_{j,ref}^j\left(CN_j, CN_{j,ref}\right) = \frac{\sum\limits_{j=1}^{N_s}\exp{\left(-\beta\times j\left(CN_j-CN_{j,ref}\right)^2\right)}}{\sum\limits_{j,ref=1}^{N_{j,ref}}\sum\limits_{j=1}^{N_s}\exp{\left(-\beta\times j\left(CN_j-CN_{j,ref}\right)^2\right)}},
@@ -28,13 +28,13 @@ $$
 
 ### Molecular Polarizabilities
 
-We obtain molecular polarizabilities as sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently. 
+We obtain molecular polarizabilities as the sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently. 
 
 $$
 \alpha_{mol} = \sum\limits_{i=1}^N \alpha_i
 $$
 
-The direct comparison to experimental  polarizabilities shows the great success of the implemented method. As can be seen in the table below the `kallisto` program calculates molecular polarizabilities \(for 47 organic molecules - see [complete benchmark](https://github.com/f3rmion/molpol135) with overall 135 structures\) that are comparable to accurate quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\). 
+The direct comparison to experimental polarizabilities shows the great success of the implemented method. As can be seen in the table below `kallisto` calculates molecular polarizabilities \(for 47 organic molecules - see [complete benchmark](https://github.com/f3rmion/molpol135) with overall 135 structures\) that are comparable to accurate quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\). 
 
 | **Measure in %** | \*\*\*\*[**MP2**](https://aip.scitation.org/doi/abs/10.1063/1.4932594)\*\*\*\* | \*\*\*\*[**kallisto**](https://github.com/AstraZeneca/kallisto)\*\*\*\* | \*\*\*\*[**AlphaML**](https://tools.materialscloud.org/alphaml/input_structure/)\*\*\*\* |
 | :--- | :--- | :--- | :--- |

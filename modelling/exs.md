@@ -6,7 +6,7 @@ description: Simply exchange a found substructure with another.
 
 ## Introduction
 
-Often we want to modify existing molecular structures in an automated way, which is always a little tricky. The `kallisto` program implements an easy way to exchange substructures within a molecular structure with another substructure. For the definition of substructures and the way, we find them in `kallisto` , check out the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig). The easiest way to introduce you to the substructure exchanger is by going through several examples \(see below\).
+Often we want to modify existing molecular structures in an automated way, which is always a little tricky. `kallisto` implements an easy way to exchange substructures within a molecular structure with another substructure. For the definition of substructures and the way we find them in `kallisto` , check out the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig). The easiest way to introduce you to the substructure exchanger is by going through several examples \(see below\).
 
 ## Define the Subcommand
 
@@ -39,7 +39,6 @@ description:
 description:
  substructure to be replaced by new structure
 
- # Note that the substructre count starts at 0
  --rotate <int>
  (optional, defaut = 0)
  description:
@@ -67,7 +66,7 @@ Let's take the example given in the section [Substructure Finder](https://app.gi
 Note that the substrate exchanger needs the exchange position to be the first atom inside the structure. You can use the [BFS sorting](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRe6-_b8HjAaH4Is2t0/modelling/sort) to prepare your substrate.
 {% endhint %}
 
-To exchange benzene with pyridine, we need to know the substructure number of benzene within the complex. Here, we take the result from the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdkU9-SqjnamgQtEMU/modelling/lig); benzene has substructure number `2`. Furthermore, the Iridium atom has to be specified according to the numbering inside the complex, which is `18`.
+To exchange benzene with pyridine, we need to know the substructure number of benzene within the complex. Here, we take the result from the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdkU9-SqjnamgQtEMU/modelling/lig); benzene is substructure number `2`. Furthermore, the Iridium atom has to be specified according to the numbering inside the complex, which is `18`.
 
 Now we call the subcommand `exs` to exchange the benzene substructure with the new one. This generates a new `xmol` file \(termed `newstructure.xyz`\) that incorporates the new structure.
 
@@ -270,18 +269,18 @@ H      6.0736   11.8048   -2.7667
 > kallisto --verbose exs --inp iridium.xyz cmet.xyz --center 18 --subnr 2
 ```
 
-Again, the new structure is saved to `newstructure.xyz`. By taking a closer look to this structure, we see that atoms seem to crash into each other - "[no bueno](https://www.quora.com/What-does-no-bueno-mean-in-English)".
+Again, the new structure is saved to `newstructure.xyz`. By taking a closer look to this structure, we see that atoms seem to crash into each other - [no bueno](https://www.quora.com/What-does-no-bueno-mean-in-English).
 
 ![](../.gitbook/assets/messed.png)
 
-To overcome this failure, the `kallisto` program writes constraint files that are intended to be used in combination with the open-source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The constraint files can be used to repair the structure within a constrained geometry optimisation. The constraints fix the catalyst and enable only the substrate to relax itself in this geometry.
+To overcome this failure, the `kallisto` program writes constraint files \(termed `constrain.inp`\) that are intended to be used in combination with the open-source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The constraint files can be used to repair the structure within a constrained geometry optimisation. The constraints fix the catalyst and enable only the substrate to relax itself in this geometry.
 
 ```bash
 # Constrained geometry optimization in implicit tetrahydrofuran
 > xtb newstructure.xyz --opt tight --alpb thf --input constrain.inp
 ```
 
-After optimising the geometry successfully, we obtain a reasonable complex \(see depiction below\). This approach reduces the complexity of the exchange algorithm tremendously since we solve the exchange problems by applying a physically motivated scheme instead of empirical rules like, e.g., a template based substrate exchange.
+After optimising the geometry, we obtain a reasonable complex \(see depiction below\). This approach reduces the complexity of the exchange algorithm tremendously since we solve the exchange problems by applying a physically motivated scheme instead of empirical rules like, e.g., a template based substrate exchange.
 
 ![](../.gitbook/assets/opt.png)
 
