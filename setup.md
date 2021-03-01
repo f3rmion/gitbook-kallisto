@@ -2,12 +2,13 @@
 
 This guide deal with the general setup and local installation of the `kallisto` program.
 
-### Dependencies
+### Dependencies v1.0.3
 
-We list all dependencies of `kallisto` \(v1.0.3\)
+```
+black 19.10b0 The uncompromising code formatter.
+```
 
 ```markup
-black 19.10b0 The uncompromising code formatter.
 ├── appdirs *
 ├── attrs >=18.1.0
 ├── click >=6.5
