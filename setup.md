@@ -11,7 +11,7 @@ scipy 1.6.0 SciPy: Scientific Library for Python
 └── numpy >=1.16.5
 ```
 
-For a list of all dependencies have a look at the `pyproject.toml` file.
+For a list of all dependencies have a look at the [`pyproject.toml`](https://github.com/AstraZeneca/kallisto/blob/master/pyproject.toml) file.
 
 ## Install from PyPI
 
