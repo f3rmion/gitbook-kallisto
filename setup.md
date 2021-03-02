@@ -4,7 +4,7 @@ This guide deal with the general setup and local installation of the `kallisto` 
 
 ### Main dependencies v1.0.3
 
-```bash
+```markup
 click 7.1.2 Composable command line interface toolkit
 numpy 1.20.1 NumPy is the fundamental package for array computing with Python.
 scipy 1.6.0 SciPy: Scientific Library for Python
