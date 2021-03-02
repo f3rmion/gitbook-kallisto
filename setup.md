@@ -2,7 +2,7 @@
 
 This guide deal with the general setup and local installation of the `kallisto` program.
 
-### Main dependencies v1.0.3
+### Main dependencies
 
 ```markup
 click 7.1.2 Composable command line interface toolkit
