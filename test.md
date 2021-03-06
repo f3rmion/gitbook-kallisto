@@ -20,11 +20,11 @@ When everything runs smoothly through, you are ready to go! After one successful
 Sometimes `conda` and `nox` are getting in their ways, which could lead to a failure while running unit tests. When facing such a case, deactivate the virtual environment and try again.
 {% endhint %}
 
-Different unit test sessions are implemented \(check the `noxfile.py`\). They can be called separately via the run session `-rs` flag. 
+Different unit test sessions are implemented \(check the [`noxfile.py`](https://github.com/AstraZeneca/kallisto/blob/master/noxfile.py)\). They can be called separately via the run session `-rs` flag. 
 
 ### Tests
 
-Run all unit tests that are defined in the `/tests` directory.
+Run all unit tests that are defined in the [`/tests`](https://github.com/AstraZeneca/kallisto/tree/master/tests) directory.
 
 ```bash
 > nox -rs tests
@@ -32,7 +32,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Lint
 
-`kallisto` uses the [flake8](https://flake8.pycqa.org/en/latest/) linter \(check the `.flake8` config file\).
+`kallisto` uses the [flake8](https://flake8.pycqa.org/en/latest/) linter \(check the [`.flake8`](https://github.com/AstraZeneca/kallisto/blob/master/.flake8) config file\).
 
 ```bash
 > nox -rs lint
@@ -56,7 +56,7 @@ Run all unit tests that are defined in the `/tests` directory.
 
 ### Mypy
 
-`kallisto` checks for static types via [mypy](https://github.com/python/mypy) \(check the `mypy.ini` config file\).
+`kallisto` checks for static types via [mypy](https://github.com/python/mypy) \(check the [`mypy.ini`](https://github.com/AstraZeneca/kallisto/blob/master/mypy.ini) config file\).
 
 ```bash
 > nox -rs mypy

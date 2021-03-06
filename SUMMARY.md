@@ -3,10 +3,10 @@
 * [Featurizer and Modelling Helper](README.md)
 * [Setup and Installation](setup.md)
 * [Testing suite](test.md)
+* [Check the Example](example.md)
 
 ## Features
 
-* [Check the Example](features/example.md)
 * [Coordination Numbers and Spheres](features/cns.md)
 * [Electronegativity Equilibration](features/eeq.md)
 * [Dynamic Polarizabilities](features/alp.md)
