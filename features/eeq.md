@@ -14,7 +14,7 @@ $$
 
 The first part of the equation above describes the on-side interaction of atom `i` in terms of a Taylor expansion of atomic partial charges. The second part of the equation describes the \(pairwise\) interactions between the atom `i` and all `j`particles as obtained for interacting charge densities \(for a deeper understanding check those references, [Goedecker et al.](https://doi.org/10.1103/PhysRevB.92.045131) and [Caldeweyher et al.](https://doi.org/10.26434/chemrxiv.7430216.v2)\).
 
-To obtain EEQ partial charges under the constraint that the partial charges conserve the total charge of the system, the method of constrained Lagrangian optimisation is used
+To obtain EEQ partial charges under the constraint that the partial charges conserve the total charge of the system, the method of constrained [Lagrangian optimisation](https://en.wikipedia.org/wiki/Lagrange_multiplier) is used
 
 $$
 \mathcal{L} = E_{IES} + \lambda\left(\sum\limits_{k=1}^Nq_k - q_{total}\right) \\ \quad \text{with}\quad \frac{\partial\mathcal{L}}{\partial q} = \mathbf{0} \quad\text{and} \quad \frac{\partial\mathcal{L}}{\partial \lambda}= \sum\limits_{k=1}^N q_k-q_{total} =0,
