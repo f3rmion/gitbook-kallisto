@@ -9,7 +9,7 @@ description: Calculate atomic partial charges via Lagrangian constraints.
 Classical electronegativity equilibration \(EEQ\) partial charges are determined by minimising the following energy expression of the isotropic electrostatic interaction, which is dependent on atomic charges _q_
 
 $$
-E_{IES} = \sum\limits_{i=1}^N\left( E_i^0 + \chi_iq_i + \frac{1}{2}\left(J_{ii} + \frac{2\gamma_{ii}}{\sqrt{\pi}}\right)q_i^2\right) \\+ \frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{j\ne i}^Nq_iq_j\frac{\text{erf}(\gamma_{ij}R_{ij})}{R_{ij}}.
+E_{IES} = \sum\limits_{i=1}^N\left( \chi_iq_i + \frac{1}{2}\left(J_{ii} + \frac{2\gamma_{ii}}{\sqrt{\pi}}\right)q_i^2\right) \\+ \frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{j\ne i}^Nq_iq_j\frac{\text{erf}(\gamma_{ij}R_{ij})}{R_{ij}}.
 $$
 
 The first part of the equation above describes the on-side interaction of atom `i` in terms of a Taylor expansion of atomic partial charges. The second part of the equation describes the \(pairwise\) interactions between the atom `i` and all `j`particles as obtained for interacting charge densities \(for a deeper understanding check those references, [Goedecker et al.](https://doi.org/10.1103/PhysRevB.92.045131), and [Caldeweyher et al.](https://doi.org/10.26434/chemrxiv.7430216.v2)\).
