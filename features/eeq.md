@@ -49,13 +49,13 @@ $$
 
 and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and `kappai`.
 
-| Parameter | Meaning |
+| Parameter | Meaning for atom i |
 | :--- | :--- |
-| Jii | Atomic hardness |
-| gammaii | Atomic radii dependent term |
-| EN | Pauling electronegativity |
-| Rcov | Covalent atomic radius |
-| Kappa | Scaling factor |
+| `Jii` | Atomic hardness |
+| `gammaii` | Atomic radii dependent term |
+| `ENi` | Pauling electronegativity |
+| `Rcovi` | Covalent atomic radius |
+| `Kappai` | Scaling factor for `chii` |
 
 ## Define the Subcommand
 
