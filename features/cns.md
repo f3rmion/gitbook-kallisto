@@ -33,7 +33,7 @@ This atomic feature is useful to determine the steric hindrance from neighboring
 {% tabs %}
 {% tab title="cns" %}
 ```bash
-> kallisto --verbose cns options arguments
+> kallisto cns options arguments
 ```
 {% endtab %}
 
@@ -66,7 +66,7 @@ output:
 {% tabs %}
 {% tab title="cnsp" %}
 ```bash
-> kallisto --verbose cnsp options arguments
+> kallisto cnsp options arguments
 ```
 {% endtab %}
 
@@ -92,7 +92,7 @@ output:
 To calculate coordination numbers, I call the subcommand `cns` 
 
 ```bash
-> kallisto --verbose cns --inp alanine-glycine.xyz
+> kallisto cns --inp alanine-glycine.xyz
 3.98207181
 3.00785834 
 2.99800682 
@@ -114,7 +114,7 @@ To calculate coordination numbers, I call the subcommand `cns`
 0.99397068 
 0.99397075
 # Save output to file 'cns'
-> kallisto --verbose cns --inp alanine-glycine.xyz cns
+> kallisto cns --inp alanine-glycine.xyz cns
 > cat cns
 3.98207181
 3.00785834 
@@ -161,7 +161,7 @@ Toluene
   H      0.5024      2.7582     -1.0330
   H      1.2994      2.6647      0.5466
   H     -0.4475      2.9470      0.4506
-> kallisto --verbose cnsp --inp toluene.xyz
+> kallisto cnsp --inp toluene.xyz
 4.381228500236796
 3.3677521535602004
 2.8495247846705114
@@ -178,7 +178,7 @@ Toluene
 4.073729305140565
 4.075067940009211
 # Save output to file 'cnsp'
-> kallisto --verbose cnsp --inp toluene.xyz cnsp
+> kallisto cnsp --inp toluene.xyz cnsp
 > cat cnsp
 4.381228500236796
 3.3677521535602004
