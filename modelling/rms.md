@@ -21,7 +21,7 @@ After setting up the quaternion \(4x4 matrix\), the largest eigenvalue is calcul
 {% tabs %}
 {% tab title="rms" %}
 ```bash
-> kallisto --verbose rms options arguments
+> kallisto rms options arguments
 ```
 {% endtab %}
 
@@ -80,7 +80,7 @@ H       -2.56608070      -0.40007121       0.47312929
 H       -1.76619136       1.16652831       0.34003517
 H       -1.19366144      -0.03197289       1.50775619
 # Calculate RMSD error and rotation matrix
-> kallisto --verbose rms --compare 1-propanol_lowest.xyz 1-propanol_higher.xyz
+> kallisto rms --compare 1-propanol_lowest.xyz 1-propanol_higher.xyz
 RMSD 1.1207014099033985 Angstrom
 Rotation Matrix
 [[ 0.98139375 -0.04913776 -0.18561193]
