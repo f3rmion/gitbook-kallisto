@@ -10,7 +10,11 @@ Besides this manual, you can check the in-program help by
 
 ### The Silent Mode
 
-You can get rid of the output by using the silent mode, which is usabable via the `--silent` flag.
+You can get rid of the output by using the silent mode, which is usable via the `--silent` flag.
+
+```bash
+> kallisto --silent option argument
+```
 
 ### Still not working?
 
