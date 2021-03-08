@@ -8,9 +8,13 @@ Besides this manual, you can check the in-program help by
 > kallisto --help
 ```
 
-### The Verbose Mode
+### The Silent Mode
 
-If you think some information is missing in your calculation you can switch to the verbose mode by using `--verbose` in the command line arguments.
+You can get rid of the output by using the silent mode, which is usable via the `--silent` flag.
+
+```bash
+> kallisto --silent option argument
+```
 
 ### Still not working?
 

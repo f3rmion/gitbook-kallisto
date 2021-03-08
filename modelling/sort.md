@@ -21,7 +21,7 @@ The BFS algorithm employs the following rules.
 {% tabs %}
 {% tab title="sort" %}
 ```bash
-> kallisto --verbose sort options arguments
+> kallisto sort options arguments
 ```
 {% endtab %}
 

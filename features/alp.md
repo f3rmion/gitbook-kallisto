@@ -6,7 +6,7 @@ description: Calculate atomic dynamic polarizabilities.
 
 ## Introduction
 
-Accurate dynamic polarizabilities can be determined by time-dependent density functional theory \(TD-DFT\) when applying a large atomic orbital basis set. Such reference TD-DFT calculations are, however, computationally demanding. To overcome this computational bottleneck `kallisto` uses a set of pre-calculated dynamic polarizabilities for each atom and maps the environmental effect \(so-called many-body effect\) to atomic coordination numbers. Hence the problem is shifted from calculating dynamic polarizabilities to calculating atomic coordination numbers and interpolate the atomic reference systems. This procedure comes along with a tremendous increase in efficiency and overcomes furthermore numerical issues that could occur in TD-DFT calculations.
+Accurate dynamic polarizabilities can be determined by time-dependent density functional theory \(TD-DFT\) when applying a large atomic orbital basis set. Such reference TD-DFT calculations are, however, computationally demanding. To overcome this computational bottleneck `kallisto` uses a set of pre-calculated dynamic polarizabilities \([TD-PBE0/d-aug-def2-QZVP level of theory](https://aip.scitation.org/doi/10.1063/1.5090222)\) for each atom and maps the environmental effect \(so-called many-body effect\) to atomic coordination numbers. Hence the problem is shifted from calculating dynamic polarizabilities to calculating atomic coordination numbers and interpolate the atomic reference systems. This procedure comes along with a tremendous increase in efficiency and overcomes furthermore numerical issues that could occur in TD-DFT calculations.
 
 We introduced the concept of [atomic coordination numbers](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MQgkWTyy2kFmCRZXTvp/features/cns) \(CNs\) earlier. We calculate reference CN-values for each reference system and map all calculated TD-DFT polarizabilities to reference CN-values. Now we have a simple mapping from CN-values to TD-DFT polarizabilities, which is used within a Gaussian weighting scheme together with system-specific CN-values for a system of interest. 
 
@@ -50,7 +50,7 @@ The direct comparison to experimental polarizabilities shows the great success o
 {% tabs %}
 {% tab title="alp" %}
 ```bash
-> kallisto --verbose alp options arguments 
+> kallisto alp options arguments 
 ```
 {% endtab %}
 
@@ -86,7 +86,7 @@ output:
 To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glycine molecule, we call the subcommand `alp`
 
 ```bash
-> kallisto --verbose alp --inp alanine-glycine.xyz
+> kallisto alp --inp alanine-glycine.xyz
 6.797559893536487
 7.954558030234794
 8.343416502883054
@@ -108,7 +108,7 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 1.9173190746286342
 2.0092941860457025
 # Save output to file 'alp'
-> kallisto --verbose alp --inp alanine-glycine.xyz alp
+> kallisto alp --inp alanine-glycine.xyz alp
 > cat alp
 6.797559893536487
 7.954558030234794

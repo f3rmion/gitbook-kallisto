@@ -6,11 +6,13 @@ description: Calculate atomic partial charges via Lagrangian constraints.
 
 ## Introduction
 
-Classical electronegativity equilibration \(EEQ\) partial charges are determined by minimising the following energy expression, which is dependent on atomic charges _q_
+Classical electronegativity equilibration \(EEQ\) partial charges are determined by minimising the following energy expression of the isotropic electrostatic interaction, which is dependent on atomic charges _q_
 
 $$
-E_{IES} = \sum\limits_{i=1}^N\left( \chi_iq_i + \frac{1}{2}\left(J_{ii} + \frac{2\gamma_{ii}}{\sqrt{\pi}}\right)q_i^2\right) + \frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{j\ne i}^Nq_iq_j\frac{\text{erf}(\gamma_{ij}R_{ij})}{R_{ij}}.
+E_{IES} = \sum\limits_{i=1}^N\left( \chi_iq_i + \frac{1}{2}\left(J_{ii} + \frac{2\gamma_{ii}}{\sqrt{\pi}}\right)q_i^2\right) \\+ \frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{j\ne i}^Nq_iq_j\frac{\text{erf}(\gamma_{ij}R_{ij})}{R_{ij}}.
 $$
+
+The first part of the equation above describes the on-side interaction of atom `i` in terms of a Taylor expansion of atomic partial charges. The second part of the equation describes the \(pairwise\) interactions between the atom `i` and all `j`particles as obtained for interacting charge densities \(for a deeper understanding check those references, [Goedecker et al.](https://doi.org/10.1103/PhysRevB.92.045131) and [Caldeweyher et al.](https://doi.org/10.26434/chemrxiv.7430216.v2)\).
 
 To obtain EEQ partial charges under the constraint that the partial charges conserve the total charge of the system, the method of constrained Lagrangian optimisation is used
 
@@ -47,12 +49,20 @@ $$
 
 and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and `kappai`.
 
+| Parameter | Meaning for atom i |
+| :--- | :--- |
+| `Jii` | [Chemical Hardness](https://doi.org/10.1021/j100023a006) |
+| `gammaii` | Atomic radii dependent term |
+| `ENi` | [Pauling electronegativity](https://en.wikipedia.org/wiki/Electronegativity#Pauling_electronegativity) |
+| `Rcovi` | [Covalent atomic radius](https://doi.org/10.1002/chem.200800987) |
+| `Kappai` | Scaling factor for `chii` |
+
 ## Define the Subcommand
 
 {% tabs %}
 {% tab title="eeq" %}
 ```bash
-> kallisto --verbose eeq options arguments
+> kallisto eeq options arguments
 ```
 {% endtab %}
 
@@ -83,7 +93,7 @@ output:
 To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, we call the subcommand `eeq`
 
 ```bash
-> kallisto --verbose eeq --inp alanine-glycine.xyz
+> kallisto eeq --inp alanine-glycine.xyz
 0.059704461728256275
 0.2626494653657499
 -0.4965512448739412
@@ -105,7 +115,7 @@ To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, 
 0.1342346682463232
 0.11540986754612566
 # Save output to file 'eeq'
-> kallisto --verbose eeq --inp alanine-glycine.xyz eeq
+> kallisto eeq --inp alanine-glycine.xyz eeq
 > cat eeq
 0.059704461728256275
 0.2626494653657499
