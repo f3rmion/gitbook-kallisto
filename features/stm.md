@@ -15,7 +15,7 @@ An example of how the Sterimol descriptors of an ethane molecule along the C2-C5
 {% tabs %}
 {% tab title="stm" %}
 ```bash
-> kallisto --verbose stm options arguments
+> kallisto stm options arguments
 ```
 {% endtab %}
 
@@ -65,7 +65,7 @@ H    1.03 1.03 -2.71
 H    2.03 0.76 -1.25
 H    0.76 2.03 -1.25
 # Note that the counting of atoms starts at 0
-> kallisto --verbose stm --inp ethane.xyz --origin 1 --partner 4
+> kallisto stm --inp ethane.xyz --origin 1 --partner 4
 L, Bmin, Bmax / au:  6.29  4.27  4.54
 L, Bmin, Bmax / A:  3.33  2.26  2.40
 # Save output to file 'stm'
