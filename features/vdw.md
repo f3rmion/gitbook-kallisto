@@ -27,7 +27,7 @@ We apply static atomic polarizabilities for the calculation of vdW radii. The gr
 {% tabs %}
 {% tab title="vdw" %}
 ```bash
-> kallisto --verbose vdw options arguments
+> kallisto vdw options arguments
 ```
 {% endtab %}
 
@@ -70,7 +70,7 @@ output:
 To calculate atomic van-der-Waals radii for a neutral charged Alanine-Glycine molecule, we call the subcommand `vdw`
 
 ```bash
-> kallisto --verbose vdw --inp alanine-glycine.xyz
+> kallisto vdw --inp alanine-glycine.xyz
 3.3065606171598922
 3.38164759676716
 3.4391750162303536
@@ -92,7 +92,7 @@ To calculate atomic van-der-Waals radii for a neutral charged Alanine-Glycine mo
 2.536646925483585
 2.5536833297719026
 # Save output to file 'vdw'
-> kallisto --verbose vdw --inp alanine-glycine.xyz vdw
+> kallisto vdw --inp alanine-glycine.xyz vdw
 3.3065606171598922
 3.38164759676716
 3.4391750162303536
