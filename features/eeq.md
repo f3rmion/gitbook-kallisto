@@ -62,7 +62,7 @@ and apply the Pauling electronegativity \(`EN`\) and the atomic coordination num
 {% tabs %}
 {% tab title="eeq" %}
 ```bash
-> kallisto --verbose eeq options arguments
+> kallisto eeq options arguments
 ```
 {% endtab %}
 
@@ -93,7 +93,7 @@ output:
 To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, we call the subcommand `eeq`
 
 ```bash
-> kallisto --verbose eeq --inp alanine-glycine.xyz
+> kallisto eeq --inp alanine-glycine.xyz
 0.059704461728256275
 0.2626494653657499
 -0.4965512448739412
@@ -115,7 +115,7 @@ To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, 
 0.1342346682463232
 0.11540986754612566
 # Save output to file 'eeq'
-> kallisto --verbose eeq --inp alanine-glycine.xyz eeq
+> kallisto eeq --inp alanine-glycine.xyz eeq
 > cat eeq
 0.059704461728256275
 0.2626494653657499
