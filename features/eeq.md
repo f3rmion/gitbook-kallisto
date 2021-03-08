@@ -51,7 +51,7 @@ and apply the Pauling electronegativity \(`EN`\) and the atomic coordination num
 
 | Parameter | Meaning for atom i |
 | :--- | :--- |
-| `Jii` | Hardness \(element specific\) |
+| `Jii` | [Hardness](https://doi.org/10.1021/j100023a006) \(element specific\) |
 | `gammaii` | Atomic radii dependent term |
 | `ENi` | Pauling electronegativity |
 | `Rcovi` | Covalent atomic radius |
