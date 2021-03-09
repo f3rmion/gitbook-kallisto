@@ -1,10 +1,10 @@
 # Check the Example
 
-During the next sections, we exemplify the calculation of all atomic features for the Alanine-Glycine molecule as depicted below:
+During the next sections, we exemplify the calculation of all atomic features for several molecules as depicted below. The coordinates of all molecules are given in an [`xmol` format](https://en.wikipedia.org/wiki/XYZ_file_format).
+
+#### Alanine-glycine
 
 ![](.gitbook/assets/alanine.png)
-
-The coordinates of this molecule are given below in an `xmol` format in Ångström:
 
 ```bash
 > cat alanine-glycine.xyz
@@ -31,4 +31,10 @@ H     2.029201    -1.457008    -0.719999
 H     2.170233    -0.542411    -2.238576
 H     3.572730    -0.688405    -1.154998
 ```
+
+#### Toluene
+
+![](.gitbook/assets/toluene%20%281%29.png)
+
+
 
