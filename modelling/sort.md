@@ -12,7 +12,7 @@ Breadth First Search \(BFS\) algorithm traverses a graph in a breadth-ward motio
 
 The BFS algorithm employs the following rules.
 
-1. Visit the adjacent unvisited vertex. Mark it as visited. Display it. Insert it in a queue.
+1. Visit the adjacent unvisited vertex and mark it as visited. Then display it and insert it in a queue.
 2. If no adjacent vertex is found, remove the first vertex from the queue.
 3. Repeat Rule 1 and Rule 2 until the queue is empty.
 
