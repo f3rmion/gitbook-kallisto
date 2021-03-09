@@ -3,7 +3,7 @@
 * [Featurizer and Modelling Helper](README.md)
 * [Setup and Installation](setup.md)
 * [Testing suite](test.md)
-* [Check the Example](example.md)
+* [Check the Examples](example.md)
 
 ## Features
 
