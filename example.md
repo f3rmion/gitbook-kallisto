@@ -1,6 +1,6 @@
 # Check the Examples
 
-During the next sections, we exemplify the calculation of all atomic features for several molecules as depicted below. The coordinates of all molecules are given in an [`xmol` format](https://en.wikipedia.org/wiki/XYZ_file_format). We have furthermore extracted 135 structures \([CAM-B3LYP-D3\(B\)/def2-TZVP level of theory](https://doi.org/10.1063/1.4932594)\), which can be used for testing purposes.
+During the next sections, we exemplify the calculation of all atomic features for several molecules as depicted below. The coordinates of all molecules are given in an [`xmol` format](https://en.wikipedia.org/wiki/XYZ_file_format). We have furthermore extracted 135 structures \(optimized at the [CAM-B3LYP-D3\(B\)/def2-TZVP level of theory](https://doi.org/10.1063/1.4932594)\), which can be used for testing purposes.
 
 #### Alanine-glycine
 
