@@ -1,6 +1,14 @@
 # Check the Examples
 
-During the next sections, we exemplify the calculation of all atomic features for several molecules as depicted below. The coordinates of all molecules are given in an [`xmol` format](https://en.wikipedia.org/wiki/XYZ_file_format). We have furthermore extracted 135 `xmol` structures for organic molecules and transition metal complexes that have been optimized at the [CAM-B3LYP-D3\(B\)/def2-TZVP](https://doi.org/10.1063/1.4932594) level of theory, which can be used for testing purposes as well.
+During the next sections, we exemplify the calculation of all atomic features for several molecules as depicted below. The coordinates of all molecules are given in an [`xmol` format](https://en.wikipedia.org/wiki/XYZ_file_format). We have furthermore extracted 135 `xmol` structures for organic molecules and transition metal complexes that have been optimized at the [CAM-B3LYP-D3\(B\)/def2-TZVP](https://doi.org/10.1063/1.4932594) level of theory, which can be used for testing purposes as well. 
+
+{% hint style="success" %}
+`xmol` files can be nicely visualized by the [atomic simulation environment](https://wiki.fysik.dtu.dk/ase/install.html). Once you have installed ASE, you can use their GUI to visualize `xmol` structures
+{% endhint %}
+
+```bash
+> ase gui <struture.xyz>
+```
 
 #### Alanine-glycine
 
