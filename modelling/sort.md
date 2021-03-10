@@ -52,7 +52,7 @@ output:
 
 #### Simple example: Ethane
 
-To sort an ethane molecule according to a breadth-first algorithms, we use the subcommand `sort`
+To sort an ethane molecule according to a BFS algorithms, we use the subcommand `sort`
 
 ```bash
 > cat ethane.xyz
