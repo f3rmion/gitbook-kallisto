@@ -50,7 +50,7 @@ output:
 
 ## Application
 
-#### Simple example: Ethane
+### Simple example: Ethane
 
 To sort an ethane molecule according to a BFS algorithms, we use the subcommand `sort`
 
@@ -85,11 +85,11 @@ The depiction below shows the sorting for the ethane molecule. On the left side 
 
 ![](../.gitbook/assets/bfs.png)
 
-#### More advanced example: Alanine-glycine
+### More advanced example: Alanine-glycine
 
 Let's increase the difficulty a little bit, we choose the alanine-glycine molecule from our [Examples](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MVPwY8o6UiDbKvkMkld/example). First we take the unsorted molecule in an `xmol` format
 
-![](../.gitbook/assets/unsorted.png)
+![](../.gitbook/assets/unsorted%20%281%29.png)
 
 ```bash
 > cat alanine-glycine.xyz
