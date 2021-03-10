@@ -42,7 +42,7 @@ output:
 
 ## Application
 
-Let's dive directly into an example to extract substructures for the Iridium atom within an organometallic transition state structure describing the oxidative addition of benzene \(B3LYP-D3\(BJ\)/LACVP\*\*/PBF\(THF\) level\) with an Iridium catalyst as pioneered by [Hartwig](https://pubs.acs.org/doi/10.1021/ja412563e).
+Let's dive directly into an example to extract substructures for the Iridium atom within an organometallic transition state structure describing the oxidative addition of pyridine \(B3LYP-D3\(BJ\)/LACVP\*\*/PBF\(THF\) level\) with an Iridium catalyst as pioneered by [Hartwig](https://pubs.acs.org/doi/10.1021/ja412563e).
 
 ![Transition state structure for the oxidative addition \(Hartwig&apos;s Iridium catalyzed borylation\)](../.gitbook/assets/iridium_exs.png)
 
@@ -164,7 +164,7 @@ We find the following substructures:
 | :--- | :--- |
 | 0 | N-ligand |
 | 1 | N-ligand |
-| 2 | Benzene |
+| 2 | Pyridine |
 | 3 | Hydrogen Atom |
 | 4 | Bpin-ligand |
 | 5 | Bpin-ligand |
