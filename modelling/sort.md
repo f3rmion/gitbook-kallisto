@@ -89,6 +89,8 @@ The depiction below shows the sorting for the ethane molecule. On the left side 
 
 Let's increase the difficulty a little bit, we choose the alanine-glycine molecule from our [Examples](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MVPwY8o6UiDbKvkMkld/example). First we take the unsorted molecule in an `xmol` format
 
+![](../.gitbook/assets/unsorted.png)
+
 ```bash
 > cat alanine-glycine.xyz
   20
@@ -113,5 +115,35 @@ H     7.687400     1.448620    -0.860340
 H     2.029201    -1.457008    -0.719999
 H     2.170233    -0.542411    -2.238576
 H     3.572730    -0.688405    -1.154998
+```
+
+We want to sort this structure according to the algorithm described above. Here, we choose to sort everything starting from the atom with the index `0` .
+
+```bash
+# Save BFS sorted structure to 'alanine_glycine_s.xyz'
+> kallisto sort --inp alanine-glycine.xyz --start 0 > alanine_glycine_s.xyz
+> cat alanine_glycine_s.xyz
+   20
+Created with kallisto
+C      2.0814    0.6151   -0.5084
+C      2.7422    1.8240   -1.2008
+N      0.6101    0.6951   -0.5388
+C      2.4888   -0.5934   -1.1984
+H      2.4165    0.5574    0.5321
+N      4.1178    1.7999   -1.1904
+O      2.0956    2.7249   -1.7397
+H      0.3031    1.4261    0.1038
+H      0.3384    1.0507   -1.4605
+H      2.0292   -1.4570   -0.7200
+H      2.1702   -0.5424   -2.2386
+H      3.5727   -0.6884   -1.1550
+C      4.9436    2.8270   -1.8221
+H      4.6141    1.0820   -0.6705
+C      6.4401    2.5694   -1.6376
+H      4.6998    3.7945   -1.3737
+H      4.7229    2.8447   -2.8942
+O      7.3516    3.2523   -2.0691
+O      6.7052    1.4634   -0.8975
+H      7.6874    1.4486   -0.8603
 ```
 
