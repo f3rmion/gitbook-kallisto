@@ -147,3 +147,7 @@ O      6.7052    1.4634   -0.8975
 H      7.6874    1.4486   -0.8603
 ```
 
+We obtain the following sorted structure where the covalent partner of atom `0` are: `1`, `2`, `3`, and `4`. Once we habe identified all partner we go on with index `1` and identify it's partners: `5` and `6` . After visiting all indices we have a BFS sorted molecule! 🎉
+
+![](../.gitbook/assets/sorted.png)
+
