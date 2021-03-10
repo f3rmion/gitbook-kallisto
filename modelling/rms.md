@@ -48,6 +48,8 @@ output:
 
 As an example let's compare two conformers of 1-propanol that we have obtained by applying the [conformer rotamer ensemble sampling tool](https://github.com/grimme-lab/crest).
 
+![Lowest energy conformer of 1-propanol.](../.gitbook/assets/1-propanol_low.png)
+
 ```bash
 > cat 1-propanol_lowest.xyz
   12
@@ -64,6 +66,11 @@ As an example let's compare two conformers of 1-propanol that we have obtained b
  H         -2.7476736372       -0.5972665554       -0.0242488945
  H         -2.0700756998        0.8040326560       -0.8554507953
  H         -2.0722381370        0.7410005769        0.9069567477
+```
+
+![Higher energy conformer of 1-propanol.](../.gitbook/assets/1-propanol_high.png)
+
+```bash
 > cat 1-propanol_higher.xyz
 12
 
@@ -79,7 +86,11 @@ H       -1.14165995      -0.39229359      -1.53423716
 H       -2.56608070      -0.40007121       0.47312929
 H       -1.76619136       1.16652831       0.34003517
 H       -1.19366144      -0.03197289       1.50775619
-# Calculate RMSD error and rotation matrix
+```
+
+Let's calculate the RMSD error and the rotation matrix
+
+```bash
 > kallisto rms --compare 1-propanol_lowest.xyz 1-propanol_higher.xyz
 RMSD 1.1207014099033985 Angstrom
 Rotation Matrix
