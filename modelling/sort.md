@@ -117,7 +117,7 @@ H     2.170233    -0.542411    -2.238576
 H     3.572730    -0.688405    -1.154998
 ```
 
-We want to sort this structure according to the BFS algorithm described above. Here, we choose to sort everything starting from the atom with the index `0` .
+We want to sort this structure according to the BFS algorithm described above. Here, we choose to sort everything starting from the atom having index `0` .
 
 ```bash
 # Save BFS sorted structure to 'alanine_glycine_s.xyz'
