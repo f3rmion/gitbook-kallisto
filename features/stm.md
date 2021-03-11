@@ -6,7 +6,13 @@ description: 'Calculate Sterimol descriptors L, Bmin, and Bmax.'
 
 ## Introduction
 
-An example of how the Sterimol descriptors of an ethane molecule along the C2-C5 bond are constructed is shown below \(depiction is taken from [here](https://github.com/bobbypaton/DBSTEP)\). For the calculation of Sterimol descriptors `kallisto` uses van-der-Waals radii that are obtained from atomic static polarizabilities as described in the section [van-der-Waals Radii](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRAfxINKqRBUyA1POhp/features/vdw).
+An example of how the Sterimol descriptors of an ethane molecule along the C2-C5 bond are constructed is shown below \(depiction is taken from [here](https://github.com/bobbypaton/DBSTEP)\). For the calculation of Sterimol descriptors `kallisto` uses van-der-Waals radii that are obtained from atomic static polarizabilities as described in the section [van-der-Waals Radii](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRAfxINKqRBUyA1POhp/features/vdw). 
+
+{% hint style="info" %}
+This Sterimol algorithm has been initially implemented in the [Morfeus](https://kjelljorner.github.io/morfeus/sterimol.html) software package and was integrated by permission of its [main developer](https://scholar.google.com/citations?hl=de&user=85jiD4EAAAAJ).
+{% endhint %}
+
+
 
 ![](../.gitbook/assets/sterimol_new.png)
 
