@@ -92,10 +92,10 @@ Let's calculate the RMSD error and the rotation matrix
 
 ```bash
 > kallisto rms --compare 1-propanol_lowest.xyz 1-propanol_higher.xyz
-RMSD 1.1207014099033985 Angstrom
+RMSD [1.12070194] Angstrom
 Rotation Matrix
-[[ 0.98139375 -0.04913776 -0.18561193]
- [ 0.06120433  0.9963295   0.05984609]
- [ 0.18198994 -0.07009283  0.98079899]]
+[[ 0.98139458 -0.04965545 -0.18546973]
+ [ 0.06170977  0.9963015   0.05979323]
+ [ 0.18181471 -0.07012604  0.98082911]]
 ```
 
