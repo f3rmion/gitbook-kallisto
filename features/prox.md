@@ -12,7 +12,7 @@ $$
 P_{i}^{(k,l)} = CN_{i}\left(R^{cov'}_{AB} = k\times R^{cov}_{AB}\right) - CN_{i}\left(R^{cov'}_{AB} = l\times R^{cov}_{AB}\right)  \text{with} \quad k>l
 $$
 
-This atomic feature is useful to determine the steric hindrance that occurs due to neighbouring groups. The depiction below exemplifies this for the toluene molecule \(see [Applications part](atomic-proximity-shells.md#application)\), where higher CNSP-values show a higher steric hindrance.
+This atomic feature is useful to determine the steric hindrance that occurs due to neighbouring groups. The depiction below exemplifies this for the toluene molecule \(see [Applications part](prox.md#application)\), where higher CNSP-values show a higher steric hindrance.
 
 ![](../.gitbook/assets/cnsp_toluene.png)
 
