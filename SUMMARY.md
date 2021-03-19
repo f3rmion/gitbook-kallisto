@@ -7,7 +7,8 @@
 
 ## Features
 
-* [Coordination Numbers and Spheres](features/cns.md)
+* [Coordination Numbers](features/cns.md)
+* [Atomic Proximity Shells](features/atomic-proximity-shells.md)
 * [Electronegativity Equilibration](features/eeq.md)
 * [Dynamic Polarizabilities](features/alp.md)
 * [van-der-Waals Radii](features/vdw.md)
