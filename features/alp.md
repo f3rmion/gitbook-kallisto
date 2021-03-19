@@ -2,7 +2,7 @@
 description: Calculate atomic dynamic polarizabilities.
 ---
 
-# Dynamic Polarizabilities
+# Atomic Dynamic Polarizabilities
 
 ## Introduction
 

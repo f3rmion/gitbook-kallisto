@@ -10,7 +10,7 @@
 * [Coordination Numbers](features/cns.md)
 * [Atomic Proximity Shells](features/prox.md)
 * [Atomic Partial Charges](features/eeq.md)
-* [Dynamic Polarizabilities](features/alp.md)
+* [Atomic Dynamic Polarizabilities](features/alp.md)
 * [van-der-Waals Radii](features/vdw.md)
 * [Sterimol Descriptors](features/stm.md)
 
