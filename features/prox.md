@@ -2,7 +2,7 @@
 description: Get steric hindrance of an atom depending on its environment.
 ---
 
-# Atomic Proximity Shells
+# Proximity Shells
 
 ### Introduction
 

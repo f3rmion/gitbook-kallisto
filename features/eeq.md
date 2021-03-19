@@ -2,7 +2,7 @@
 description: Calculate atomic partial charges via Lagrangian constraints.
 ---
 
-# Atomic Partial Charges
+# Partial Charges
 
 ## Introduction
 
