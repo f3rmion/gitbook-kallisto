@@ -2,7 +2,7 @@
 description: Calculate atomic partial charges via Lagrangian constraints.
 ---
 
-# Electronegativity Equilibration
+# Partial Charges
 
 ## Introduction
 

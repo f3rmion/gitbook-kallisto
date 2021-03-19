@@ -1,5 +1,5 @@
 ---
-description: Simply exchange a found substructure with another.
+description: Simply exchange a substructure with another.
 ---
 
 # Substructure Exchanger
