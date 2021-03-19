@@ -1,5 +1,5 @@
 ---
-description: Get steric hindrance of an atom depending on its neighbours.
+description: Get steric hindrance of an atom depending on its environment.
 ---
 
 # Atomic Proximity Shells
