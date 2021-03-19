@@ -71,6 +71,7 @@ Toluene
   H      0.5024      2.7582     -1.0330
   H      1.2994      2.6647      0.5466
   H     -0.4475      2.9470      0.4506
+# Note that the default sizes are l, k = 2, 3
 > kallisto prox --inp toluene.xyz
 4.381228500236796
 3.3677521535602004
