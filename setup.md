@@ -13,6 +13,11 @@ scipy 1.6.0 SciPy: Scientific Library for Python
 
 For a list of all dependencies have a look at the [`pyproject.toml`](https://github.com/AstraZeneca/kallisto/blob/master/pyproject.toml) file.
 
+### Scientific References for Main Dependencies \(if available\)
+
+1. \*\*\*\*[**Array programming with NumPy**](https://doi.org/10.1038/s41586-020-2649-2)\*\*\*\*
+2. \*\*\*\*[**SciPy 1.0: fundamental algorithms for scientific computing in Python**](https://doi.org/10.1038/s41592-019-0686-2)\*\*\*\*
+
 ## Install from PyPI
 
 The `kallisto` program is [available on PyPI](https://pypi.org/project/kallisto/). The installation is straightforward using `pip`
