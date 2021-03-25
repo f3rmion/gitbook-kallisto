@@ -43,7 +43,7 @@ $$
 \mathcal{A}_{ij} =     \begin{cases}
             J_{ii} + \frac{2\gamma_{ii}}{\sqrt{\pi}}, &         \text{if } i=j\\
             \frac{\text{erf}(\gamma_{ij}R_{ij})}{R_{ij}}, &         \text{if } i\neq j 
-    \end{cases}
+    \end{cases},
 $$
 
 and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and `kappai`.
