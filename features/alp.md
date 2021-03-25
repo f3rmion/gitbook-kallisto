@@ -43,7 +43,7 @@ The direct comparison to experimental polarizabilities shows the great success o
 | **RMSD** | 3.1 | 6.8 | 20.6 |
 | **AMAX** | 16.9 | 22.3 | 74.4 |
 |  |  |  |  |
-| _**time in seconds\***_ | na | 2.8 | 152.0 |
+| _**time in seconds\***_ | _na_ | _2.8_ | _152.0_ |
 
 **MAD** = Mean Absolute Deviation; **MD** = Mean Deviation; **RMSD** = Root-Mean Squared Deviation; **AMAX** = Absolut MAXimum deviation. 
 
