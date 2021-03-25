@@ -45,7 +45,9 @@ The direct comparison to experimental polarizabilities shows the great success o
 |  |  |  |  |
 | _**time in seconds\***_ | na | 2.8 | 152.0 |
 
-**MAD** = Mean Absolute Deviation; **MD** = Mean Deviation; **RMSD** = Root-Mean Squared Deviation; **AMAX** = Absolut MAXimum deviation. **\***Total amount of computation time to obtain molecular polarizabilities for 45 organic molecules using `kallisto` or `AlphaML`. The test set includes: 1-3-butadiene, 1-butene, 2-methyl-1-propene, acetaldehyde, acetone, adamantane, benzene, C2H2, C2H4, C2H6, CH3Cl, CH3CN, CH3OH, CH3SH, CH4, CO2, cyclopropane, dimethylamine, dimethylether, E-2-butene, ethanol, ethoxyethane, H2CO, H2O, H2S, HCN, methyl-propyl-ether, N2O, n-butane, NCCN, neopentane, NH3, n-heptane, n-hexane, n-octane, n-pentane, OCS, oxirane, propadiene, propane, propyne, SO2, SO3, and trimethylamine\). `kallisto` timings have been averaged over three runs. `AlphaML` values were taken from the printout of their [webinterface](https://tools.materialscloud.org/alphaml/input_structure/). Total timing is calculated as the sum of all contributions.
+**MAD** = Mean Absolute Deviation; **MD** = Mean Deviation; **RMSD** = Root-Mean Squared Deviation; **AMAX** = Absolut MAXimum deviation. 
+
+**\***Total amount of computation time to obtain molecular polarizabilities for 45 organic molecules using `kallisto` or `AlphaML`. The test set includes: 1-3-butadiene, 1-butene, 2-methyl-1-propene, acetaldehyde, acetone, adamantane, benzene, C2H2, C2H4, C2H6, CH3Cl, CH3CN, CH3OH, CH3SH, CH4, CO2, cyclopropane, dimethylamine, dimethylether, E-2-butene, ethanol, ethoxyethane, H2CO, H2O, H2S, HCN, methyl-propyl-ether, N2O, n-butane, NCCN, neopentane, NH3, n-heptane, n-hexane, n-octane, n-pentane, OCS, oxirane, propadiene, propane, propyne, SO2, SO3, and trimethylamine\). `kallisto` timings have been averaged over three runs. `AlphaML` values were taken from the printout of their [webinterface](https://tools.materialscloud.org/alphaml/input_structure/). Total timing is calculated as the sum of all contributions.
 
 ## Define the Subcommand
 
