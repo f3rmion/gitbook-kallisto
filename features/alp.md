@@ -107,6 +107,9 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 1.9359520557775551
 1.9173190746286342
 2.0092941860457025
+# Get the molecular polarizability
+> kallisto alp --inp alanine-glycine.xyz --molecular
+90.19211544088955
 # Save output to file 'alp'
 > kallisto alp --inp alanine-glycine.xyz alp
 > cat alp
