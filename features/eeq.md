@@ -37,7 +37,7 @@ q_{total}
 \end{pmatrix}.
 $$
 
-Let's define the interaction matrix and the right-hand side as
+Let's define the interaction matrix \(the definition of the right-hand side is given [above](eeq.md#introduction)\)
 
 $$
 \mathcal{A}_{ij} =     \begin{cases}
