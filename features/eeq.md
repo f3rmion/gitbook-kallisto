@@ -34,7 +34,7 @@ $$
 \begin{pmatrix}
 \mathcal{X} \\
 q_{total} 
-\end{pmatrix}.
+\end{pmatrix} \\[1em] \quad \text{with}\quad \mathcal{X}_i = -\chi_i
 $$
 
 Let's define the interaction matrix \(the definition of the right-hand side is given [above](eeq.md#introduction)\)
