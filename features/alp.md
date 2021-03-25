@@ -107,9 +107,6 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 1.9359520557775551
 1.9173190746286342
 2.0092941860457025
-# Get the molecular polarizability
-> kallisto alp --inp alanine-glycine.xyz --molecular
-90.19211544088955
 # Save output to file 'alp'
 > kallisto alp --inp alanine-glycine.xyz alp
 > cat alp
@@ -133,6 +130,9 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 1.9359520557775551
 1.9173190746286342
 2.0092941860457025
+# Get the molecular polarizability for the Alanine-Glycine molecule
+> kallisto alp --inp alanine-glycine.xyz --molecular
+90.19211544088955
 ```
 
 Now we obtain a list of atomic dynamic polarizabilities. However, we can furthermore calculate dynamic polarizabilities for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
