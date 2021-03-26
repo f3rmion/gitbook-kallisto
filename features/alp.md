@@ -42,7 +42,8 @@ The direct comparison to experimental polarizabilities shows the great success o
 | **MD** | -2.6 | -2.2 | -0.8 |
 | **RMSD** | 3.1 | 6.8 | 20.6 |
 | **AMAX** | 16.9 | 22.3 | 74.4 |
-|  | [DFT-D4](https://github.com/dftd4/dftd4/tree/main/python) | kallisto | AlphaML |
+|  |  |  |  |
+|  | [DFT-D4](https://github.com/dftd4/dftd4/tree/main/python) | [kallisto](https://github.com/AstraZeneca/kallisto) | [AlphaML](https://tools.materialscloud.org/alphaml/input_structure/) |
 | _**tCPU / s\***_ | 0.3 | 9.9 | 152.0 |
 
 **MAD** = Mean Absolute Deviation; **MD** = Mean Deviation; **RMSD** = Root-Mean Squared Deviation; **AMAX** = Absolut MAXimum deviation.
