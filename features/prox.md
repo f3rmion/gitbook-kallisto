@@ -26,7 +26,7 @@ This atomic feature is useful to determine the steric hindrance that occurs due 
 {% endtab %}
 
 {% tab title="options" %}
-```text
+```markup
 --inp <string> 
 (optional, default: coord)
 description: 
