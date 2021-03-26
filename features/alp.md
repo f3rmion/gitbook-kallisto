@@ -8,7 +8,7 @@ description: Calculate atomic dynamic polarizabilities.
 
 Accurate dynamic polarizabilities can be determined by time-dependent density functional theory \(TD-DFT\) when applying a large atomic orbital basis set. Such reference TD-DFT calculations are, however, computationally demanding. To overcome this computational bottleneck `kallisto` uses a set of pre-calculated dynamic polarizabilities \([TD-PBE0/d-aug-def2-QZVP level of theory](https://aip.scitation.org/doi/10.1063/1.5090222)\) for each atom and maps the environmental effect \(so-called many-body effect\) to atomic coordination numbers. Hence the problem is shifted from calculating dynamic polarizabilities to calculating atomic coordination numbers and interpolate the atomic reference systems. This procedure comes along with a tremendous increase in efficiency and overcomes furthermore numerical issues that could occur in TD-DFT calculations. The accuracy of such polarizabilities is high such that a mean absolute deviation below 5% can be obtained with respect to experimentally derived polarizabilities for small sized organic molecules \(see [statistics](alp.md#molecular-polarizabilities) below\).
 
-We introduced the concept of [atomic coordination numbers](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MQgkWTyy2kFmCRZXTvp/features/cns) \(CNs\) earlier. We calculate reference CN-values for each reference system and map all calculated TD-DFT polarizabilities to reference CN-values. Now we have a simple mapping from CN-values to TD-DFT polarizabilities, which is used within a Gaussian weighting scheme together with system-specific CN-values for a system of interest. 
+We introduced the concept of [atomic coordination numbers](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MQgkWTyy2kFmCRZXTvp/features/cns) \(CNs\) earlier. We calculate reference CN-values for each reference system and map all calculated TD-DFT polarizabilities to reference CN-values. Now we have a simple mapping from CN-values to TD-DFT polarizabilities, which is used within a Gaussian weighting scheme together with system-specific CN-values for a system of interest.
 
 $$
 \alpha_j(i\omega)=\sum\limits_{j,ref=1}^{N_{j,ref}}\alpha_{j,ref}(i\omega)\,W_{j,ref}^j
@@ -28,13 +28,13 @@ $$
 
 ### Molecular Polarizabilities
 
-We obtain molecular polarizabilities as the sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently. 
+We obtain molecular polarizabilities as the sum of all atomic ones \(see below\). This approximation offers the possibility to calculate accurate molecular polarizabilities efficiently.
 
 $$
 \alpha_{mol} = \sum\limits_{i=1}^N \alpha_i
 $$
 
-The direct comparison to experimental polarizabilities shows the great success of the implemented method. As can be seen in the table below `kallisto` calculates molecular polarizabilities \(for 47 organic molecules - see [complete benchmark](https://github.com/f3rmion/molpol135) with overall 135 structures\) that are comparable to accurate quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\). 
+The direct comparison to experimental polarizabilities shows the great success of the implemented method. As can be seen in the table below `kallisto` calculates molecular polarizabilities \(for 47 organic molecules - see [complete benchmark](https://github.com/f3rmion/molpol135) with overall 135 structures\) that are comparable to accurate quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\).
 
 | **Measure in %** | \*\*\*\*[**MP2**](https://aip.scitation.org/doi/abs/10.1063/1.4932594)\*\*\*\* | \*\*\*\*[**kallisto**](https://github.com/AstraZeneca/kallisto)\*\*\*\* | \*\*\*\*[**AlphaML**](https://tools.materialscloud.org/alphaml/input_structure/)\*\*\*\* |
 | :--- | :--- | :--- | :--- |
@@ -43,9 +43,9 @@ The direct comparison to experimental polarizabilities shows the great success o
 | **RMSD** | 3.1 | 6.8 | 20.6 |
 | **AMAX** | 16.9 | 22.3 | 74.4 |
 |  |  |  |  |
-| _**time in seconds\***_ | _na_ | _2.8_ | _152.0_ |
+| _**time in seconds\***_ | na | 2.8 | 152.0 |
 
-**MAD** = Mean Absolute Deviation; **MD** = Mean Deviation; **RMSD** = Root-Mean Squared Deviation; **AMAX** = Absolut MAXimum deviation. 
+**MAD** = Mean Absolute Deviation; **MD** = Mean Deviation; **RMSD** = Root-Mean Squared Deviation; **AMAX** = Absolut MAXimum deviation.
 
 **\***Total amount of computation time to obtain molecular polarizabilities for 45 organic molecules including: [1-3-butadiene](https://github.com/f3rmion/molpol135/blob/main/structures/1-3-butadiene/inp.xyz), [1-butene](https://github.com/f3rmion/molpol135/blob/main/structures/1-butene/inp.xyz), [2-methyl-1-propene](https://github.com/f3rmion/molpol135/blob/main/structures/2-methyl-1-propene/inp.xyz), [acetaldehyde](https://github.com/f3rmion/molpol135/blob/main/structures/acetaldehyde/inp.xyz), [acetone](https://github.com/f3rmion/molpol135/blob/main/structures/acetone/inp.xyz), [adamantane](https://github.com/f3rmion/molpol135/blob/main/structures/adamantane/inp.xyz), [benzene](https://github.com/f3rmion/molpol135/blob/main/structures/benzene/inp.xyz), [C2H2](https://github.com/f3rmion/molpol135/blob/main/structures/C2H2/inp.xyz), [C2H4](https://github.com/f3rmion/molpol135/blob/main/structures/C2H4/inp.xyz), [C2H6](https://github.com/f3rmion/molpol135/blob/main/structures/C2H6/inp.xyz), [CH3Cl](https://github.com/f3rmion/molpol135/blob/main/structures/CH3Cl/inp.xyz), [CH3CN](https://github.com/f3rmion/molpol135/blob/main/structures/CH3CN/inp.xyz), [CH3OH](https://github.com/f3rmion/molpol135/blob/main/structures/CH3OH/inp.xyz), [CH3SH](https://github.com/f3rmion/molpol135/blob/main/structures/CH3SH/inp.xyz), [CH4](https://github.com/f3rmion/molpol135/blob/main/structures/CH4/inp.xyz), [CO2](https://github.com/f3rmion/molpol135/blob/main/structures/CO2/inp.xyz), [cyclopropane](https://github.com/f3rmion/molpol135/blob/main/structures/cyclopropane/inp.xyz), [dimethylamine](https://github.com/f3rmion/molpol135/blob/main/structures/dimethylamine/inp.xyz), [dimethylether](https://github.com/f3rmion/molpol135/blob/main/structures/dimethylether/inp.xyz), [E-2-butene](https://github.com/f3rmion/molpol135/blob/main/structures/E-2-butene/inp.xyz), [ethanol](https://github.com/f3rmion/molpol135/blob/main/structures/ethanol/inp.xyz), [ethoxyethane](https://github.com/f3rmion/molpol135/blob/main/structures/ethoxyethane/inp.xyz), [H2CO](https://github.com/f3rmion/molpol135/blob/main/structures/H2CO/inp.xyz), [H2O](https://github.com/f3rmion/molpol135/blob/main/structures/H2O/inp.xyz), [H2S](https://github.com/f3rmion/molpol135/blob/main/structures/H2S/inp.xyz), [HCN](https://github.com/f3rmion/molpol135/blob/main/structures/HCN/inp.xyz), [methyl-propyl-ether](https://github.com/f3rmion/molpol135/blob/main/structures/methyl-propyl-ether/inp.xyz), [N2O](https://github.com/f3rmion/molpol135/blob/main/structures/N2O/inp.xyz), [n-butane](https://github.com/f3rmion/molpol135/blob/main/structures/n-butane/inp.xyz), [NCCN](https://github.com/f3rmion/molpol135/blob/main/structures/NCCN/inp.xyz), [neopentane](https://github.com/f3rmion/molpol135/blob/main/structures/neopentane/inp.xyz), [NH3](https://github.com/f3rmion/molpol135/blob/main/structures/NH3/inp.xyz), [n-heptane](https://github.com/f3rmion/molpol135/blob/main/structures/n-heptane/inp.xyz), [n-hexane](https://github.com/f3rmion/molpol135/blob/main/structures/n-hexane/inp.xyz), [n-octane](https://github.com/f3rmion/molpol135/blob/main/structures/n-octane/inp.xyz), [n-pentane](https://github.com/f3rmion/molpol135/blob/main/structures/n-pentane/inp.xyz), [OCS](https://github.com/f3rmion/molpol135/blob/main/structures/OCS/inp.xyz), [oxirane](https://github.com/f3rmion/molpol135/blob/main/structures/oxirane/inp.xyz), [propadiene](https://github.com/f3rmion/molpol135/blob/main/structures/propadiene/inp.xyz), [propane](https://github.com/f3rmion/molpol135/blob/main/structures/propane/inp.xyz), [propyne](https://github.com/f3rmion/molpol135/blob/main/structures/propyne/inp.xyz), [SO2](https://github.com/f3rmion/molpol135/blob/main/structures/SO2/inp.xyz), [SO3](https://github.com/f3rmion/molpol135/blob/main/structures/SO3/inp.xyz), and [trimethylamine](https://github.com/f3rmion/molpol135/blob/main/structures/trimethylamine/inp.xyz)\). `kallisto` timings have been averaged over three runs. `AlphaML` values were taken from the printout of their [webinterface](https://tools.materialscloud.org/alphaml/input_structure/). Total timing is calculated as the sum of all contributions.
 
@@ -54,7 +54,7 @@ The direct comparison to experimental polarizabilities shows the great success o
 {% tabs %}
 {% tab title="alp" %}
 ```bash
-> kallisto alp options arguments 
+> kallisto alp options arguments
 ```
 {% endtab %}
 
@@ -69,7 +69,7 @@ description:
 (optional, default: 0)
 description:
  absolute charge (qtotal) of the input structure (Lagrangian constraint)
- 
+
 --molecular (flag)
 (optional, default: false)
 description:
@@ -139,5 +139,5 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 90.19211544088955
 ```
 
-Now we obtain a list of atomic dynamic polarizabilities. However, we can furthermore calculate dynamic polarizabilities for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
+Now we obtain a list of atomic dynamic polarizabilities. Molecular polarizabilities can be calculated by using the `molecular` flag. We can furthermore calculate dynamic polarizabilities for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` flag as described in the subcommand definition.
 
