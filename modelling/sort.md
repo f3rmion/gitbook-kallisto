@@ -8,7 +8,7 @@ description: Sort your structure according to the breadth-first search algorithm
 
 Breadth First Search \(BFS\) algorithm traverses a graph in a breadth-ward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration \(depiction below taken from [here](https://www.tutorialspoint.com/data_structures_algorithms/breadth_first_traversal.htm)\).
 
-![](../.gitbook/assets/breadth_first_traversal%20%281%29%20%281%29.jpg)
+![](../.gitbook/assets/breadth_first_traversal%20%281%29%20%281%29%20%281%29%20%282%29%20%281%29.jpg)
 
 The BFS algorithm employs the following rules.
 
