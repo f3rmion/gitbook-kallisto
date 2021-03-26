@@ -139,5 +139,5 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 90.19211544088955
 ```
 
-Now we obtain a list of atomic dynamic polarizabilities. Molecular polarizabilities can be calculated by using the `molecular` flag. We can furthermore calculate dynamic polarizabilities for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` flag as described in the subcommand definition.
+Now we obtain a list of atomic dynamic polarizabilities. Molecular polarizabilities can be calculated by using the `molecular` flag. We can furthermore calculate dynamic polarizabilities for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
 
