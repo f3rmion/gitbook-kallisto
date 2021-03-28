@@ -76,7 +76,7 @@ Calculated for atom 1 (origin) and atom 4 (partner)
 L, Bmin, Bmax / au:  6.29  4.27  4.54
 L, Bmin, Bmax / A:  3.33  2.26  2.40
 # Save output to file 'stm'
-> kallisto --verbose stm --inp ethane.xyz --origin 1 --partner 4 stm
+> kallisto stm --inp ethane.xyz --origin 1 --partner 4 stm
 > cat stm
 Calculated for atom 1 (origin) and atom 4 (partner)
 L, Bmin, Bmax / au:  6.29  4.27  4.54
