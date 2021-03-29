@@ -27,23 +27,22 @@ The BFS algorithm employs the following rules.
 
 {% tab title="options" %}
 ```markup
---inp <string> 
-(optional, default: coord)
-description: 
- input file in xmol format (Ångström) or in Turbomole format (Bohr)
-
 # Note that the atom count starts at 0
 --start <int>
 (optional)
 description:
  start BFS from given atom
+ 
+--out <string> 
+(optional)
+description: 
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```text
-output: 
- standard output or specified file
+input file is given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -67,7 +66,7 @@ C    1.03 1.03 -1.61
 H    0.76 2.03 -1.25
 H    0.00 0.00 0.00
 # Save BFS sorted structure to 'ethane_s.xyz'
-> kallisto sort --inp ethane.xyz --start 0 > ethane_s.xyz
+> kallisto sort --start 0 --out ethane_s.xyz ethane.xyz
 > cat ethane_s.xyz
     8
 Created with kallisto
@@ -121,7 +120,7 @@ We want to sort this structure according to the BFS algorithm described above. H
 
 ```bash
 # Save BFS sorted structure to 'alanine_glycine_s.xyz'
-> kallisto sort --inp alanine-glycine.xyz --start 0 > alanine_glycine_s.xyz
+> kallisto sort --start 0 --out alanine-glycine_s.xyz alanine-glycine.xyz
 > cat alanine_glycine_s.xyz
    20
 Created with kallisto

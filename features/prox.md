@@ -27,23 +27,22 @@ This atomic feature is useful to determine the steric hindrance that occurs due 
 
 {% tab title="options" %}
 ```markup
---inp <string> 
-(optional, default: coord)
-description: 
- input file in xmol format (Ångström) or in Turbomole format (Bohr)
- 
- # note that the inner (smaller) border is given first
+  # note that the inner (smaller) border is given first
  --size <int> <int>
  (optional, default: 2 3)
  description:
   defines inner and outer border for proximity shells
+  
+--out <string> 
+(optional)
+description: 
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```bash
- output: 
- standard output or specified file
+input file is given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -72,7 +71,7 @@ Toluene
   H      1.2994      2.6647      0.5466
   H     -0.4475      2.9470      0.4506
 # Note that the default sizes are l, k = 2, 3
-> kallisto prox --inp toluene.xyz
+> kallisto prox toluene.xyz
 4.381228500236796
 3.3677521535602004
 2.8495247846705114
@@ -89,7 +88,7 @@ Toluene
 4.073729305140565
 4.075067940009211
 # Save output to file 'prox'
-> kallisto prox --inp toluene.xyz prox
+> kallisto prox --out prox toluene.xyz
 > cat prox
 4.381228500236796
 3.3677521535602004

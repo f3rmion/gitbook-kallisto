@@ -25,19 +25,16 @@ with `a`, `b`, `c`, and `d` as real numbers; and **i**, **j**, and **k** as the 
 
 {% tab title="options" %}
 ```markup
---compare <string> <string>
-(required)
+--out <string> 
+(optional)
 description: 
- compare two input files in xmol format (Ångström) 
- or in Turbomole format (Bohr) and calculate a RMSD 
- error and a rotation matrix
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```text
-output:
- standard output or specified file
+input file is given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -89,7 +86,7 @@ H       -1.19366144      -0.03197289       1.50775619
 Let's calculate the RMSD error and the rotation matrix
 
 ```bash
-> kallisto rms --compare 1-propanol_lowest.xyz 1-propanol_higher.xyz
+> kallisto rms 1-propanol_lowest.xyz 1-propanol_higher.xyz
 RMSD [1.12070194] Angstrom
 Rotation Matrix
 [[ 0.98139458 -0.04965545 -0.18546973]

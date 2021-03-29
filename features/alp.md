@@ -62,11 +62,6 @@ The direct comparison to experimental polarizabilities shows the great success o
 
 {% tab title="options" %}
 ```markup
---inp <string> 
-(optional, default: coord)
-description: 
- input file in xmol format (Ångström) or in Turbomole format (Bohr)
-
 --chrg <int>
 (optional, default: 0)
 description:
@@ -76,13 +71,17 @@ description:
 (optional, default: false)
 description:
  get the molecular polarizability as sum of all atomic ones
+ 
+--out <string> 
+(optional)
+description: 
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```bash
-output: 
- standard output or specified file
+input file is given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -92,7 +91,7 @@ output:
 To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glycine molecule, we call the subcommand `alp`
 
 ```bash
-> kallisto alp --inp alanine-glycine.xyz
+> kallisto alp alanine-glycine.xyz
 6.797559893536487
 7.954558030234794
 8.343416502883054
@@ -114,7 +113,7 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 1.9173190746286342
 2.0092941860457025
 # Save output to file 'alp'
-> kallisto alp --inp alanine-glycine.xyz alp
+> kallisto alp --out alp alanine-glycine.xyz
 > cat alp
 6.797559893536487
 7.954558030234794
@@ -137,7 +136,7 @@ To calculate atomic dynamic polarizabilities for a neutral charged Alanine-Glyci
 1.9173190746286342
 2.0092941860457025
 # Get the molecular polarizability for the Alanine-Glycine molecule
-> kallisto alp --inp alanine-glycine.xyz --molecular
+> kallisto alp --molecular alanine-glycine.xyz
 90.19211544088955
 ```
 

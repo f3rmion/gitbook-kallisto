@@ -38,24 +38,23 @@ Those parameters have been obtained by a least-squared fit to Wiberg bond orders
 
 {% tab title="options" %}
 ```markup
---inp <string> 
-(optional, default: coord)
-description: 
- input file in xmol format (Ångström) or in Turbomole format (Bohr)
- 
- --cntype <string>
+  --cntype <string>
 (optional, default: cov)
 available:
  cov, exp, erf
 description:
  different CN definitions
+ 
+--out <string> 
+(optional)
+description: 
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```
-output: 
- standard output or specified fil
+input file is given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -65,7 +64,7 @@ output:
 To calculate coordination numbers, I call the subcommand `cns` 
 
 ```bash
-> kallisto cns --inp alanine-glycine.xyz
+> kallisto cns alanine-glycine.xyz
 3.98207181
 3.00785834 
 2.99800682 
@@ -87,7 +86,7 @@ To calculate coordination numbers, I call the subcommand `cns`
 0.99397068 
 0.99397075
 # Save output to file 'cns'
-> kallisto cns --inp alanine-glycine.xyz cns
+> kallisto cns --out cns alanine-glycine.xyz
 > cat cns
 3.98207181
 3.00785834 
