@@ -34,7 +34,7 @@ $$
 \alpha_{mol} = \sum\limits_{i=1}^N \alpha_i
 $$
 
-The direct comparison to experimental polarizabilities shows the great success of the implemented method. As can be seen in the table below `kallisto` calculates molecular polarizabilities \(for 47 organic molecules - see [complete benchmark](https://github.com/f3rmion/molpol135) with overall 135 structures\) that are comparable to accurate quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\) and to the [python](https://github.com/dftd4/dftd4/tree/main/python) `dftd4`API, which uses a pre-compiled Fortran library.
+The direct comparison to experimental polarizabilities shows the great success of the implemented method. As can be seen in the table below `kallisto` calculates molecular polarizabilities \(for 47 organic molecules - see [complete benchmark](https://github.com/f3rmion/molpol135) with overall 135 structures\) that are comparable to accurate quantum chemistry calculations \(MP2/def2-QZVPD\), but several orders of magnitude faster! We furthermore compare to the recently published AlphaML model \(CCSD mode\) and to the [python](https://github.com/dftd4/dftd4/tree/main/python) `dftd4`API, which uses a pre-compiled Fortran library as a backend.
 
 | **Measure in %** | \*\*\*\*[**MP2**](https://aip.scitation.org/doi/abs/10.1063/1.4932594)\*\*\*\* | \*\*\*\*[**kallisto**](https://github.com/AstraZeneca/kallisto)\*\*\*\* | \*\*\*\*[**AlphaML**](https://tools.materialscloud.org/alphaml/input_structure/)\*\*\*\* |
 | :--- | :--- | :--- | :--- |
