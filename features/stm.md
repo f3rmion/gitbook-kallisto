@@ -15,7 +15,7 @@ An example of how the Sterimol descriptors of an ethane molecule along the C2-C5
 ![](../.gitbook/assets/sterimol_new.png)
 
 {% hint style="info" %}
-This Sterimol algorithm has been initially implemented in the [Morfeus](https://kjelljorner.github.io/morfeus/sterimol.html) software package and was integrated by permission of its [main developer](https://scholar.google.com/citations?hl=de&user=85jiD4EAAAAJ).
+The applied Sterimol algorithm has been initially implemented in the [Morfeus](https://kjelljorner.github.io/morfeus/sterimol.html) software package and was integrated by permission of its [main developer](https://scholar.google.com/citations?hl=de&user=85jiD4EAAAAJ).
 {% endhint %}
 
 ## Define the Subcommand
