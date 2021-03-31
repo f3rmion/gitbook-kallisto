@@ -12,7 +12,7 @@
 * [Partial Charges](features/eeq.md)
 * [Polarizabilities](features/alp.md)
 * [van-der-Waals Radii](features/vdw.md)
-* [Sterimol Descriptors](features/stm.md)
+* [Sterimol](features/stm.md)
 
 ## Modelling
 

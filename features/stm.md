@@ -2,7 +2,7 @@
 description: 'Calculate Sterimol descriptors L, Bmin, and Bmax.'
 ---
 
-# Sterimol Descriptors
+# Sterimol
 
 ## Introduction
 
