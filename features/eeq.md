@@ -46,7 +46,7 @@ $$
     \end{cases},
 $$
 
-Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and `kappai`.
+Overall five parameter exist per element:
 
 | Parameter | Meaning for atom i |
 | :--- | :--- |
