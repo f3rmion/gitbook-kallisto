@@ -46,7 +46,7 @@ description:
    truhlar: 10.1021/jp8111556
 
 --angstrom (flag)
-(optional, default: radii in Bohr)
+(optional, default: false)
 description:
  calculate van-der-Waals radii in Ångström
  
