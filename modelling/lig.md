@@ -19,23 +19,22 @@ Often we are interested in the finding substructures, e.g., ligands that are cov
 
 {% tab title="options" %}
 ```markup
---inp <string> 
-(optional, default: coord)
-description: 
- input file in xmol format (Ångström) or in Turbomole format (Bohr)
-
 # Note that the atom count starts at 0
 --center <int>
 (required)
 description:
  central atom for which covalently bound substructures are obtained
+ 
+ --out <string> 
+(optional)
+description: 
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```text
-output: 
- standard output or specified file
+input file is given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -147,7 +146,7 @@ H     1.9905998   -4.6454995    4.2840996
 H    -4.5414996   -2.6926997   -1.6821998
 H    -4.0522996    3.5020997    1.5576998
 # Search for substructures of the Iridium atom
-> kallisto lig --inp iridium.xyz --center 18
+> kallisto lig --center 18 iridium.xyz
 Write out substructures for 18
 Substructure 0: [0, 1, 2, 3, 4, 5, 6, 7, 94, 8, 9, 10, 11, 12, 13, 14, 15, 95, 16, 17]
 Substructure 1: [10, 9, 1, 0, 5, 4, 3, 2, 8, 94, 7, 6, 14, 13, 12, 11, 17, 16, 95, 15]

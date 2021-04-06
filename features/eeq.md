@@ -46,7 +46,7 @@ $$
     \end{cases},
 $$
 
-and apply the Pauling electronegativity \(`EN`\) and the atomic coordination number \(`CN`\) to introduce an environment dependency into the partial-charge approach. Overall five parameter exist per element: `Jii`, `gammaii`, `ENi`, `Rcovi`, and `kappai`.
+Overall five parameter exist per element:
 
 | Parameter | Meaning for atom i |
 | :--- | :--- |
@@ -67,22 +67,21 @@ and apply the Pauling electronegativity \(`EN`\) and the atomic coordination num
 
 {% tab title="options" %}
 ```markup
---inp <string> 
-(optional, default: coord)
-description: 
- input file in xmol format (Ångström) or in Turbomole format (Bohr)
-
 --chrg <int>
 (optional, default: 0)
 description:
  absolute charge (qtotal) of the input structure (Lagrangian constraint)
+ 
+--out <string> 
+(optional)
+description: 
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```text
-output: 
- standard output or specified file
+input file is given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -92,7 +91,7 @@ output:
 To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, we call the subcommand `eeq`
 
 ```bash
-> kallisto eeq --inp alanine-glycine.xyz
+> kallisto eeq alanine-glycine.xyz
 0.059704461728256275
 0.2626494653657499
 -0.4965512448739412
@@ -114,7 +113,7 @@ To calculate atomic EEQ charges for a neutral charged Alanine-Glycine molecule, 
 0.1342346682463232
 0.11540986754612566
 # Save output to file 'eeq'
-> kallisto eeq --inp alanine-glycine.xyz eeq
+> kallisto eeq --out eeq alanine-glycine.xyz
 > cat eeq
 0.059704461728256275
 0.2626494653657499

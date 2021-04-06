@@ -33,11 +33,6 @@ We apply static atomic polarizabilities for the calculation of vdW radii. The gr
 
 {% tab title="options" %}
 ```markup
---inp <string> 
-(optional, default: coord)
-description: 
- input file in xmol format (Ångström) or in Turbomole format (Bohr)
-
 --chrg <int>
 (optional, default: 0)
 description:
@@ -51,16 +46,20 @@ description:
    truhlar: 10.1021/jp8111556
 
 --angstrom (flag)
-(optional, default: radii in Bohr)
+(optional, default: false)
 description:
  calculate van-der-Waals radii in Ångström
+ 
+--out <string> 
+(optional)
+description: 
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```text
-output: 
- standard output or specified file
+input file is given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -70,7 +69,7 @@ output:
 To calculate atomic van-der-Waals radii for a neutral charged Alanine-Glycine molecule, we call the subcommand `vdw`
 
 ```bash
-> kallisto vdw --inp alanine-glycine.xyz
+> kallisto vdw alanine-glycine.xyz
 3.3065606171598922
 3.38164759676716
 3.4391750162303536
@@ -92,7 +91,7 @@ To calculate atomic van-der-Waals radii for a neutral charged Alanine-Glycine mo
 2.536646925483585
 2.5536833297719026
 # Save output to file 'vdw'
-> kallisto vdw --inp alanine-glycine.xyz vdw
+> kallisto vdw --out vdw alanine-glycine.xyz
 3.3065606171598922
 3.38164759676716
 3.4391750162303536

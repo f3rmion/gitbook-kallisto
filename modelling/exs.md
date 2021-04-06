@@ -19,14 +19,6 @@ Often we want to modify existing molecular structures in an automated way, which
 
 {% tab title="options" %}
 ```markup
---inp <string> <string>
-(required)
-description: 
- two input files in xmol format (Ångström) 
- or in Turbomole format (Bohr). Both formats need
- to match. First <string> is the reference and 
- second <string> the new structure 
-
 # Note that the atom count starts at 0
 --center <int>
 (required)
@@ -45,13 +37,17 @@ description:
   rotate the substrate around the covalent bond defined
   between the center and the first atom in substrate.
   Angle has to be given in degrees.
+  
+--out <string> 
+(optional)
+description: 
+ write output to file
 ```
 {% endtab %}
 
 {% tab title="arguments" %}
 ```text
-output: 
- standard output or specified file
+input files are given as (positional) argument
 ```
 {% endtab %}
 {% endtabs %}
@@ -84,7 +80,7 @@ Pyridine without H in ortho position of N
   H     -1.2365     -2.1696      0.0000
   H     -2.4837      0.0011      0.0000
   H     -1.1569      2.1657      0.0000
-> kallisto exs --inp iridium.xyz pyridine.xyz --center 18 --subnr 2
+> kallisto exs --center 18 --subnr 2 iridium.xyz pyridine.xyz
 # New geometry has been written to 'newstructure.xyz'
 > cat newstructure.xyz
    95
@@ -266,7 +262,7 @@ H      4.4759   11.0709   -2.9448
 H      5.9044   10.0570   -3.0536
 H      6.0736   11.8048   -2.7667
 # Exchange benzene with c-Met Kinase Inhibitor
-> kallisto exs --inp iridium.xyz cmet.xyz --center 18 --subnr 2
+> kallisto exs --center 18 --subnr 2 iridium.xyz cmet.xyz
 ```
 
 Again, the new structure is saved to `newstructure.xyz`. By taking a closer look to this structure, we see that atoms seem to crash into each other - [no bueno](https://www.quora.com/What-does-no-bueno-mean-in-English).
@@ -297,6 +293,6 @@ $$
 A simple example is given as follows, where we rotate the new substrate by an angle of 180 Degrees after matching it to the old substrate inside the complex of interest. Here, we take the example from above:
 
 ```bash
-> kallisto exs --inp iridium.xyz pyridine.xyz --center 18 --subnr 2 --rotate 180
+> kallisto exs --center 18 --subnr 2 --rotate 180 iridium.xyz pyridine.xyz
 ```
 
