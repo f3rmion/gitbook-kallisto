@@ -43,7 +43,7 @@ input file is given as (positional) argument
 
 Let's dive directly into an example to extract substructures for the Iridium atom within an organometallic transition state structure describing the oxidative addition of pyridine \(B3LYP-D3\(BJ\)/LACVP\*\*/PBF\(THF\) level\) with an Iridium catalyst as pioneered by [Hartwig](https://pubs.acs.org/doi/10.1021/ja412563e).
 
-![Transition state structure for the oxidative addition \(Hartwig&apos;s Iridium catalyzed borylation\)](../.gitbook/assets/iridium_exs.png)
+![](../.gitbook/assets/iridiumcat.png)
 
 ```bash
 > cat iridium.xyz
