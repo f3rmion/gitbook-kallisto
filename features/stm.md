@@ -65,7 +65,7 @@ To calculate Sterimol parameter for an ethane molecule along the C2-C5 bond, we 
 ethane
 H    0.00 0.00 0.00
 C    0.00 0.00 -1.10
-H    -1.00    0.27 -1.47
+H    -1.00 0.27 -1.47
 H    0.27 -1.00 -1.47
 C    1.03 1.03 -1.61
 H    1.03 1.03 -2.71
