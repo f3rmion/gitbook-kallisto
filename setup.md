@@ -13,10 +13,10 @@ scipy 1.6.0 SciPy: Scientific Library for Python
 
 For a list of all dependencies have a look at the [`pyproject.toml`](https://github.com/AstraZeneca/kallisto/blob/master/pyproject.toml) file.
 
-### Scientific References for Main Dependencies \(if available\)
+### Scientific References for Main Dependencies (if available)
 
-1. \*\*\*\*[**Array programming with NumPy**](https://doi.org/10.1038/s41586-020-2649-2)\*\*\*\*
-2. \*\*\*\*[**SciPy 1.0: fundamental algorithms for scientific computing in Python**](https://doi.org/10.1038/s41592-019-0686-2)\*\*\*\*
+1. ****[**Array programming with NumPy**](https://doi.org/10.1038/s41586-020-2649-2)****
+2. ****[**SciPy 1.0: fundamental algorithms for scientific computing in Python**](https://doi.org/10.1038/s41592-019-0686-2)****
 
 ## Install from PyPI
 
@@ -32,22 +32,20 @@ Requirements to install`kallisto` from sources:
 
 * [poetry](https://python-poetry.org/docs/#installation)
 * [pyenv](https://github.com/pyenv/pyenv#installation) or [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
-* python &gt;=3.7
+* python >=3.7
 
-First check that `poetry` is running correctly \(v1.0.10 at the time of writing\)
+First check that `poetry` is running correctly (v1.0.10 at the time of writing)
 
 ```bash
 > poetry --version
 Poetry version 1.0.10
 ```
 
-Create a virtual environment \(via `pyenv` or `conda`\) and activate it. Afterwards, clone the `kallisto` project from GitHub and install it using `poetry`
+Create a virtual environment (via `pyenv` or `conda`) and activate it. Afterwards, clone the `kallisto` project from GitHub and install it using `poetry`
 
 ```bash
 > git clone git@github.com:AstraZeneca/kallisto.git
 > cd kallisto
 > poetry install
 ```
-
-
 

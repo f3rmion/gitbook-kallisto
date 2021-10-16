@@ -8,5 +8,3 @@ We provide a number of detailed guides dealing with a common task that can be pe
 
 ![](.gitbook/assets/logo.svg)
 
-
-

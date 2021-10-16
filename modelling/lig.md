@@ -6,7 +6,7 @@ description: Get all substructures attached to a specified atom.
 
 ## Introduction
 
-Often we are interested in the finding substructures, e.g., ligands that are covalently bound to a metal center within an organometallic catalyst structure. Here, we need information about the molecular graph. This information is, however, not adequate enough to write out ligands or other substructures. Within the `kallisto` program we implemented a recursive way to deal with substructures that are covalently bound to a specified atom \(termed as the `center`\).
+Often we are interested in the finding substructures, e.g., ligands that are covalently bound to a metal center within an organometallic catalyst structure. Here, we need information about the molecular graph. This information is, however, not adequate enough to write out ligands or other substructures. Within the `kallisto` program we implemented a recursive way to deal with substructures that are covalently bound to a specified atom (termed as the `center`).
 
 ## Define the Subcommand
 
@@ -33,7 +33,7 @@ description:
 {% endtab %}
 
 {% tab title="arguments" %}
-```text
+```
 input file is given as (positional) argument
 ```
 {% endtab %}
@@ -41,9 +41,9 @@ input file is given as (positional) argument
 
 ## Application
 
-Let's dive directly into an example to extract substructures for the Iridium atom within an organometallic transition state structure describing the oxidative addition of pyridine \(B3LYP-D3\(BJ\)/LACVP\*\*/PBF\(THF\) level\) with an Iridium catalyst as pioneered by [Hartwig](https://pubs.acs.org/doi/10.1021/ja412563e).
+Let's dive directly into an example to extract substructures for the Iridium atom within an organometallic transition state structure describing the oxidative addition of pyridine (B3LYP-D3(BJ)/LACVP\*\*/PBF(THF) level) with an Iridium catalyst as pioneered by [Hartwig](https://pubs.acs.org/doi/10.1021/ja412563e).
 
-![](../.gitbook/assets/iridiumcat.png)
+![](../.gitbook/assets/iridiumCat.png)
 
 ```bash
 > cat iridium.xyz
@@ -159,13 +159,12 @@ Substructure 6: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
 
 We find the following substructures:
 
-| \# | Substructure in complex |
-| :--- | :--- |
-| 0 | N-ligand |
-| 1 | N-ligand |
-| 2 | Pyridine |
-| 3 | Hydrogen Atom |
-| 4 | Bpin-ligand |
-| 5 | Bpin-ligand |
-| 6 | Bpin-ligand |
-
+| # | Substructure in complex |
+| - | ----------------------- |
+| 0 | N-ligand                |
+| 1 | N-ligand                |
+| 2 | Pyridine                |
+| 3 | Hydrogen Atom           |
+| 4 | Bpin-ligand             |
+| 5 | Bpin-ligand             |
+| 6 | Bpin-ligand             |

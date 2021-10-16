@@ -6,9 +6,9 @@ description: Sort your structure according to the breadth-first search algorithm
 
 ## Introduction
 
-Breadth First Search \(BFS\) algorithm traverses a graph in a breadth-ward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration \(depiction below taken from [here](https://www.tutorialspoint.com/data_structures_algorithms/breadth_first_traversal.htm)\).
+Breadth First Search (BFS) algorithm traverses a graph in a breadth-ward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration (depiction below taken from [here](https://www.tutorialspoint.com/data_structures_algorithms/breadth_first_traversal.htm)).
 
-![](../.gitbook/assets/breadth_first_traversal%20%281%29%20%281%29%20%281%29%20%282%29%20%281%29.jpg)
+![](<../.gitbook/assets/breadth_first_traversal (1) (1) (1) (2) (2).jpg>)
 
 The BFS algorithm employs the following rules.
 
@@ -41,7 +41,7 @@ description:
 {% endtab %}
 
 {% tab title="arguments" %}
-```text
+```
 input file is given as (positional) argument
 ```
 {% endtab %}
@@ -86,9 +86,9 @@ The depiction below shows the sorting for the ethane molecule. On the left side 
 
 ### More advanced example: Alanine-glycine
 
-Let's increase the difficulty a little bit, we choose the alanine-glycine molecule from our [Examples](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MVPwY8o6UiDbKvkMkld/example). First we take the unsorted molecule in an `xmol` format
+Let's increase the difficulty a little bit, we choose the alanine-glycine molecule from our [Examples](https://app.gitbook.com/@ehjc/s/kallisto/\~/drafts/-MVPwY8o6UiDbKvkMkld/example). First we take the unsorted molecule in an `xmol` format
 
-![](../.gitbook/assets/unsorted%20%281%29.png)
+![](<../.gitbook/assets/unsorted (1).png>)
 
 ```bash
 > cat alanine-glycine.xyz
@@ -149,4 +149,3 @@ H      7.6874    1.4486   -0.8603
 ![](../.gitbook/assets/sorted.png)
 
 We obtain the sorted structure as depicted above where the covalent partner of atom `0` are: `1`, `2`, `3`, and `4`. Once we have identified all partner we go on with index `1` and identify it's partners: `5` and `6` . After visiting all indices we have a BFS sorted molecule! 🎉
-

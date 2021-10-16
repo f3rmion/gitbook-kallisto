@@ -19,4 +19,3 @@ You can get rid of the output by using the silent mode, which is usable via the 
 ### Still not working?
 
 If you’re heading trouble please contact hello at eikecaldeweyher.de
-

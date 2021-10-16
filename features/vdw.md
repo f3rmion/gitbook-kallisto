@@ -6,21 +6,21 @@ description: Calculate atomic van der Waals radii.
 
 ## Introduction
 
-Atomic van-der-Waals \(vdW\) radii are calculated from atomic polarizabilities as recently introduced by Fedorov _et al._ \(see their [arXiv](https://arxiv.org/abs/1803.11507)\). In their work, they obtained a quantum-mechanical relation between atomic polarizabilities and vdW radii.
+Atomic van-der-Waals (vdW) radii are calculated from atomic polarizabilities as recently introduced by Fedorov _et al._ (see their [arXiv](https://arxiv.org/abs/1803.11507)). In their work, they obtained a quantum-mechanical relation between atomic polarizabilities and vdW radii.
 
 $$
 R_{vdw}(\alpha) = \theta_a \alpha^{1/7},
 $$
 
-where `thetaa = 2.54` has been obtained by fitting to reference data for noble gases. Since the present model should be easily applicable to all elements up to Radon, an additional element-wise parameter `thetab` is introduced and fitted to reproduce theoretically determined vdW radii \(see works of [Rahm](https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/chem.201602949) and [Mantina](https://pubs.acs.org/doi/10.1021/jp8111556)\).
+where `thetaa = 2.54` has been obtained by fitting to reference data for noble gases. Since the present model should be easily applicable to all elements up to Radon, an additional element-wise parameter `thetab` is introduced and fitted to reproduce theoretically determined vdW radii (see works of [Rahm](https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/chem.201602949) and [Mantina](https://pubs.acs.org/doi/10.1021/jp8111556)).
 
 $$
 R_{vdw}(\alpha) = \theta_a \theta_b\alpha^{1/7}
 $$
 
-We apply static atomic polarizabilities for the calculation of vdW radii. The graphic below depicts calculated vdW radii \(`vdwtype=rahm`\) for all atoms up to Radon \(CN = 0, q = 0\).
+We apply static atomic polarizabilities for the calculation of vdW radii. The graphic below depicts calculated vdW radii (`vdwtype=rahm`) for all atoms up to Radon (CN = 0, q = 0).
 
-![](../.gitbook/assets/vdw.png)
+![](<../.gitbook/assets/vdw (1).png>)
 
 ## Define the Subcommand
 
@@ -58,7 +58,7 @@ description:
 {% endtab %}
 
 {% tab title="arguments" %}
-```text
+```
 input file is given as (positional) argument
 ```
 {% endtab %}
@@ -114,5 +114,4 @@ To calculate atomic van-der-Waals radii for a neutral charged Alanine-Glycine mo
 2.5536833297719026
 ```
 
-Now we obtain a list of atomic van-der-Waals radii. However, we can furthermore calculate van-der-Waals radii for the cationic \(or anionic\) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.
-
+Now we obtain a list of atomic van-der-Waals radii. However, we can furthermore calculate van-der-Waals radii for the cationic (or anionic) Alanine-Glycine molecule by incorporating the `chrg` option as described in the subcommand definition.

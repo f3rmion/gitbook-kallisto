@@ -6,7 +6,7 @@ description: Simply exchange a substructure with another.
 
 ## Introduction
 
-Often we want to modify existing molecular structures in an automated way, which is always a little tricky. `kallisto` implements an easy way to exchange substructures within a molecular structure with another substructure. For the definition of substructures and the way we find them in `kallisto` , check out the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig). The easiest way to introduce you to the substructure exchanger is by going through several examples \(see below\).
+Often we want to modify existing molecular structures in an automated way, which is always a little tricky. `kallisto` implements an easy way to exchange substructures within a molecular structure with another substructure. For the definition of substructures and the way we find them in `kallisto` , check out the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/\~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig). The easiest way to introduce you to the substructure exchanger is by going through several examples (see below).
 
 ## Define the Subcommand
 
@@ -46,7 +46,7 @@ description:
 {% endtab %}
 
 {% tab title="arguments" %}
-```text
+```
 input files are given as (positional) argument
 ```
 {% endtab %}
@@ -54,19 +54,19 @@ input files are given as (positional) argument
 
 ## Application
 
-Let's take the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig) and exchange the benzene substrate with another substrate. Since this example describes the transition state of an oxidative addition we have to keep track that the new substrate misses one Hydrogen atom at the exchange position. We decide to exchange with a pyridine molecule \(ortho to Nitrogen\).
+Let's take the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/\~/drafts/-MRdiDzTh2KOJX8DLE81/modelling/lig) and exchange the benzene substrate with another substrate. Since this example describes the transition state of an oxidative addition we have to keep track that the new substrate misses one Hydrogen atom at the exchange position. We decide to exchange with a pyridine molecule (ortho to Nitrogen).
 
 ![](../.gitbook/assets/pyridine_c.png)
 
 {% hint style="warning" %}
-Note that the substrate exchanger needs the exchange position to be the first atom inside the structure. You can use the [BFS sorting](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRe6-_b8HjAaH4Is2t0/modelling/sort) to prepare your substrate.
+Note that the substrate exchanger needs the exchange position to be the first atom inside the structure. You can use the [BFS sorting](https://app.gitbook.com/@ehjc/s/kallisto/\~/drafts/-MRe6-\_b8HjAaH4Is2t0/modelling/sort) to prepare your substrate.
 {% endhint %}
 
-To exchange benzene with pyridine, we need to know the substructure number of benzene within the complex. Here, we take the result from the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/~/drafts/-MRdkU9-SqjnamgQtEMU/modelling/lig); benzene is substructure number `2`. Furthermore, the Iridium atom has to be specified according to the numbering inside the complex, which is `18`.
+To exchange benzene with pyridine, we need to know the substructure number of benzene within the complex. Here, we take the result from the example given in the section [Substructure Finder](https://app.gitbook.com/@ehjc/s/kallisto/\~/drafts/-MRdkU9-SqjnamgQtEMU/modelling/lig); benzene is substructure number `2`. Furthermore, the Iridium atom has to be specified according to the numbering inside the complex, which is `18`.
 
-Now we call the subcommand `exs` to exchange the benzene substructure with the new one. This generates a new `xmol` file \(termed `newstructure.xyz`\) that incorporates the new structure.
+Now we call the subcommand `exs` to exchange the benzene substructure with the new one. This generates a new `xmol` file (termed `newstructure.xyz`) that incorporates the new structure.
 
-```text
+```
 > cat pyridine.xyz
 10
 Pyridine without H in ortho position of N
@@ -269,20 +269,20 @@ Again, the new structure is saved to `newstructure.xyz`. By taking a closer look
 
 ![](../.gitbook/assets/messed.png)
 
-To overcome this failure, the `kallisto` program writes constraint files \(termed `constrain.inp`\) that are intended to be used in combination with the open-source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The constraint files can be used to repair the structure within a constrained geometry optimisation. The constraints fix the catalyst and enable only the substrate to relax itself in this geometry.
+To overcome this failure, the `kallisto` program writes constraint files (termed `constrain.inp`) that are intended to be used in combination with the open-source [xtb tight-binding scheme](https://github.com/grimme-lab/xtb). The constraint files can be used to repair the structure within a constrained geometry optimisation. The constraints fix the catalyst and enable only the substrate to relax itself in this geometry.
 
 ```bash
 # Constrained geometry optimization in implicit tetrahydrofuran
 > xtb newstructure.xyz --opt tight --alpb thf --input constrain.inp
 ```
 
-After optimising the geometry, we obtain a reasonable complex \(see depiction below\). This approach reduces the complexity of the exchange algorithm tremendously since we solve the exchange problems by applying a physically motivated scheme instead of empirical rules like, e.g., a template based substrate exchange.
+After optimising the geometry, we obtain a reasonable complex (see depiction below). This approach reduces the complexity of the exchange algorithm tremendously since we solve the exchange problems by applying a physically motivated scheme instead of empirical rules like, e.g., a template based substrate exchange.
 
 ![](../.gitbook/assets/opt.png)
 
 ### Rotate with Rodrigues' rotation formula
 
-Sometimes we want to additionally rotate the new substrate around its covalent bond \(central atom - here Iridium - to substrate atom\) after matching it. The `kallisto` program makes use of the Rodrigues rotation formula that rotates a vector **v** by an angle `theta` around vector **k** by decomposing it into its components parallel and perpendicular to **k**, and rotating only the perpendicular component.
+Sometimes we want to additionally rotate the new substrate around its covalent bond (central atom - here Iridium - to substrate atom) after matching it. The `kallisto` program makes use of the Rodrigues rotation formula that rotates a vector **v** by an angle `theta` around vector **k** by decomposing it into its components parallel and perpendicular to **k**, and rotating only the perpendicular component.
 
 ![](../.gitbook/assets/rodrigues.png)
 
@@ -295,4 +295,3 @@ A simple example is given as follows, where we rotate the new substrate by an an
 ```bash
 > kallisto exs --center 18 --subnr 2 --rotate 180 iridium.xyz pyridine.xyz
 ```
-
